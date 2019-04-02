@@ -1,5 +1,5 @@
 {
-  "name": "budget-sim",
+  "name": "sozialhilfe-simulation",
   "version": "0.0.0",
   "description": "custom components for the story",
   "main": "index.js",
@@ -11,20 +11,21 @@
     "now-build": "NODE_ENV=production rollup -c && cd test && next build",
     "heroku-postbuild": "NODE_ENV=production rollup -c && cd test && next build",
     "start": "NODE_ENV=production cd test && node server.js",
-    "translations": "gsheets --key=1gmANuB6heAxirrBn7mPSMD97Ro9n_RnxZSswA0RkIvY --title=de --pretty --out src/lib/translations.json",
-    "deploy": "s3cmd sync --exclude '.DS_Store' --verbose --acl-public build/ s3://republik-assets/dynamic-components/skilifte/",
+    "fields": "gsheets --key=1rO5fqHWe_ckiqbkSO3EOC5ho_kRUV7gM8zTF3m1zdf0 --title=Felder --pretty --out fields.json",
+    "translations": "gsheets --key=1rO5fqHWe_ckiqbkSO3EOC5ho_kRUV7gM8zTF3m1zdf0 --title=Text --pretty --out translations.json",
+    "deploy": "s3cmd sync --exclude '.DS_Store' --verbose --acl-public build/ s3://republik-assets/dynamic-components/sozialhilfe-simulation/",
     "storybook": "start-storybook"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orbiting/budget-sim.git"
+    "url": "git+https://github.com/orbiting/sozialhilfe-simulation.git"
   },
   "author": "",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/orbiting/budget-sim/issues"
+    "url": "https://github.com/orbiting/sozialhilfe-simulation/issues"
   },
-  "homepage": "https://github.com/orbiting/budget-sim",
+  "homepage": "https://github.com/orbiting/sozialhilfe-simulation",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.0.0-beta.51",
@@ -66,8 +67,10 @@
   },
   "dependencies": {
     "d3-array": "^1.2.4",
+    "d3-format": "^1.3.0",
     "d3-scale": "^2.0.0",
     "d3-shape": "^1.2.0",
+    "glamorous": "^5.0.0",
     "lodash": "^4.17.11",
     "react": "^16.8.0"
   }

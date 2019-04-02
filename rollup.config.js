@@ -16,7 +16,7 @@ export default [
   },
   external: [
     // default
-    'prop-types', 'glamor', '@project-r/styleguide', '@project-r/styleguide/chart'
+    'react', 'prop-types', 'glamor', '@project-r/styleguide', '@project-r/styleguide/chart'
   ],
   plugins: [
     json(),

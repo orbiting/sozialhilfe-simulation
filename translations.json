@@ -1,0 +1,1502 @@
+{
+  "updated": "2019-03-29T12:44:14.465Z",
+  "title": "Spiel",
+  "data": [
+    {
+      "140": 319,
+      "986": 746,
+      "Grundbedarf": "Pauschale Abzüge",
+      "Kleider und Verkehr ": "Unterhaltung und Kommunikation ",
+      "undefined": 352
+    },
+    {
+      "140": 175,
+      "986": 200,
+      "Grundbedarf": "Startguthaben",
+      "Kleider und Verkehr ": "Freizeit und Sozialleben",
+      "undefined": 634
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Startgeld",
+      "Kleider und Verkehr ": null
+    },
+    {
+      "140": 634,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null
+    },
+    {
+      "140": null,
+      "986": "Einnahmen",
+      "Grundbedarf": "Ereignis",
+      "Kleider und Verkehr ": null,
+      "undefined": "Pauschal"
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Billag 3 Monate",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Internet/Telefon etc. ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Handyabo",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Hund behalten? Hundefutter",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Velo reparieren ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Theater",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Kaffee mit Freundin",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Döner",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Busbilett",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Geburtstagsgeschenk ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Sommerkleider",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Mitgliedschaft",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Busbilett",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Vorstellungsgespräch Zug",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Ausgang/ 2x Bier",
+      "Kleider und Verkehr ": null,
+      "undefined": 132.75
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Internet/Telefon etc. ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Handyabo",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Kino ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Halbtax",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Busbilett",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Bibliothekskarte",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Hundefutter",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Freunde zum Abendessen einalden ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Badieintritte ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Geburtstagsgeschenk Buch",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Pneu-Blatte Velo ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Grossmutter in Genf",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Flip-Flops",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Wanderausflug ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Unterhosen",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 127.75
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Internet/Telefon etc. ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Handyabo",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Hundefutter",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Hund zum TA ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Badieintritte ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Wanderschuhe",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Neue Wohnung suchen/ 10 Busbillet",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Open-Air",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Essen/Trinken Open Air",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Socken",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Briefmarken ",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Date Abenessen auswärts",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Mahnung",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Kaffe mit Freunden",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": "Grill für Balkon",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": -8.25
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": 986,
+      "Grundbedarf": "Start",
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    },
+    {
+      "140": null,
+      "986": null,
+      "Grundbedarf": null,
+      "Kleider und Verkehr ": null,
+      "undefined": 22
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "updated": "2019-03-29T15:19:17.303Z",
+  "title": "Felder",
+  "data": [
+    {
+      "id": 1,
+      "description": "Start",
+      "price": null,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 2,
+      "description": "Billag 3 Monate",
+      "price": 93.25,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": 3
+    },
+    {
+      "id": 3,
+      "description": "Internet/Telefon etc. ",
+      "price": 50,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 4,
+      "description": "Handyabo",
+      "price": 50,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 5,
+      "description": "Hund behalten? Hundefutter",
+      "price": 15,
+      "optional": 1,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 6,
+      "description": "Velo reparieren ",
+      "price": 20,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 7,
+      "description": "Theater",
+      "price": 10,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 8,
+      "description": "Kaffee mit Freundin",
+      "price": 5,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 9,
+      "description": "Döner",
+      "price": 10,
+      "optional": 1,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 10,
+      "description": "Busbilett",
+      "price": 18,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 11,
+      "description": "Geburtstagsgeschenk ",
+      "price": 20,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 12,
+      "description": "Sommerkleider",
+      "price": 50,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 13,
+      "description": "Mitgliedschaft",
+      "price": 100,
+      "optional": 1,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 14,
+      "description": "Busbilett",
+      "price": 18,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 15,
+      "description": "Vorstellungsgespräch Zug",
+      "price": 30,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 16,
+      "description": "Ausgang/ 2x Bier",
+      "price": 12,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 17,
+      "description": "Start",
+      "price": null,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 18,
+      "description": "Internet/Telefon etc. ",
+      "price": 50,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 19,
+      "description": "Handyabo",
+      "price": 50,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 20,
+      "description": "Hundefutter",
+      "price": 15,
+      "optional": null,
+      "depends": 5,
+      "enables": null,
+      "repeatAfterRounds": 1
+    },
+    {
+      "id": 21,
+      "description": "Hund zum TA ",
+      "price": 150,
+      "optional": null,
+      "depends": 5,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 22,
+      "description": "Badieintritte ",
+      "price": 30,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 23,
+      "description": "Wanderschuhe",
+      "price": 120,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 24,
+      "description": "Neue Wohnung suchen/ 10 Busbillet",
+      "price": 50,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 25,
+      "description": "Open-Air",
+      "price": 80,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 26,
+      "description": "Essen/Trinken Open Air",
+      "price": 30,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 27,
+      "description": "Socken",
+      "price": 30,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 28,
+      "description": "Briefmarken ",
+      "price": 30,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 29,
+      "description": "Date Abenessen auswärts",
+      "price": 70,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 30,
+      "description": "Mahnung",
+      "price": 30,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 31,
+      "description": "Kaffe mit Freunden",
+      "price": 5,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    },
+    {
+      "id": 32,
+      "description": "Grill für Balkon",
+      "price": 30,
+      "optional": null,
+      "depends": null,
+      "enables": null,
+      "repeatAfterRounds": null
+    }
+  ]
+}
