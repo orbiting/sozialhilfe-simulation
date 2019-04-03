@@ -6,8 +6,8 @@ import fields from '../../fields.json'
 
 storiesOf('Grid', module)
   .add('default', () => (
-    <svg width={300} height={300}>
-      <Grid fields={fields.data} size={300} />
+    <svg width={500} height={500}>
+      <Grid fields={fields.data} />
     </svg>
   ))
   .add('large', () => (

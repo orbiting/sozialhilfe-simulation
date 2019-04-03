@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Field from './Field'
-import { get, chunk } from 'lodash'
+import Chance from './Chance'
+
+import { get, chunk, range } from 'lodash'
 import { css } from 'glamor'
 import theme from './theme'
 import constants from './constants'
@@ -65,20 +67,19 @@ const Grid = ({fields, size, segments}) => {
 	return (
 
     <g>
-      {/*<rect width={size} height={size} fill={'#888'} />*/}
-      {
-        gridCoords.right.map(
-          (c,i) => i===0 ? (
-            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
-          ) : (
-            <rect width={longSide} height={shortSide} {...getOffsets(c)} {...styles.field} />
-          )
-        )
-      }
+			{
+				gridCoords.right.map(
+					(c,i) => i===0 ? (
+						<Chance size={shortSide} field={get(right, i)} {...getOffsets(c)} rotate='-90'/>
+					) : (
+						<Field size={shortSide} field={get(right, i)} {...getOffsets(c)}  rotate='-90'/>
+					)
+				)
+			}
       {
         gridCoords.bottom.map(
           (c,i) => i===0 ? (
-            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
+						<Chance size={shortSide} field={get(bottom, i)} {...getOffsets(c)}/>
           ) : (
             <Field size={shortSide} field={get(bottom, i)} {...getOffsets(c)}/>
           )
@@ -86,29 +87,29 @@ const Grid = ({fields, size, segments}) => {
       }
       {
         gridCoords.left.map(
-          (c,i) => i===0 ? (
-            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
-          ) : (
-            <rect width={longSide} height={shortSide} {...getOffsets(c)} {...styles.field} />
-          )
+					(c,i) => i===0 ? (
+						<Chance size={shortSide} field={get(left, i)} {...getOffsets(c)} rotate='90'/>
+					) : (
+						<Field size={shortSide} field={get(left, i)} {...getOffsets(c)}  rotate='90' offsetY={-shortSide/2} />
+					)
         )
       }
-      {
-        gridCoords.top.map(
-          (c,i) => i===0 ? (
-            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
-          ) : (
-            <rect width={shortSide} height={longSide} {...getOffsets(c)} {...styles.field} />
-          )
-        )
-      }
+			{
+				gridCoords.top.map(
+					(c,i) => i===0 ? (
+						<Chance size={shortSide} field={get(top, i)} {...getOffsets(c)} rotate='180'/>
+					) : (
+						<Field size={shortSide} field={get(top, i)} {...getOffsets(c)}  rotate='180'  offsetY={-shortSide/2} />
+					)
+				)
+			}
     </g>
 
 	)
 }
 
 Grid.defaultProps = {
-	size: 800,
+	size: 500,
 	fields: []
 }
 

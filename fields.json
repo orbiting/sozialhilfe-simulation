@@ -94,7 +94,7 @@
     },
     {
       "id": 11,
-      "description": "Geburtstagsgeschenk ",
+      "description": "Geburtstags- geschenk ",
       "price": 20,
       "optional": null,
       "depends": null,
@@ -130,7 +130,7 @@
     },
     {
       "id": 15,
-      "description": "Vorstellungsgespräch Zug",
+      "description": "Vorstellungs- gespräch in Zug",
       "price": 30,
       "optional": null,
       "depends": null,
