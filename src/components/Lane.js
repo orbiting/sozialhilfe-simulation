@@ -4,12 +4,12 @@ import Chance from './Chance'
 import { get, reverse } from 'lodash'
 
 
-const Lane = ({fields, size, children}) => {
+const Lane = ({fields, size, rotate, x, y}) => {
 
-  const shortSide = size / 5
+  const shortSide = size / 4.5
 
   return (
-    <g transform={`rotate(0)`}>
+    <g transform={`translate(${x}, ${y}) rotate(${rotate})`}>
       {
         reverse(fields).map(
           (c,i) => i===fields.length-1 ? (
@@ -26,7 +26,10 @@ const Lane = ({fields, size, children}) => {
 
 Lane.defaultProps = {
   fields: [],
-  size: 500
+  size: 500,
+  rotate: 0,
+  x: 0,
+  y: 0,
 }
 
 export default Lane
