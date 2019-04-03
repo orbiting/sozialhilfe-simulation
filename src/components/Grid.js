@@ -3,6 +3,7 @@ import Field from './Field'
 import { get, chunk } from 'lodash'
 import { css } from 'glamor'
 import theme from './theme'
+import constants from './constants'
 
 const margins = {
 	top: 5,
@@ -11,107 +12,97 @@ const margins = {
 	left: 5,
 }
 
-const grid = `1fr 1fr 1fr 1fr 1fr`
-
 const gridCoords = {
 	right: [
-		[5,1],
-		[5,2],
-		[5,3],
-		[5,4],
+		[4,0],
+		[4,1],
+		[4,2],
+		[4,3],
 	],
 	bottom: [
-		[5,5],
-		[4,5],
-		[3,5],
-		[2,5],
+    [4,4],
+    [3,4],
+		[2,4],
+    [1,4],
 	],
 	left: [
-		[1,5],
-		[1,4],
-		[1,3],
-		[1,2],
+		[0,4],
+		[0,3],
+		[0,2],
+		[0,1],
 	],
 	top: [
-		[1,1],
-		[2,1],
-		[3,1],
-		[4,1],
+		[0,0],
+		[1,0],
+		[2,0],
+		[3,0],
 	],
 }
 
+const styles = {
+  grid: css({
+    background: theme.background
+  }),
+  field: css({
+    fill: theme.field,
+    stroke: theme.border,
+    strokeWidth: 1,
+  })
+}
 
-const Grid = ({fields, size}) => {
-	const margin = 0
-	const s = size - margin
-
-	const getGridProps = (colStart=1, rowStart=1, colEnd, rowEnd) => css({
-		gridColumnStart: colStart,
-		gridColumnEnd: colEnd || colStart,
-		gridRowStart: rowStart,
-		gridRowEnd: rowEnd || rowStart,
-		msGridColumn: colStart,
-		msGridRow: rowStart,
-		msGridColumnSpan: `${(colEnd - colStart)}`,
-		msGridRowSpan: `${(rowEnd - rowStart)}`,
-	})
-
-	const defaultSpaceStyle = css({background: theme.field})
+const Grid = ({fields, size, segments}) => {
 
 	const [right, bottom, left, top] = chunk(fields, 4)
-	const fieldData = {
-		right, bottom, left, top
-	}
 
-	const renderFields = (side) => {
-		return gridCoords[side].map(([col, row], i) =>
-			<div {...defaultSpaceStyle} {...getGridProps(col,row)}>
-				{
-					i===0 ? (
-						<div></div>
-					) : (
-						<Field field={get(fieldData[side], i, {})} orientation={`${side}`} />
-					)
-				}
-			</div>
-		)
+  const shortSide = size / (3 + 2 * constants.FIELD_SIDE_RATIO)
+  const longSide = constants.FIELD_SIDE_RATIO * shortSide
 
-	}
+  const getOffsets = ([x, y]) => ({
+    x: (x > 0 ? 1 : 0)*longSide+Math.max(0, x-1)*shortSide,
+    y: (y > 0 ? 1 : 0)*longSide+Math.max(0, y-1)*shortSide
+  })
 
 	return (
-		<div style={{position: 'relative', width:s , height: s}}>
-			<div {...css({
-				display: ['grid', '-ms-grid'],
-				width: s,
-				height: s,
-				MsGridColumns: grid,
-				MsGridRows: grid,
-				gridTemplateColumns: grid,
-				gridTemplateRows: grid,
-				gridGap: Math.max(size/300,2),
-				background: theme.background
-			})}>
 
-				<div style={{background: '#fff'}} {...getGridProps(2,2,5,5)}>
-					Lorem ipsum dolor sit amet
-				</div>
-
-				{
-					renderFields('right')
-				}
-				{
-					renderFields('bottom')
-				}
-				{
-					renderFields('left')
-				}
-				{
-					renderFields('top')
-				}
-
-
-			</div>
-		</div>
+    <g>
+      {/*<rect width={size} height={size} fill={'#888'} />*/}
+      {
+        gridCoords.right.map(
+          (c,i) => i===0 ? (
+            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
+          ) : (
+            <rect width={longSide} height={shortSide} {...getOffsets(c)} {...styles.field} />
+          )
+        )
+      }
+      {
+        gridCoords.bottom.map(
+          (c,i) => i===0 ? (
+            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
+          ) : (
+            <Field size={shortSide} field={get(bottom, i)} {...getOffsets(c)}/>
+          )
+        )
+      }
+      {
+        gridCoords.left.map(
+          (c,i) => i===0 ? (
+            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
+          ) : (
+            <rect width={longSide} height={shortSide} {...getOffsets(c)} {...styles.field} />
+          )
+        )
+      }
+      {
+        gridCoords.top.map(
+          (c,i) => i===0 ? (
+            <rect width={longSide} height={longSide} {...getOffsets(c)} {...styles.field} />
+          ) : (
+            <rect width={shortSide} height={longSide} {...getOffsets(c)} {...styles.field} />
+          )
+        )
+      }
+    </g>
 
 	)
 }

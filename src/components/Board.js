@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
-import Field from './Field'
+import Grid from './Grid'
+
 
 const margins = {
-	top: 5,
-	right: 5,
-	bottom: 5,
-	left: 5,
+	top: 100,
+	right: 100,
+	bottom: 100,
+	left: 100,
 }
 
-const Board = ({width, height}) => {
+const Board = ({width, height, fields}) => {
 
 	const [ gameState, setGameState ] = useState({ currentField: 0 })
 
@@ -16,21 +17,18 @@ const Board = ({width, height}) => {
 	const w = width - margins.left - margins.right
 
 	return (
-		<svg width={w} height={h}>
+		<svg width={width} height={height}>
 			<g transform={`translate(${margins.left}, ${margins.top})`}>
-			{
-				[0,1,2,3,4].map(
-					i => <g key={i} transform={`translate(0,${i*100})`}><Field /></g>
-				)
-			}
+				<Grid fields={fields} size={w}/>
 			</g>
 		</svg>
 	)
 }
 
 Board.defaultProps = {
-	width: 800,
-	height: 800
+	width: 400,
+	height: 400,
+	fields: [],
 }
 
 export default Board
