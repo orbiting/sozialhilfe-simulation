@@ -1,48 +1,28 @@
 import React from 'react'
 import { fontFamilies } from '@project-r/styleguide'
-import constants from './constants'
+import {FIELD_SIDE_RATIO} from './constants'
 import theme from './theme'
 import { chunk } from 'lodash'
+import Text from './Text'
 
-const Field = ({field: { description, price }, size, x, y, rotate, offsetY }) => {
+const Field = ({field: { description, price, category }, boardSize, x, y, rotate, offsetY }) => {
 
-  const tokens = description.split(/\s/).filter(Boolean)
-  const tokenChunks = chunk(tokens, 2).reduce((acc,cur) => {
-    const rest = []
-    cur.forEach(e => {
-      if (e.length > 10) {
-        acc.push([e])
-      } else {
-        rest.push(e)
-      }
-    })
-    if (rest.length > 0) {
-      acc.push(rest)
-    }
-    return acc
-  }, [])
-
-  const width = size
-  const height = constants.FIELD_SIDE_RATIO*width
+  const size = boardSize / 6
 
   return (
     <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${size/2}, ${size/2} ) translate(0, ${offsetY})`}>
-      <rect width={size} height={constants.FIELD_SIDE_RATIO*size} fill={theme.field} />
-      <rect width={size} height={0.2*size} fill={theme.categories['entertainment']} />
-      {
-        tokenChunks.map((c,i) =>
-          <text x={size/2} y={size/2+(i*size/8)} textAnchor='middle' style={{fontFamily: fontFamilies.sansSerifRegular, fontSize: size/8}}>{c.join(' ')}</text>
-        )
-      }
-      <text x={size/2} y={size/2+(4*size/8)} textAnchor='middle' style={{fontFamily: fontFamilies.sansSerifMedium, fontSize: size/5}}>{price}.–</text>
-      <rect width={size} height={constants.FIELD_SIDE_RATIO*size} strokeWidth={1} stroke={theme.border} fill='none' />
+      <rect width={size} height={FIELD_SIDE_RATIO*size} fill={theme.field} />
+      <rect width={size} height={0.2*size} fill={theme.categories[category]} />
+      <Text boardSize={boardSize} x={size/2} y={size/2} >{description}</Text>
+      <Text boardSize={boardSize} x={size/2} y={size/2+(5*size/8)} type={'bold'}>{`${Math.floor(price) === price ? price+'.–' : price  }`}</Text>
+      <rect width={size} height={FIELD_SIDE_RATIO*size} strokeWidth={1} stroke={theme.border} fill='none' />
     </g>
   )
 
 }
 
 Field.defaultProps = {
-  size: 100,
+  boardSize: 600,
   field: {
     description: '',
     price: 0,

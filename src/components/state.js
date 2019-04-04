@@ -1,13 +1,12 @@
-export const FIELD_SIDE_RATIO = 1.5
+import { useState } from 'react'
 
-export const GAME_INITIAL_STATE = {
+export const gameState = useState({
   amount: 986,
   budget: {
     leisure: 1/3,
     mobility: 1/3,
     media: 1/3,
   },
-  round: 0,
+  month: 0,
   activeField: 0
-}
-
+})

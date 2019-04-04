@@ -1,34 +1,32 @@
-import React, { useState } from 'react'
-import Grid from './Grid'
+import React from 'react'
 
+import { chunk } from 'lodash'
+import {FIELD_SIDE_RATIO} from './constants'
+import Lane from './Lane'
 
-const margins = {
-	top: 100,
-	right: 100,
-	bottom: 100,
-	left: 100,
-}
+const Board = ({ fields, boardSize }) => {
 
-const Board = ({width, height, fields}) => {
+	const [right, bottom, left, top] = chunk(fields, 4)
 
-	const [ gameState, setGameState ] = useState({ currentField: 0 })
-
-	const h = height - margins.top - margins.bottom
-	const w = width - margins.left - margins.right
+	const shortSide = boardSize / (3 + 2 * FIELD_SIDE_RATIO)
+	const longSide = FIELD_SIDE_RATIO * shortSide
+	const laneSize = boardSize-longSide
 
 	return (
-		<svg width={width} height={height}>
-			<g transform={`translate(${margins.left}, ${margins.top})`}>
-				<Grid fields={fields} size={w}/>
-			</g>
-		</svg>
+
+		<g>
+			<Lane boardSize={boardSize} fields={bottom} x={longSide} y={laneSize} start />
+			<Lane boardSize={boardSize} fields={left} rotate={90} x={longSide} y={longSide} />
+			<Lane boardSize={boardSize} fields={right} rotate={-90} x={laneSize} y={laneSize} />
+			<Lane boardSize={boardSize} fields={top} rotate={180} x={laneSize} y={longSide} />
+		</g>
+
 	)
 }
 
 Board.defaultProps = {
-	width: 400,
-	height: 400,
-	fields: [],
+	boardSize: 500,
+	fields: []
 }
 
 export default Board
