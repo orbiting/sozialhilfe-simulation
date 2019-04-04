@@ -19,16 +19,17 @@ const App = () => {
     activeField: gameState.activeField+1
   })
 
-  const [ rotation, setRotation ] = useState(0)
   const boardRef = useRef(null)
 
   useEffect(
     () => {
-      gameState.activeField > 0 && select(boardRef.current).transition().attr('transform', `rotate(${-gameState.activeField * dα}, ${boardSize/2}, ${boardSize/2})` ).ease(easeCircle)
+      const d = Math.floor(width/3.5*Math.abs(Math.sin((gameState.activeField*dα*2)*Math.PI/180)))
+      console.log('App.js:28 [d]', d)
+      gameState.activeField > 0 && select(boardRef.current).transition().attr('transform', `translate(${d}, ${0}) rotate(${-gameState.activeField*dα}, ${boardSize/2}, ${boardSize/2})` )//.ease(easeCircle)
     }
   )
 
-  const width = 400, height = 600
+  const width = 300, height = 500
   const boardSize = 800
 
   const rotationAxis = boardSize / 2 - boardSize / 4 + ( (width - boardSize / 4) / 2 )

@@ -9,5 +9,4 @@ storiesOf('Chance', module)
     <svg width={1000} height={1000}>
       <Chance field={fields.data[5]} orientation='top' />
     </svg>
-
   ))

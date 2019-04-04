@@ -1,8 +1,6 @@
 import React from 'react'
-import { fontFamilies } from '@project-r/styleguide'
 import {FIELD_SIDE_RATIO} from './constants'
 import theme from './theme'
-import { chunk } from 'lodash'
 import Text from './Text'
 
 const Field = ({field: { description, price, category }, boardSize, x, y, rotate, offsetY }) => {
