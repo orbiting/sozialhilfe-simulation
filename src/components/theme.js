@@ -7,7 +7,7 @@ const classic = {
   score: '#fff',
   text: '#111',
   categories: {
-    general: '#666',
+    general: '#000',
     generalBg: '#ccc',
     leisure: '#F15A24',
     leisureBg: '#EAB1A0',
