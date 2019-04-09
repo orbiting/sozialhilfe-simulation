@@ -51,13 +51,13 @@ const App = () => {
 
   return (
     <div style={{position: 'relative', width, height}} onTouchStart={advanceGame} onClick={advanceGame}>
+      <Score gameState={gameState} setGameState={setGameState} boardSize={boardSize} width={width} />
       <svg width={width} height={height} style={{background: '#444'}}>
         <g transform={`translate(${-boardSize+rotationAxis}, ${-boardSize+rotationAxis+height/2})`}>
           <g ref={boardRef}>
             <Board boardSize={boardSize} fields={fields.data} />
           </g>
         </g>
-        <Score gameState={gameState} setGameState={setGameState} boardSize={boardSize} width={width} />
       </svg>
     </div>
   )

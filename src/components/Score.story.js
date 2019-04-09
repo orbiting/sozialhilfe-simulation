@@ -7,11 +7,15 @@ const ScoreStory = (props) => {
 
   const [ gameState, setGameState ] = useState(GAME_INITIAL_STATE)
 
-  return <Score {...props}  gameState={gameState} setGameState={setGameState} />
+  return(
+    <div style={{position: 'absolute'}}>
+      <Score {...props} gameState={gameState} setGameState={setGameState}/>
+    </div>
+  )
 
 }
 
 storiesOf('Score', module)
   .add('default',
-    () => <svg width={500} height={500}><ScoreStory width={500} boardSize={800} /></svg>
+    () => <ScoreStory width={500} boardSize={800} />
   )

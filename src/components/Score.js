@@ -1,6 +1,16 @@
 import React , { useState } from 'react'
 import theme from './theme'
 import Text, { fonts } from './Text'
+import { Chart } from '@project-r/styleguide/lib/chart'
+import CsvChart  from '@project-r/styleguide/lib/components/Chart/Csv'
+import { range } from 'lodash'
+
+import { scaleOrdinal } from 'd3-scale'
+import { schemeSet2 } from 'd3-scale-chromatic'
+
+import { css } from 'glamor'
+
+const LegendSymbol = ({color='#999', size}) => <div style={{display: 'inline-block', width: size, height: size, background: color}} />
 
 const Score = ({gameState, setGameState, width, boardSize}) => {
 
@@ -22,7 +32,8 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
     if (leftDraggable || rightDraggable) {
       let nextScore = {...gameState.score}
       if (position === 'left') {
-        const delta = ((arg.clientX === 0 ? 0.001 : arg.clientX)-leftDraggable)
+        const delta = ((arg.clientX === 0 ? 0.001 : arg.clientX)-leftDraggable)* mobility
+        console.log('Score.js:26 [delta]', delta)
         nextScore.budget = {
           ...nextScore.budget,
           mobility: (leftWidth + delta) / w,
@@ -34,51 +45,28 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
     }
   }
 
+  const factor = 5
+  const units = 986 / factor
+  const unitSize = 6
+  const spacing = 2
+  const totalWidth = units * (unitSize + spacing)
+  const totalHeight = Math.ceil((units*(unitSize+spacing))/width)*(unitSize+spacing)
+
   return (
-    <g>
-      <rect width={width} height={height} fill={theme.score} opacity={0.9}></rect>
-      <g  transform={`translate(${padding}, ${0})`}>
-        {/*<image xlinkHref="https://helpx.adobe.com/content/dam/help/mnemonics/ai_cc_app_RGB.svg" x={padding} y={padding} height="50px" width="50px"/>*/}
-        <text alignmentBaseline='hanging' y={padding} fill={'#000'} style={fonts(boardSize).large} >Kontostand</text>
-        <text alignmentBaseline='hanging' y={4*padding} fill={'#000'} style={fonts(boardSize).regular} >Nahrung, Hygiene und Stromkosten</text>
-        <rect y={6*padding} width={w} height={1.5*padding} />
-
-        <g  transform={`translate(${0}, ${9*padding})`}>
-          <text alignmentBaseline='hanging' fill={'#000'} style={fonts(boardSize).regular} >Mobilität</text>
-          <rect y={2*padding} width={leftWidth} height={1.5*padding} fill={theme.categories.mobilityBg} />
-          <rect y={2*padding} width={10} height={1.5*padding} fill={theme.categories.mobility} />
-
-          <text x={leftWidth} alignmentBaseline='hanging' fill={'#000'} style={fonts(boardSize).regular} >Freizeit</text>
-          <rect x={leftWidth} y={2*padding} width={centerWidth} height={1.5*padding} fill={theme.categories.leisureBg} />
-          <rect x={leftWidth} y={2*padding} width={10} height={1.5*padding} fill={theme.categories.leisure} />
-
-          <text x={w-rightWidth} alignmentBaseline='hanging' fill={'#000'} style={fonts(boardSize).regular} >Medien</text>
-          <rect x={w-rightWidth} y={2*padding} width={rightWidth} height={1.5*padding}  fill={theme.categories.mediaBg} />
-          <rect x={w-rightWidth} y={2*padding} width={10} height={1.5*padding}  fill={theme.categories.media} />
+    <div style={{position: 'absolute', width, background: theme.score}}>
+      <div>Kontostand: {balance}</div>
+      <div>Ausgaben im Mai:</div>
+      <svg width={totalWidth} height={totalHeight}>
+        <g>
+        {
+          range(0, units).map(i =>
+            <rect height={unitSize} width={unitSize} x={i*(unitSize+spacing) % width} y={Math.floor((i*(unitSize+spacing))/width)*(unitSize+spacing)} fill={'#ddd'} />
+          )
+        }
         </g>
-
-        <circle
-          r={boardSize/50}
-          fill={theme.background}
-          cy={15*padding}
-          cx={leftWidth}
-          onMouseDown={e => { e.stopPropagation(); setLeftDraggable(e.clientX)}}
-          onMouseMove={updateGameState('left')}
-          onMouseUp={() => setLeftDraggable(null)}
-          onMouseLeave={() => setLeftDraggable(null)}
-        />
-        <circle
-          r={boardSize/50}
-          fill={theme.background}
-          cy={15*padding}
-          cx={w-rightWidth}
-          onMouseDown={e => { e.stopPropagation(); setRightDraggable(e.clientX)}}
-          onMouseMove={updateGameState('right')}
-          onMouseUp={() => setRightDraggable(null)}
-          onMouseLeave={() => setRightDraggable(null)}
-        />
-      </g>
-    </g>
+      </svg>
+      <div>{factor} Franken ausgegeben für<br/><LegendSymbol size={2*unitSize} label='Nahrung' color={theme.categories.mobility} /> Mobilität</div>
+    </div>
   )
 }
 
