@@ -4,11 +4,14 @@ const classic = {
   background: '#777',
   border: '#333',
   field: '#F9F1E4',
-  score: '#999',
+  score: '#fff',
   categories: {
     leisure: 'red',
+    leisureBg: 'magenta',
     mobility: 'blue',
+    mobilityBg: 'cyan',
     media: 'green',
+    mediaBg: 'darkgreen',
   }
 }
 

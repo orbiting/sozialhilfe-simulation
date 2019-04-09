@@ -3,7 +3,7 @@ import { fontFamilies } from '@project-r/styleguide'
 import theme from './theme'
 import { last } from 'lodash'
 
-const fonts = (boardSize) => ({
+export const fonts = (boardSize) => ({
   regular: {
     fontFamily: fontFamilies.sansSerifRegular,
     fontSize: boardSize / 50,

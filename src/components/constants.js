@@ -1,13 +1,2 @@
 export const FIELD_SIDE_RATIO = 1.5
 
-export const GAME_INITIAL_STATE = {
-  amount: 986,
-  budget: {
-    leisure: 1/3,
-    mobility: 1/3,
-    media: 1/3,
-  },
-  round: 0,
-  activeField: 0
-}
-
