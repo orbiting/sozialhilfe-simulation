@@ -3,7 +3,7 @@ import theme from './theme'
 import Text from './Text'
 import {FIELD_SIDE_RATIO} from './constants'
 
-const Chance = ({field: { description, price }, boardSize, x, y, rotate }) => {
+const Chance = ({field: { description, amount }, boardSize, x, y, rotate }) => {
 
   const [ revealed, setRevealed ] = useState(false)
 
@@ -34,7 +34,7 @@ Chance.defaultProps = {
   boardSize: 800,
   field: {
     description: '',
-    price: 0,
+    amount: 0,
   },
   x: 0,
   y: 0,

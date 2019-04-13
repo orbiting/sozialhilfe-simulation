@@ -3,11 +3,12 @@ import { fontFamilies } from '@project-r/styleguide'
 const classic = {
   background: '#777',
   border: '#333',
-  field: '#F9F1E4',
+  field: '#FFFDF3',
+  placeholder: '#dbd6bd',
   score: '#fff',
-  text: '#111',
+  text: '#222',
   categories: {
-    general: '#000',
+    general: '#888',
     generalBg: '#ccc',
     leisure: '#F15A24',
     leisureBg: '#EAB1A0',

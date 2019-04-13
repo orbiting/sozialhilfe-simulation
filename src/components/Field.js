@@ -2,33 +2,63 @@ import React from 'react'
 import {FIELD_SIDE_RATIO} from './constants'
 import theme from './theme'
 import Text from './Text'
+import { css } from 'glamor'
 
-const Field = ({field: { description, price, category }, boardSize, x, y, rotate, offsetY }) => {
+const styles = {
+  active: css({
+    fillOpacity: 0,
+    transition: 'fill-opacity 0.3s ease-in-out'
+  }),
+  inactive: css({
+    fillOpacity: 1,
+    transition: 'fill-opacity 0.3s ease-in-out'
+  }),
+}
 
-  const size = boardSize / 6
+const Field = ({field: { description, amount, category, id }, boardSize, x, y, rotate, offsetY, active }) => {
+
+  const width = boardSize / 6
+  const height = FIELD_SIDE_RATIO*width
+  const widthUnit = width / 10
+  const heightUnit = height / 12
+
+
 
   return (
-    <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${size/2}, ${size/2} ) translate(0, ${offsetY})`}>
-      <rect width={size} height={FIELD_SIDE_RATIO*size} fill={theme.field} />
-      <rect width={size} height={0.2*size} fill={theme.categories[category]} />
-      <Text boardSize={boardSize} x={size/2} y={size/2} >{description}</Text>
-      <Text boardSize={boardSize} x={size/2} y={size/2+(5*size/8)} type={'bold'}>{`${Math.floor(price) === price ? price+'.–' : price  }`}</Text>
-      <rect width={size} height={FIELD_SIDE_RATIO*size} strokeWidth={1} stroke={theme.border} fill='none' />
-    </g>
+    <>
+      <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${width/2}, ${width/2} ) translate(0, ${offsetY})`}>
+        <rect width={width} height={height} fill={theme.field} />
+        <rect width={width} height={2*heightUnit} fill={theme.categories[category]} />
+          <>
+            <Text boardSize={boardSize} x={width/2} y={3.5*heightUnit} charsPerLine={8} fillOpacity={1} {...(!active ? styles.active : styles.inactive)}>{description}</Text>
+            <Text boardSize={boardSize} x={width/2} y={8*heightUnit} type={'bold'} fillOpacity={1}  {...(!active ? styles.active : styles.inactive)} charsPerLine={5}>
+              {`${Math.floor(amount) === amount ? -amount+'.–' : -amount  }`}
+            </Text>
+          </>
+          <>
+            <rect x={widthUnit} y={2.5*heightUnit} width={8*widthUnit} height={heightUnit} {...(active ? styles.active : styles.inactive)} fill={theme.placeholder}/>
+            <rect x={widthUnit} y={4*heightUnit} width={8*widthUnit} height={heightUnit}  {...(active ? styles.active : styles.inactive)}fill={theme.placeholder}/>
+            <rect x={widthUnit} y={5.5*heightUnit} width={8*widthUnit} height={heightUnit}  {...(active ? styles.active : styles.inactive)}fill={theme.placeholder}/>
+            <rect x={4*widthUnit} y={8*heightUnit} width={2*widthUnit} height={heightUnit}  {...(active ? styles.active : styles.inactive)}fill={theme.placeholder}/>
+          </>
+        <rect width={width} height={height} strokeWidth={1} stroke={theme.border} fill='none' />
+      </g>
+    </>
   )
 
 }
 
 Field.defaultProps = {
-  boardSize: 600,
+  boardSize: 1200,
   field: {
     description: '',
-    price: 0,
+    amount: 0,
   },
   x: 0,
   y: 0,
   rotate: 0,
-  offsetY: 0
+  offsetY: 0,
+  active: true,
 }
 
 export default Field

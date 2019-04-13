@@ -1,13 +1,18 @@
 import React, { useState } from 'react'
 import { fontFamilies } from '@project-r/styleguide'
 import theme from './theme'
-import { last } from 'lodash'
+import chunk from 'lodash/chunk'
+import last from 'lodash/last'
 
 export const fonts = (boardSize) => ({
+  small: {
+    fontFamily: fontFamilies.sansSerifRegular,
+    fontSize: boardSize / 60,
+  },
   regular: {
     fontFamily: fontFamilies.sansSerifRegular,
     fontSize: boardSize / 50,
-    lineHeight: boardSize / 50 + 2
+    lineHeight: `${boardSize / 50 + 2}`
   },
   bold: {
     fontFamily: fontFamilies.sansSerifMedium,
@@ -31,28 +36,26 @@ export const fonts = (boardSize) => ({
   }
 })
 
-const Text = ({boardSize, type, children, wordsPerLine, active, x, y, ...rest}) => {
+const Text = ({boardSize, type, children, charsPerLine, x, y, ...rest}) => {
 
   const tokens = children.split(/\s/).filter(Boolean)
-  const tokenChunks = tokens.reduce((acc, cur) => {
-    if (acc[acc.length-1] && (acc[acc.length-1].reduce((a,c) => c.length + a, 0)+cur.length < 17 && acc[acc.length-1].length < 3)) {
-      acc[acc.length-1].push(cur)
-    } else {
+
+  const lines = tokens.reduce((acc, cur) => {
+    const lastLine = last(acc)
+    if (lastLine.join(' ').length > charsPerLine) {
       acc.push([cur])
+    } else {
+      last(acc).push(cur)
     }
     return acc
-  }, [])
+  }, [['']])
 
   const font = fonts(boardSize)
 
   return (
     <g>
       {
-        tokenChunks.map((c,i) =>
-          active
-            ? <text x={x} y={y+(i*font[type].lineHeight)} textAnchor='middle' alignmentBaseline='central' style={font[type]} {...rest}>{c.join(' ')}</text>
-            : <rect x={-50} y={y+(i*font[type].lineHeight)} width={100} height={font[type].lineHeight * 0.5} fill={'#999'}/>
-        )
+        lines.map((c,i) => <text x={x} y={y+(i*font[type].lineHeight)} textAnchor='middle' alignmentBaseline='central' style={font[type]} {...rest}>{c.join(' ')}</text>)
       }
     </g>
   )
@@ -63,8 +66,7 @@ Text.defaultProps = {
   type: 'regular',
   x: 0,
   y: 0,
-  wordsPerLine: 2,
-  active: true,
+  charsPerLine: 6,
 }
 
 export default Text

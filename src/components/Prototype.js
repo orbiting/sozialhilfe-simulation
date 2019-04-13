@@ -33,7 +33,7 @@ const Prototype = () => {
 
   const advance = () => {
     setCurrentField(currentField+1);
-    setBalance(balance-currentFieldDef.price-flatExpense)
+    setBalance(balance-currentFieldDef.amount-flatExpense)
     if (currentField > 0 && currentField % FIELDS_PER_ROUND === 0) {
       setCurrentRound(currentRound+1)
       setBalance(balance+MONTHLY_ALLOWANCE)
@@ -54,7 +54,7 @@ const Prototype = () => {
       <div>Balance: {f(balance)}</div>
       <hr />
       <div>{currentFieldDef.description}</div>
-      <div>{f(currentFieldDef.price)}</div>
+      <div>{f(currentFieldDef.amount)}</div>
       <div {...styles.actionBar}>
         <button onClick={reset}>Reset</button>
         <button onClick={advance}>Next</button>

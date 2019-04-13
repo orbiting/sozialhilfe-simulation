@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { chunk } from 'lodash'
+import chunk from 'lodash/chunk'
 import {FIELD_SIDE_RATIO} from './constants'
 import Lane from './Lane'
 
-const Board = ({ fields, boardSize }) => {
+const Board = ({ fields, boardSize, gameState }) => {
 
-	const [right, bottom, left, top] = chunk(fields, 4)
+	const [bottom, left, top, right] = chunk(fields, 4)
 
 	const shortSide = boardSize / (3 + 2 * FIELD_SIDE_RATIO)
 	const longSide = FIELD_SIDE_RATIO * shortSide
@@ -15,10 +15,10 @@ const Board = ({ fields, boardSize }) => {
 	return (
 
 		<g>
-			<Lane boardSize={boardSize} fields={bottom} x={longSide} y={laneSize} start />
-			<Lane boardSize={boardSize} fields={left} rotate={90} x={longSide} y={longSide} />
-			<Lane boardSize={boardSize} fields={right} rotate={-90} x={laneSize} y={laneSize} />
-			<Lane boardSize={boardSize} fields={top} rotate={180} x={laneSize} y={longSide} />
+			<Lane gameState={gameState} boardSize={boardSize} fields={bottom} x={longSide} y={laneSize} start />
+			<Lane gameState={gameState} boardSize={boardSize} fields={left} rotate={90} x={longSide} y={longSide} />
+			<Lane gameState={gameState} boardSize={boardSize} fields={right} rotate={-90} x={laneSize} y={laneSize} />
+			<Lane gameState={gameState} boardSize={boardSize} fields={top} rotate={180} x={laneSize} y={longSide} />
 		</g>
 
 	)

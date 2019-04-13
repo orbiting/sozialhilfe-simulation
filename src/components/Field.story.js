@@ -11,3 +11,9 @@ storiesOf('Field', module)
     </svg>
 
   ))
+  .add('inactive', () => (
+    <svg width={1000} height={1000}>
+      <Field field={fields.data[5]} orientation='top' active={false} />
+    </svg>
+
+  ))
