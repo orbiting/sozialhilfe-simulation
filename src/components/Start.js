@@ -4,14 +4,14 @@ import theme from './theme'
 import Text from './Text'
 import {FIELD_SIDE_RATIO} from './constants'
 
-const Start = ({field: { description, amount }, boardSize, x, y, rotate }) => {
+const Start = ({field: { description, amount }, boardSize, x, y, rotate, active, highlight }) => {
 
   const s = boardSize / 6 * FIELD_SIDE_RATIO
   const dy = s / 10
 
   return (
     <g transform={`translate(${x}, ${y})`}>
-      <rect width={s} height={s} fill={theme.field}  />
+      <rect width={s} height={s} fill={highlight ? theme.fieldHighlight : theme.field}  />
       <g transform={`translate(${s/2},${s/2})`}>
         <Text boardSize={boardSize} type='huge' y={-2*dy}>Start</Text>
         <Text boardSize={boardSize} type='regular' y={dy} charsPerLine={10}>Sie erhalten zu Beginn des Monats 986 Franken für den Grundbedarf</Text>
@@ -30,7 +30,8 @@ Start.defaultProps = {
   },
   x: 0,
   y: 0,
-  rotate: 0
+  rotate: 0,
+  active: false
 }
 
 export default Start

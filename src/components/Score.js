@@ -47,6 +47,8 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
     }
   }
 
+  const bal = gameState.transactions.accepted.reduce((acc,cur) => acc + cur.amount + cur.pauschal, 0)
+
   const transactions = range(0,4).flatMap(
     i => range(0,16).map(j => ({ month: i, day: j, amount: j % 16 === 0 ? 986 : -67 }))
   )
@@ -63,10 +65,10 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
   const l = line().x((d,i) => i*stepWidth).y((d,i) => chartHeight-scale(d.value)).curve(curveStepAfter)
 
   return (
-    <div style={{position: 'absolute', width, background: theme.score, padding: 5}}>
+    <div style={{position: 'absolute', width, background: theme.score, padding: 5, boxSizing: 'border-box',}}>
       <div style={{display: 'flex', justifyContent: 'space-between'}}>
         <div style={{...fonts(boardSize).bold, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>Hans Mustermann</div>
-        <div style={{...fonts(boardSize).regular, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>sFr. {balance}.00</div>
+        <div style={{...fonts(boardSize).regular, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>sFr. {bal}</div>
       </div>
       <div style={{...fonts(boardSize).small}}>Saldovelauf</div>
       <svg width={width} height={chartHeight}>

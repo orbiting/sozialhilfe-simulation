@@ -12,27 +12,23 @@ export const fonts = (boardSize) => ({
   regular: {
     fontFamily: fontFamilies.sansSerifRegular,
     fontSize: boardSize / 50,
-    lineHeight: `${boardSize / 50 + 2}`
+    lineHeight: `${boardSize / 50 * 1.2}px`
   },
   bold: {
     fontFamily: fontFamilies.sansSerifMedium,
-    fontSize: boardSize / 40,
-    lineHeight: boardSize / 25 + 3
+    fontSize: boardSize / 50,
   },
   large: {
     fontFamily: fontFamilies.sansSerifRegular,
     fontSize: boardSize / 35,
-    lineHeight: boardSize / 35 + 3
   },
   huge: {
     fontFamily: fontFamilies.serifTitle,
     fontSize: boardSize / 20,
-    lineHeight: boardSize / 20
   },
   display: {
     fontFamily: fontFamilies.serifTitle,
     fontSize: boardSize / 10,
-    lineHeight: boardSize / 10
   }
 })
 
@@ -50,12 +46,14 @@ const Text = ({boardSize, type, children, charsPerLine, x, y, ...rest}) => {
     return acc
   }, [['']])
 
-  const font = fonts(boardSize)
+  const font = fonts(boardSize)[type]
+  const lineHeight = font.fontSize *1.1
+
 
   return (
     <g>
       {
-        lines.map((c,i) => <text x={x} y={y+(i*font[type].lineHeight)} textAnchor='middle' alignmentBaseline='central' style={font[type]} {...rest}>{c.join(' ')}</text>)
+        lines.map((c,i) => <text x={x} y={y+(i*lineHeight)} textAnchor='middle' alignmentBaseline='central' style={font} {...rest}>{c.join(' ')}</text>)
       }
     </g>
   )

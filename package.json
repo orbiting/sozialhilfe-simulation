@@ -11,7 +11,7 @@
     "now-build": "NODE_ENV=production rollup -c && cd test && next build",
     "heroku-postbuild": "NODE_ENV=production rollup -c && cd test && next build",
     "start": "NODE_ENV=production cd test && node server.js",
-    "fields": "gsheets --key=1rO5fqHWe_ckiqbkSO3EOC5ho_kRUV7gM8zTF3m1zdf0 --title=game1 --pretty --out fields.json",
+    "fields": "gsheets --key=1rO5fqHWe_ckiqbkSO3EOC5ho_kRUV7gM8zTF3m1zdf0 --title='Game 1' --pretty --out fields.json",
     "game1": "gsheets --key=1rO5fqHWe_ckiqbkSO3EOC5ho_kRUV7gM8zTF3m1zdf0 --title=Felder --pretty --out fields.json",
     "translations": "gsheets --key=1rO5fqHWe_ckiqbkSO3EOC5ho_kRUV7gM8zTF3m1zdf0 --title=Text --pretty --out translations.json",
     "deploy": "s3cmd sync --exclude '.DS_Store' --verbose --acl-public build/ s3://republik-assets/dynamic-components/sozialhilfe-simulation/",

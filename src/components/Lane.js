@@ -3,6 +3,7 @@ import Field from './Field'
 import Chance from './Chance'
 import Start from './Start'
 import get from 'lodash/get'
+import reverse from 'lodash/reverse'
 
 const Lane = ({fields, gameState, boardSize, rotate, x, y, start}) => {
 
@@ -19,9 +20,9 @@ const Lane = ({fields, gameState, boardSize, rotate, x, y, start}) => {
           if(i===0) {
             return start
               ? <Start boardSize={boardSize} x={w} />
-              : <Chance boardSize={boardSize} field={field} x={w}/>
+              : <Chance boardSize={boardSize} field={field} x={w} />
           } else {
-            return <Field boardSize={boardSize} field={field} x={w-i*shortSide} active={field.id <= activeField}/>
+            return <Field boardSize={boardSize} field={field} x={w-i*shortSide} highlight={field.id === activeField} active={field.id <= activeField}/>
           }
         })
       }
