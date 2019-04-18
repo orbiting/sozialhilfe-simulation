@@ -10,5 +10,5 @@ storiesOf('Lane', module)
     () => <svg width={1000} height={1000}><Lane gameState={GAME_INITIAL_STATE} fields={fields.data.slice(0,4)} /></svg>
   )
   .add('translate',
-    () => <svg width={1000} height={1000}><Lane gameState={GAME_INITIAL_STATE} fields={fields.data.slice(0,4)} rotate={-90} y={500} /></svg>
+    () => <svg width={1000} height={1000}><Lane gameState={GAME_INITIAL_STATE} fields={fields.data.slice(0,4)} rotate={-90} y={600} /></svg>
   )
