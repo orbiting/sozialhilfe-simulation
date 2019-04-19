@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import theme from './theme'
 import Text from './Text'
 import {FIELD_SIDE_RATIO} from './constants'
+import { styles } from './Field'
 
-const Chance = ({field: { description, amount }, boardSize, x, y, rotate }) => {
+const Chance = ({field: { description, amount }, boardSize, x, y, rotate, highlight = false }) => {
 
   const [ revealed, setRevealed ] = useState(false)
 
@@ -24,6 +25,7 @@ const Chance = ({field: { description, amount }, boardSize, x, y, rotate }) => {
         )
       }
       </g>
+      <rect width={s} height={s} {...(highlight ? styles.highlightOn : styles.highlightOff)} />
       <rect width={s} height={s} strokeWidth={1} stroke={theme.border} fill='none' />
     </g>
   )
@@ -38,7 +40,7 @@ Chance.defaultProps = {
   },
   x: 0,
   y: 0,
-  rotate: 0
+  rotate: 0,
 }
 
 export default Chance

@@ -4,7 +4,6 @@ const classic = {
   background: '#777',
   border: '#333',
   field: '#FFFDF3',
-  fieldHighlight: '#000',
   placeholder: '#dbd6bd',
   score: '#fff',
   text: '#222',

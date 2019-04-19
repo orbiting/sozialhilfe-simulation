@@ -4,7 +4,7 @@ import { transition } from 'd3-transition'
 import { select } from 'd3-selection'
 import { scaleLinear } from 'd3-scale'
 
-import fields from '../../fields'
+import fields from '../../fields.json'
 import Score from './Score'
 import theme from './theme'
 import chunk from 'lodash/chunk'
@@ -33,13 +33,12 @@ const dα = 360 / 16
 const App = ({centerWidth, marginWidth, height}) => {
 
   const fieldData = fields.data
-  const fieldDataChunks = chunk(fields.data, 16)
+  const fieldDataChunks = chunk(fields.data, 16).slice(0,6)
 
   const boardRef = useRef(null)
 
   const [gameState, setGameState] = useState(GAME_INITIAL_STATE)
   //useState({...GAME_INITIAL_STATE, transactions: { accepted: fieldData.slice(0,1) }})
-
 
   // display last 4 old fields while on first 5 fields of round
   const displayData = (gameState.round > 1 && (gameState.activeField + gameState.round - 1) % 17 < 5)
@@ -48,12 +47,10 @@ const App = ({centerWidth, marginWidth, height}) => {
 
   const currentFieldIdx = gameState.activeField - 1
   const currentField = fieldData[currentFieldIdx]
-  const gamePaused = currentField.type === 'chance'
 
   const width = centerWidth + 2 * marginWidth
   const zoomScale = scaleLinear().domain([0,1000]).range([0.8,0.5])
   zoomScale.clamp(true)
-  console.log('App.js:54 [zoomScale(width)]', zoomScale(width))
   const cornerFieldHeight = centerWidth*zoomScale(width)
   const boardSize = cornerFieldHeight*4
   const boardOffsetX = marginWidth-boardSize/2-boardSize/4+(centerWidth-cornerFieldHeight)/2
@@ -81,23 +78,23 @@ const App = ({centerWidth, marginWidth, height}) => {
     [gameState]
   )
 
+  const gamePaused = currentFieldIdx > 0 && currentField.type === 'chance'
 
   return (
     <div style={{position: 'relative'}}>
-      <div style={{ position: 'absolute', width, height }}>
-        {/*<div style={{position: 'relative'}}>*/}
-        {/*  <Score gameState={gameState} setGameState={setGameState} boardSize={boardSize} width={width}/>*/}
-        {/*</div>*/}
-        <Dialog boardSize={boardSize} size={width} field={currentField} fieldIdx={currentFieldIdx}
-                advanceGame={advanceGame} show={gamePaused}/>
+      <div style={{ position: 'absolute', width, height}}>
+        <div style={{position: 'relative', marginLeft: marginWidth, width: centerWidth}}>
+          <Score gameState={gameState} setGameState={setGameState} boardSize={boardSize} width={centerWidth}/>
+          <Dialog boardSize={boardSize} width={centerWidth} height={height} field={currentField} advanceGame={advanceGame} show={gamePaused}/>
+        </div>
         <svg width={width} height={height} style={{background: theme.background}}>
           <g transform={`translate(${boardOffsetX}, ${boardOffsetY})`}>
             <g ref={boardRef}>
               <Board boardSize={boardSize} fields={displayData} gameState={gameState}/>
             </g>
           </g>
-          <circle opacity={0.3} cx={marginWidth + centerWidth * 0.5} cy={height*0.7} r={centerWidth*0.1} fill={'#000'}  onClick={() => advanceGame(currentField) } />
-          <rect x={marginWidth} y={0} width={centerWidth} height={height} fill={'none'} stroke={'#000'} />
+          <circle opacity={0.3} cx={marginWidth + centerWidth * 0.5} cy={height*0.7} r={centerWidth*0.1} fill={'#000'}  onClick={() => !gamePaused && advanceGame(currentField) } />
+          {/*<rect x={marginWidth} y={0} width={centerWidth} height={height} fill={'none'} stroke={'#000'} />*/}
         </svg>
       </div>
     </div>

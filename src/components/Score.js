@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import theme from './theme'
-import Text, { fonts } from './Text'
+import Text, { fonts, formatAmount } from './Text'
 import { Chart } from '@project-r/styleguide/chart'
 import range from 'lodash/chunk'
 
@@ -14,6 +14,7 @@ import { css } from 'glamor'
 const LegendSymbol = ({color = '#999', size}) => <div
   style={{display: 'inline-block', width: size, height: size, background: color}}/>
 
+  
 const Score = ({gameState, setGameState, width, boardSize}) => {
 
   const padding = boardSize / 80
@@ -21,97 +22,41 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
   const w = width - 2 * padding
   const h = height - 2 * padding
 
-  const {balance, budget: {leisure, mobility, media}} = gameState.score
+  const sumTransactions = (category) => gameState.transactions.accepted.filter(t => t.category === category).reduce((acc,cur) => acc + cur.amount, 0)
 
-  const leftWidth = mobility * w
-  const rightWidth = media * w
-  const centerWidth = w - leftWidth - rightWidth
-
-  const [leftDraggable, setLeftDraggable] = useState(null)
-  const [rightDraggable, setRightDraggable] = useState(null)
-
-  const updateGameState = position => (arg) => {
-    if (leftDraggable || rightDraggable) {
-      let nextScore = {...gameState.score}
-      if (position === 'left') {
-        const delta = ((arg.clientX === 0 ? 0.001 : arg.clientX) - leftDraggable) * mobility
-        console.log('Score.js:26 [delta]', delta)
-        nextScore.budget = {
-          ...nextScore.budget,
-          mobility: (leftWidth + delta) / w,
-        }
-      } else {
-
-      }
-      setGameState({...gameState, score: nextScore})
-    }
-  }
-
-  const bal = gameState.transactions.accepted.reduce((acc,cur) => acc + cur.amount + cur.pauschal, 0)
-
-  const transactions = range(0,4).flatMap(
-    i => range(0,16).map(j => ({ month: i, day: j, amount: j % 16 === 0 ? 986 : -67 }))
-  )
-
-  const chartHeight = 50
-  const stepWidth = width / transactions.length
-
-  const summedTransactions = transactions.reduce((acc,cur) => {
-    acc.push({...cur, value: acc[acc.length - 1] ? cur.amount + acc[acc.length - 1].value : cur.amount})
-    return acc
-  }, [])
-  const scale = scaleLinear().domain([0, Math.max(...summedTransactions.map(t => t.value))]).rangeRound([0, chartHeight])
-
-  const l = line().x((d,i) => i*stepWidth).y((d,i) => chartHeight-scale(d.value)).curve(curveStepAfter)
+  const general = gameState.transactions.accepted.reduce((acc,cur) => acc + cur.pauschal, 0)
+  const start = sumTransactions('start')
+  const mobility = sumTransactions('mobility')
+  const clothing = sumTransactions('clothing')
+  const leisure = 10*sumTransactions('leisure')
+  const media = sumTransactions('media')
+  const bal = start + general + mobility + clothing + leisure + media
 
   return (
     <div style={{position: 'absolute', width, background: theme.score, padding: 5, boxSizing: 'border-box',}}>
       <div style={{display: 'flex', justifyContent: 'space-between'}}>
         <div style={{...fonts(boardSize).bold, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>Hans Mustermann</div>
-        <div style={{...fonts(boardSize).regular, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>sFr. {bal}</div>
+        <div style={{...fonts(boardSize).regular, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>sFr. {formatAmount(bal)}</div>
       </div>
-      <div style={{...fonts(boardSize).small}}>Saldovelauf</div>
-      <svg width={width} height={chartHeight}>
-        <g>
-          {
-            <path d={l(summedTransactions)} fill={'none'} stroke={'#999'} strokeWidth={2} />
-            //summedTransactions.map((t, i) => console.log('Score.js:80 [t.value]', scale(t.value)) || <circle r={1} cx={i*stepWidth} cy={scale(t.value)} />)
-            // bars.map((value, i) => {
-            //     const outlineHeight = value.start ? scale(value.start) : barHeight
-            //     const scaledVals = Object.values(value.values).map(v => scale(v))
-            //     return (
-            //       <g transform={`translate(${i * (spacing + barWidth)})`}>
-            //         <rect height={outlineHeight} width={barWidth} y={barHeight - outlineHeight} fill={value.start ? '#ddd' : '#f9f9f9'}/>
-            //         {
-            //           Object.keys(value.values).map((k, i) => <rect height={scaledVals[i]} width={barWidth} y={barHeight - scaledVals[i] - scaledVals.slice(0, i).reduce((acc, cur) => acc + cur, 0)} fill={theme.categories[k]}/>)
-            //         }
-            //         {/*<text x={barWidth / 2} textAnchor={'middle'} y={12}>{Object.values(value.values).reduce((acc,cur) => acc + cur, 0) || ''}</text>*/}
-            //         <text x={barWidth / 2} textAnchor={'middle'} y={barHeight+15} style={{...fonts(boardSize).small}}>{value.label}</text>
-            //       </g>
-            //     )
-            //   }
-            // )
-          }
-        </g>
-      </svg>
-      <div style={{...fonts(boardSize).small}}>Ausgaben im Mai</div>
+      <div style={{...fonts(boardSize).small}}>Ausgaben</div>
       <Chart
         width={width-10}
         config={{
           "type": "Bar",
           "color": "category",
-          "colorRange": [theme.categories.media, theme.categories.leisure, theme.categories.mobility, theme.categories.general],
+          "colorRange": [theme.categories.general, theme.categories.clothing, theme.categories.media, theme.categories.leisure, theme.categories.mobility],
           "colorLegend": true,
-          "domain": [0, 986],
+          "domain": [0, bal],
           "sort": "none",
           "colorSort": "none",
-          'xTicks': [0, 986]
+          'xTicks': [0, bal]
         }}
         values={[
-          {category: 'Medien', value: '234'},
-          {category: 'Freizeit', value: '123'},
-          {category: 'Mobilität', value: '345'},
-          {category: 'Allgemein', value: '123'},
+          {category: 'Alltag', value: `${Math.abs(general)}`},
+          {category: 'Kleidung', value: `${Math.abs(clothing)}`},
+          {category: 'Medien', value: `${Math.abs(media)}`},
+          {category: 'Freizeit', value: `${Math.abs(leisure)}`},
+          {category: 'Mobilität', value: `${Math.abs(mobility)}`},
         ]}
       />
     </div>

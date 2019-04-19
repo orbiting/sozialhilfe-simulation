@@ -19,10 +19,10 @@ const Lane = ({fields, gameState, boardSize, rotate, x, y, start}) => {
           const field = get(fields, i)
           if(i===0) {
             return start
-              ? <Start boardSize={boardSize} x={w} />
-              : <Chance boardSize={boardSize} field={field} x={w} />
+              ? <Start highlight={field.id === activeField} boardSize={boardSize} x={w} />
+              : <Chance highlight={field.id === activeField} boardSize={boardSize} field={field} x={w} />
           } else {
-            return <Field boardSize={boardSize} field={field} x={w-i*shortSide} highlight={field.id === activeField} active={field.id <= activeField}/>
+            return <Field boardSize={boardSize} field={field} x={w-i*shortSide} highlight={field.id === activeField} active={field.id-5 <= activeField && field.id <= activeField}/>
           }
         })
       }

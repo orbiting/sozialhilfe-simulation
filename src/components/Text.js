@@ -3,6 +3,7 @@ import { fontFamilies } from '@project-r/styleguide'
 import theme from './theme'
 import chunk from 'lodash/chunk'
 import last from 'lodash/last'
+import { format } from 'd3-format'
 
 export const fonts = (boardSize) => ({
   small: {
@@ -32,7 +33,16 @@ export const fonts = (boardSize) => ({
   }
 })
 
-const Text = ({boardSize, type, children, charsPerLine, x, y, ...rest}) => {
+const f = format(".2f");
+export const formatAmount = (amount) => {
+  if (Math.floor(amount) === amount) {
+    return `${amount}.–`
+  } else {
+    return f(amount)
+  }
+}
+
+const Text = ({boardSize, type, charsPerLine, children, x, y, ...rest}) => {
 
   const tokens = children.split(/\s/).filter(Boolean)
 

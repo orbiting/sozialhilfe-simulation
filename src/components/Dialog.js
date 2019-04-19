@@ -3,30 +3,41 @@ import { css } from 'glamor'
 import theme from './theme'
 import { fonts } from './Text'
 
+const Dialog = ({field, width, height, advanceGame, boardSize, show}) => {
 
-const Dialog = ({field, size, advanceGame, boardSize, show,}) => {
   const {description, yes, no, id, amount} = field
 
+  const [ expand, setExpand ] = React.useState(false)
+
+  React.useEffect(
+    () => {
+      const delay = setTimeout(() => setExpand(true), 300)
+      return () => clearTimeout(delay)
+    },
+    [show]
+  )
+
+  const collapse = (field, reject) => {
+    setExpand(false)
+    setTimeout(() => advanceGame(field, reject), 300)
+  }
+
   const wrapper = css({
-    display: 'none',
     position: 'absolute',
+    width,
+    height,
     overflow: 'hidden',
-    bottom: 0,
-    width: size,
-    height: size,
-    pointerEvents: 'none',
+    pointerEvents: show ? undefined : 'none',
   })
   const base = css({
-    top: 400,
-    boxSizing: 'border-box',
-    padding: 20,
+    position: 'absolute',
+    padding: 15,
     background: theme.field,
-    pointerEvents: 'auto',
-  })
-  const fadeIn = css({
-    display: 'block',
-    bottom: 0,
+    bottom: show && expand ? 0 : -height,
+    width,
+    height: height/2,
     transition: 'bottom 0.3s ease-in-out',
+    boxSizing: 'border-box',
   })
 
   const text = css({
@@ -52,8 +63,8 @@ const Dialog = ({field, size, advanceGame, boardSize, show,}) => {
         <div {...price}>
           sFr. { -amount }
         </div>
-        <p {...action} onClick={() => advanceGame(field)}>{yes}</p>
-        <p {...action} onClick={() => advanceGame(field, true)}>{no}</p>
+        <p {...action} onClick={() => collapse(field, false)}>{yes}</p>
+        <p {...action} onClick={() => collapse(field, true) }>{no}</p>
       </div>
     </div>
   )
