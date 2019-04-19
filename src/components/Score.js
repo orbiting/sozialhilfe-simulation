@@ -22,21 +22,21 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
   const w = width - 2 * padding
   const h = height - 2 * padding
 
-  const sumTransactions = (category) => gameState.transactions.accepted.filter(t => t.category === category).reduce((acc,cur) => acc + cur.amount, 0)
-
-  const general = gameState.transactions.accepted.reduce((acc,cur) => acc + cur.pauschal, 0)
-  const start = sumTransactions('start')
-  const mobility = sumTransactions('mobility')
-  const clothing = sumTransactions('clothing')
-  const leisure = 10*sumTransactions('leisure')
-  const media = sumTransactions('media')
-  const bal = start + general + mobility + clothing + leisure + media
-
+  const {
+      balance,
+      spent,
+      mobility,
+      clothing,
+      leisure,
+      media,
+      general,
+  } = gameState.score
+  
   return (
     <div style={{position: 'absolute', width, background: theme.score, padding: 5, boxSizing: 'border-box',}}>
       <div style={{display: 'flex', justifyContent: 'space-between'}}>
         <div style={{...fonts(boardSize).bold, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>Hans Mustermann</div>
-        <div style={{...fonts(boardSize).regular, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>sFr. {formatAmount(bal)}</div>
+        <div style={{...fonts(boardSize).regular, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>sFr. {formatAmount(balance)}</div>
       </div>
       <div style={{...fonts(boardSize).small}}>Ausgaben</div>
       <Chart
@@ -46,10 +46,10 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
           "color": "category",
           "colorRange": [theme.categories.general, theme.categories.clothing, theme.categories.media, theme.categories.leisure, theme.categories.mobility],
           "colorLegend": true,
-          "domain": [0, bal],
+          "domain": [0, spent],
           "sort": "none",
           "colorSort": "none",
-          'xTicks': [0, bal]
+          'xTicks': [0, spent]
         }}
         values={[
           {category: 'Alltag', value: `${Math.abs(general)}`},

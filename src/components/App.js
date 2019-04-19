@@ -9,16 +9,16 @@ import Score from './Score'
 import theme from './theme'
 import chunk from 'lodash/chunk'
 import Dialog from './Dialog'
-import { Container, NarrowContainer, Center, Editorial } from '@project-r/styleguide'
 
 export const GAME_INITIAL_STATE = {
   score: {
     balance: 986,
-    budget: {
-      leisure: 0.333,
-      mobility: 0.333,
-      media: 0.333,
-    },
+    spent: 0,
+    mobility: 0,
+    clothing: 0,
+    leisure: 0,
+    media: 0,
+    general: 0,
   },
   transactions: {
     accepted: [],
@@ -32,16 +32,28 @@ const dα = 360 / 16
 
 const App = ({centerWidth, marginWidth, height}) => {
 
-  const fieldData = fields.data
-  const fieldDataChunks = chunk(fields.data, 16).slice(0,6)
-
   const boardRef = useRef(null)
 
-  const [gameState, setGameState] = useState(GAME_INITIAL_STATE)
-  //useState({...GAME_INITIAL_STATE, transactions: { accepted: fieldData.slice(0,1) }})
+  const fieldData = fields.data
 
+  const [gameState, setGameState] = useState(GAME_INITIAL_STATE)
+  
+  const gameData = fieldData.slice(0,96).map(d => {
+    if (d.dependency) {
+      const isRejected = gameState.transactions.rejected.some(e => e.id === d.dependency)
+      let replacement = fieldData.find(e => e.id === d.altYes)
+      if (isRejected) {
+        replacement = fieldData.find(e => e.id === d.altNo)
+      }
+      return { ...replacement, id: d.id }
+    } else {
+      return d
+    }
+  })
+
+  const fieldDataChunks = chunk(gameData, 16)
   // display last 4 old fields while on first 5 fields of round
-  const displayData = (gameState.round > 1 && (gameState.activeField + gameState.round - 1) % 17 < 5)
+  let displayData = (gameState.round > 1 && (gameState.activeField + gameState.round - 1) % 17 < 5)
     ? fieldDataChunks[gameState.round - 1].slice(0, 12).concat(fieldDataChunks[gameState.round - 2].slice(12, 16))
     : fieldDataChunks[gameState.round - 1]
 
@@ -56,15 +68,40 @@ const App = ({centerWidth, marginWidth, height}) => {
   const boardOffsetX = marginWidth-boardSize/2-boardSize/4+(centerWidth-cornerFieldHeight)/2
   const boardOffsetY = -boardSize+height*0.9
 
-  const advanceGame = (field, reject = false) => setGameState({
-    ...gameState,
-    transactions: {
-      accepted: (field && !reject) ? gameState.transactions.accepted.concat(field) : gameState.transactions.accepted,
-      rejected: (field && reject) ? gameState.transactions.rejected.concat(field) : gameState.transactions.rejected,
-    },
-    round: (gameState.activeField > 0 && gameState.activeField % 16 === 0) ? gameState.round + 1 : gameState.round,
-    activeField: gameState.activeField + 1
-  })
+  const advanceGame = (field, reject = false) => {
+
+    const accepted = field.id > 0 && (field && !reject) ? gameState.transactions.accepted.concat(field) : gameState.transactions.accepted
+    const rejected = (field && reject) ? gameState.transactions.rejected.concat(field) : gameState.transactions.rejected
+    const sumTransactions = (category) => accepted.filter(t => t.category === category).reduce((acc,cur) => acc + cur.amount, 0)
+
+    const general = accepted.reduce((acc,cur) => acc + cur.pauschal, 0)
+    const start = sumTransactions('start')
+    const mobility = sumTransactions('mobility')
+    const clothing = sumTransactions('clothing')
+    const leisure = sumTransactions('leisure')
+    const media = sumTransactions('media')
+    const balance = start + general + mobility + clothing + leisure + media
+    const spent = Math.abs(Math.min(balance - start, 0))
+
+    setGameState({
+      ...gameState,
+      transactions: {
+        accepted,
+        rejected,
+      },
+      score: {
+        balance,
+        spent,
+        general,
+        mobility,
+        clothing,
+        leisure,
+        media
+      },
+      round: (gameState.activeField > 0 && gameState.activeField % 16 === 0) ? gameState.round + 1 : gameState.round,
+      activeField: gameState.activeField + 1
+    })
+  }
 
   useEffect(
     () => {
