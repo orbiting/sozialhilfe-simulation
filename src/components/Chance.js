@@ -26,7 +26,7 @@ const Chance = ({field: { description, amount }, boardSize, x, y, rotate, highli
       }
       </g>
       <rect width={s} height={s} {...(highlight ? styles.highlightOn : styles.highlightOff)} />
-      <rect width={s} height={s} strokeWidth={1} stroke={theme.border} fill='none' />
+      <rect width={s} height={s} strokeWidth={boardSize/200} stroke={theme.border} fill='none' />
     </g>
   )
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import {FIELD_SIDE_RATIO} from './constants'
 import theme from './theme'
-import Text from './Text'
+import Text, { formatAmount } from './Text'
 import { css } from 'glamor'
 import { select } from 'd3-selection'
+import icons from './icons';
 
 export const styles = {
   active: css({
@@ -21,7 +22,7 @@ export const styles = {
   }),
   highlightOff: css({
     fill: theme.field,
-    fillOpacity: 0.5,
+    fillOpacity: 0.2,
     transition: 'fill-opacity 0.3s ease-in-out'
   }),
 }
@@ -32,6 +33,8 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
   const height = FIELD_SIDE_RATIO*width
   const widthUnit = width / 10
   const heightUnit = height / 12
+
+  const icon = icons[category]
 
   const curtainRef = React.useRef(null)
 
@@ -47,11 +50,12 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
     <>
       <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${width/2}, ${width/2} ) translate(0, ${offsetY})`}>
         <rect width={width} height={height} fill={theme.field} />
-        <rect ref={curtainRef} width={width} height={2*heightUnit} fill={theme.categories[category]} />
+        <rect ref={curtainRef} width={width} height={2*heightUnit} fill={theme.categories[category]} strokeWidth={boardSize/200} stroke={theme.border}  />
+        <icon.Icon x={width/2-heightUnit} y={heightUnit} width={2*widthUnit} height={2*widthUnit} fillOpacity={highlight ? 0.6 : 0} fill={'#fff'} style={{transition: 'fill-opacity 0.3s ease-in-out'}} />
         <>
-          <Text boardSize={boardSize} x={width/2} y={3.5*heightUnit} charsPerLine={8} fillOpacity={1} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)}>{description}</Text>
+          <Text boardSize={boardSize} x={width/2} y={3.5*heightUnit} charsPerLine={14} fillOpacity={1} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)}>{description}</Text>
           <Text boardSize={boardSize} x={width/2} y={8*heightUnit} type={'bold'} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)} charsPerLine={5}>
-            {`${Math.floor(amount) === amount ? -amount+'.–' : -amount  }`}
+            {formatAmount(Math.abs(amount))}
           </Text>
         </>
         <>
@@ -60,8 +64,8 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
           <rect x={widthUnit} y={5.5*heightUnit} width={8*widthUnit} height={heightUnit}  {...(active ? styles.active : styles.inactive)}fill={theme.placeholder}/>
           <rect x={4*widthUnit} y={8*heightUnit} width={2*widthUnit} height={heightUnit}  {...(active ? styles.active : styles.inactive)}fill={theme.placeholder}/>
         </>
-        <rect width={width} height={height} {...(highlight ? styles.highlightOn : styles.highlightOff)} />
-        <rect width={width} height={height} strokeWidth={1} stroke={theme.border} fill='none' />
+        {/* <rect width={width} height={height} {...(highlight ? styles.highlightOn : styles.highlightOff)} /> */}
+        <rect width={width} height={height} strokeWidth={boardSize/200} stroke={theme.border} fill='none' />
       </g>
     </>
   )

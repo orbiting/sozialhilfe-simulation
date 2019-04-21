@@ -2,7 +2,7 @@ import { fontFamilies } from '@project-r/styleguide'
 
 const classic = {
   background: '#777',
-  border: '#333',
+  border: '#222',
   field: '#FFFDF3',
   placeholder: '#dbd6bd',
   score: '#fff',

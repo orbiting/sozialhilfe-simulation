@@ -1,8 +1,10 @@
 import React from 'react'
 
 import chunk from 'lodash/chunk'
+import range from 'lodash/range'
 import {FIELD_SIDE_RATIO} from './constants'
 import Lane from './Lane'
+import { GAME_INITIAL_STATE } from './App';
 
 const Board = ({ fields, boardSize, gameState }) => {
 
@@ -26,7 +28,8 @@ const Board = ({ fields, boardSize, gameState }) => {
 
 Board.defaultProps = {
 	boardSize: 500,
-	fields: []
+  fields: range(0,96).map(i => ({})),
+  gameState: GAME_INITIAL_STATE
 }
 
 export default Board

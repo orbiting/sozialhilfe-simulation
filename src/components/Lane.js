@@ -4,6 +4,7 @@ import Chance from './Chance'
 import Start from './Start'
 import get from 'lodash/get'
 import reverse from 'lodash/reverse'
+import { GAME_INITIAL_STATE } from './App';
 
 const Lane = ({fields, gameState, boardSize, rotate, x, y, start}) => {
 
@@ -37,7 +38,8 @@ Lane.defaultProps = {
   rotate: 0,
   x: 0,
   y: 0,
-  start: false
+  start: false,
+  gameState: GAME_INITIAL_STATE
 }
 
 export default Lane

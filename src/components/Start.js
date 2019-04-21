@@ -16,10 +16,10 @@ const Start = ({field: { description, amount }, boardSize, x, y, rotate, active,
       <rect width={s} height={s} fill={theme.field}  />
       <g transform={`translate(${s/2},${s/2})`}>
         <Text boardSize={boardSize} type='huge' y={-2*dy}>Start</Text>
-        <Text boardSize={boardSize} type='regular' y={dy} charsPerLine={10}>Sie erhalten zu Beginn des Monats 986 Franken für den Grundbedarf</Text>
+        <Text boardSize={boardSize} type='regular' y={dy} charsPerLine={18}>Sie erhalten zu Beginn des Monats 986 Franken für den Grundbedarf</Text>
       </g>
       <rect width={s} height={s} {...(highlight ? styles.highlightOn : styles.highlightOff)} />
-      <rect width={s} height={s} strokeWidth={1} stroke={theme.border} fill='none' />
+      <rect width={s} height={s} strokeWidth={boardSize/200} stroke={theme.border} fill='none' />
     </g>
   )
 

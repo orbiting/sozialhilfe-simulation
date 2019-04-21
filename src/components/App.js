@@ -32,6 +32,7 @@ const dα = 360 / 16
 
 const App = ({centerWidth, marginWidth, height}) => {
 
+  const appRef = useRef(null)
   const boardRef = useRef(null)
 
   const fieldData = fields.data
@@ -70,11 +71,14 @@ const App = ({centerWidth, marginWidth, height}) => {
 
   const advanceGame = (field, reject = false) => {
 
+    appRef.current && appRef.current.scrollIntoView()
+
     const accepted = field.id > 0 && (field && !reject) ? gameState.transactions.accepted.concat(field) : gameState.transactions.accepted
     const rejected = (field && reject) ? gameState.transactions.rejected.concat(field) : gameState.transactions.rejected
+    
     const sumTransactions = (category) => accepted.filter(t => t.category === category).reduce((acc,cur) => acc + cur.amount, 0)
 
-    const general = accepted.reduce((acc,cur) => acc + cur.pauschal, 0)
+    const general = accepted.concat(rejected).reduce((acc,cur) => acc + cur.pauschal, 0)
     const start = sumTransactions('start')
     const mobility = sumTransactions('mobility')
     const clothing = sumTransactions('clothing')
@@ -116,15 +120,16 @@ const App = ({centerWidth, marginWidth, height}) => {
   )
 
   const gamePaused = currentFieldIdx > 0 && currentField.type === 'chance'
+  const gameOver = gameState.score.balance < 0
 
   return (
-    <div style={{position: 'relative'}}>
+    <div ref={appRef} style={{position: 'relative'}}>
       <div style={{ position: 'absolute', width, height}}>
         <div style={{position: 'relative', marginLeft: marginWidth, width: centerWidth}}>
           <Score gameState={gameState} setGameState={setGameState} boardSize={boardSize} width={centerWidth}/>
           <Dialog boardSize={boardSize} width={centerWidth} height={height} field={currentField} advanceGame={advanceGame} show={gamePaused}/>
         </div>
-        <svg width={width} height={height} style={{background: theme.background}}>
+        <svg width={width} height={height} style={{background: theme.background}} viewBox={`0 0 ${width} ${height}`}>
           <g transform={`translate(${boardOffsetX}, ${boardOffsetY})`}>
             <g ref={boardRef}>
               <Board boardSize={boardSize} fields={displayData} gameState={gameState}/>

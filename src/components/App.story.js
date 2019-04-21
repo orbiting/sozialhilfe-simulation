@@ -7,3 +7,6 @@ storiesOf('App', module)
   .add('default', () => (
     <App />
   ))
+  .add('iPhone 6', () => (
+    <App centerWidth={375-15} marginWidth={15} height={667} />
+  ))

@@ -44,11 +44,14 @@ export const formatAmount = (amount) => {
 
 const Text = ({boardSize, type, charsPerLine, children, x, y, ...rest}) => {
 
-  const tokens = children.split(/\s/).filter(Boolean)
+  if (!children)
+    return null
+
+  const tokens = children.split(/\s|-/).filter(Boolean)
 
   const lines = tokens.reduce((acc, cur) => {
     const lastLine = last(acc)
-    if (lastLine.join(' ').length > charsPerLine) {
+    if (lastLine.join(' ').length + cur.length > charsPerLine) {
       acc.push([cur])
     } else {
       last(acc).push(cur)

@@ -38,7 +38,7 @@ const Score = ({gameState, setGameState, width, boardSize}) => {
         <div style={{...fonts(boardSize).bold, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>Hans Mustermann</div>
         <div style={{...fonts(boardSize).regular, lineHeight: `${fonts(boardSize).bold.lineHeight}px`}}>sFr. {formatAmount(balance)}</div>
       </div>
-      <div style={{...fonts(boardSize).small}}>Ausgaben</div>
+      <div style={{...fonts(boardSize).small, margin: `${boardSize/160}px 0`}}>Ausgaben total</div>
       <Chart
         width={width-10}
         config={{
