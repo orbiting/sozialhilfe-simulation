@@ -1,18 +1,18 @@
 import { fontFamilies } from '@project-r/styleguide'
 
 const classic = {
-  background: '#777',
-  border: '#222',
+  background: '#888',
+  border: '#333',
   field: '#FFFDF3',
   placeholder: '#dbd6bd',
-  score: '#fff',
+  score: '#333',
   text: '#222',
   categories: {
-    general: '#888',
-    leisure: '#F15A24',
-    mobility: '#0071BC',
-    media: '#2CA02C',
-    clothing: '#e8e023',
+    general: '#aaa',
+    leisure: '#E54444',
+    mobility: '#543B9D',
+    media: '#36B736',
+    clothing: '#E5C944',
   }
 }
 

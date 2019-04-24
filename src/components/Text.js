@@ -6,22 +6,29 @@ import last from 'lodash/last'
 import { format } from 'd3-format'
 
 export const fonts = (boardSize) => ({
+  tiny: {
+    fontFamily: fontFamilies.sansSerifRegular,
+    fontSize: boardSize / 75,
+  },
   small: {
     fontFamily: fontFamilies.sansSerifRegular,
-    fontSize: boardSize / 60,
+    fontSize: boardSize / 65,
   },
   regular: {
     fontFamily: fontFamilies.sansSerifRegular,
-    fontSize: boardSize / 50,
-    lineHeight: `${boardSize / 50 * 1.2}px`
+    fontSize: boardSize / 55,
   },
   bold: {
     fontFamily: fontFamilies.sansSerifMedium,
-    fontSize: boardSize / 50,
+    fontSize: boardSize / 55,
   },
   large: {
     fontFamily: fontFamilies.sansSerifRegular,
-    fontSize: boardSize / 35,
+    fontSize: boardSize / 50,
+  },
+  xlarge: {
+    fontFamily: fontFamilies.sansSerifRegular,
+    fontSize: boardSize / 25,
   },
   huge: {
     fontFamily: fontFamilies.serifTitle,
@@ -47,7 +54,7 @@ const Text = ({boardSize, type, charsPerLine, children, x, y, ...rest}) => {
   if (!children)
     return null
 
-  const tokens = children.split(/\s|-/).filter(Boolean)
+  const tokens = children.split(/\s/).filter(Boolean)
 
   const lines = tokens.reduce((acc, cur) => {
     const lastLine = last(acc)
@@ -60,7 +67,7 @@ const Text = ({boardSize, type, charsPerLine, children, x, y, ...rest}) => {
   }, [['']])
 
   const font = fonts(boardSize)[type]
-  const lineHeight = font.fontSize *1.1
+  const lineHeight = font.fontSize *1.2
 
 
   return (

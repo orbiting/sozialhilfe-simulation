@@ -1,0 +1,38 @@
+{
+  "updated": "2019-04-22T14:47:49.773Z",
+  "title": "text",
+  "data": [
+    {
+      "key": "avatar1title",
+      "value": "Hans Mustermann, Bern, 52 Jahre"
+    },
+    {
+      "key": "avatar1body",
+      "value": "Hans Mustermann hat 30 Jahre lang bei der Post gearbeitet, bis seine Poststelle geschlossen wurde. Er bezog die letzten zwei Jahre lang Arbeitslosenversicherung, hat sich noch ein Jahr mit seinem angesparten Vermögen durchgekämpft und bezieht nun Sozialhilfe. Er lebt mit seinem Hund in einer Berner Einzimmerwohnung und singt einmal pro Woche im Männerchor."
+    },
+    {
+      "key": "avatar2title",
+      "value": "Barbara Beispiel, Dübendorf, 34 Jahre"
+    },
+    {
+      "key": "avatar2body",
+      "value": "Barbara ist alleinerziehende Mutter. Ihr Mann ist vor fünf Jahren bei einem Autounfall ums Leben gekommen. Keine Lebensversicherung. Sie ist früh Mutter geworden und findet heute in ihrem Beruf als Coiffeure keine Arbeit mehr. Bisher konnte sie ihre Familie noch mit dem angesparten Vermögen über die Runden bringen. Nun ist das Geld weg. Sie muss für sich und ihre Familie Sozialhilfe beziehen. Ihre drei minderjährigen Kinder spielen Fussball und besuchen die Primarschule."
+    },
+    {
+      "key": "intro1",
+      "value": "Guten Tag Herr Mustermann."
+    },
+    {
+      "key": "intro2",
+      "value": "In der Schweiz beziehen über 270'000 Menschen Sozialhilfe. Sie ist das letzte Auffangnetz und hat gemäss Verfassung und Gesetzen den Auftrag, Ihnen ein menschenwürdiges Leben in bescheidenem Rahmen zu gewährleisten. Ihre Sozialhilfeleistungen setzen sich aus Wohnkosten, medizinische Grundversorgung, situationsbedingten Leistungen und dem Grundbedarf zusammen."
+    },
+    {
+      "key": "intro3",
+      "value": "Monatlich wird Ihnen einen Grundbedarf von 960 Schweizer Franken ausbezahlt. Die restlichen Kosten für die Wohnung und medizinische Grundversorgung übernimmt unsere Gemeinde direkt."
+    },
+    {
+      "key": "intro4",
+      "value": "Mit den 960 Schweizer Franken müssen sie ihren täglichen Lebensunterhalt bestreiten. Das Geld soll ihnen auch ein ausgeglichenes Sozialleben und etwas Freizeitgestaltung ermöglichen."
+    }
+  ]
+}

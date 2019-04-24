@@ -64,7 +64,8 @@ const App = ({centerWidth, marginWidth, height}) => {
   const width = centerWidth + 2 * marginWidth
   const zoomScale = scaleLinear().domain([0,1000]).range([0.8,0.5])
   zoomScale.clamp(true)
-  const cornerFieldHeight = centerWidth*zoomScale(width)
+  const maxCornerFieldHeight = 300
+  const cornerFieldHeight = Math.min(centerWidth*zoomScale(width), maxCornerFieldHeight)
   const boardSize = cornerFieldHeight*4
   const boardOffsetX = marginWidth-boardSize/2-boardSize/4+(centerWidth-cornerFieldHeight)/2
   const boardOffsetY = -boardSize+height*0.9
@@ -126,7 +127,7 @@ const App = ({centerWidth, marginWidth, height}) => {
     <div ref={appRef} style={{position: 'relative'}}>
       <div style={{ position: 'absolute', width, height}}>
         <div style={{position: 'relative', marginLeft: marginWidth, width: centerWidth}}>
-          <Score gameState={gameState} setGameState={setGameState} boardSize={boardSize} width={centerWidth}/>
+          <Score gameState={gameState} field={currentField} setGameState={setGameState} boardSize={boardSize} width={centerWidth} />
           <Dialog boardSize={boardSize} width={centerWidth} height={height} field={currentField} advanceGame={advanceGame} show={gamePaused}/>
         </div>
         <svg width={width} height={height} style={{background: theme.background}} viewBox={`0 0 ${width} ${height}`}>
@@ -135,7 +136,7 @@ const App = ({centerWidth, marginWidth, height}) => {
               <Board boardSize={boardSize} fields={displayData} gameState={gameState}/>
             </g>
           </g>
-          <circle opacity={0.3} cx={marginWidth + centerWidth * 0.5} cy={height*0.7} r={centerWidth*0.1} fill={'#000'}  onClick={() => !gamePaused && advanceGame(currentField) } />
+          <circle opacity={0.3} cx={marginWidth + centerWidth * 0.5} cy={height*0.7} r={50} fill={'#000'}  onClick={() => !gamePaused && advanceGame(currentField) } />
           {/*<rect x={marginWidth} y={0} width={centerWidth} height={height} fill={'none'} stroke={'#000'} />*/}
         </svg>
       </div>

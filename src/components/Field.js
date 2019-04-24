@@ -34,7 +34,7 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
   const widthUnit = width / 10
   const heightUnit = height / 12
 
-  const icon = icons[category]
+  const icon = icons[category] || icons.clothing
 
   const curtainRef = React.useRef(null)
 
@@ -51,10 +51,10 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
       <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${width/2}, ${width/2} ) translate(0, ${offsetY})`}>
         <rect width={width} height={height} fill={theme.field} />
         <rect ref={curtainRef} width={width} height={2*heightUnit} fill={theme.categories[category]} strokeWidth={boardSize/200} stroke={theme.border}  />
-        <icon.Icon x={width/2-heightUnit} y={heightUnit} width={2*widthUnit} height={2*widthUnit} fillOpacity={highlight ? 0.6 : 0} fill={'#fff'} style={{transition: 'fill-opacity 0.3s ease-in-out'}} />
+        <icon.Icon x={width/2-heightUnit} y={1.25*heightUnit} width={2*widthUnit} height={2*widthUnit} fillOpacity={highlight ? 0.6 : 0} fill={'#fff'} style={{transition: 'fill-opacity 0.3s ease-in-out'}} />
         <>
-          <Text boardSize={boardSize} x={width/2} y={3.5*heightUnit} charsPerLine={14} fillOpacity={1} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)}>{description}</Text>
-          <Text boardSize={boardSize} x={width/2} y={8*heightUnit} type={'bold'} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)} charsPerLine={5}>
+          <Text boardSize={boardSize} x={width/2} y={4*heightUnit} charsPerLine={15} fillOpacity={1} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)}>{description}</Text>
+          <Text boardSize={boardSize} x={width/2} y={9.25*heightUnit} type={'bold'} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)} charsPerLine={5}>
             {formatAmount(Math.abs(amount))}
           </Text>
         </>

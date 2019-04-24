@@ -32,6 +32,7 @@ const Dialog = ({field, width, height, advanceGame, boardSize, show}) => {
     height,
     overflow: 'hidden',
     pointerEvents: show ? undefined : 'none',
+    margin: 'auto',
   })
   const base = css({
     border: `${border}px solid rgba(255,255,255,0.6)`,
