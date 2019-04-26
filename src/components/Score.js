@@ -13,12 +13,12 @@ import { schemeSet2 } from 'd3-scale-chromatic'
 import { css } from 'glamor'
 import { Avatar, Wallet, Calendar } from './icons';
 
-const MONTHS = ['Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober']
+const MONTHS = ['Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt']
 
 const LegendSymbol = ({color = '#999', size}) => <div
   style={{display: 'inline-block', width: size, height: size, background: color, border: '1px solid #fff'}}/>
 
-const Score = ({gameState, setGameState, field, width, boardSize, startingBalance = 986}) => {
+const Score = ({gameState, setGameState, field, width, boardSize, mobile, avatar}) => {
 
   const {
     balance,
@@ -60,7 +60,7 @@ const Score = ({gameState, setGameState, field, width, boardSize, startingBalanc
         <div style={{display: 'flex', justifyContent: 'space-between'}}>
           <div style={{display: 'block', width: '45%', alignItems: 'center'}}>
           <div style={{...fonts(boardSize).tiny, color: '#fff'}}>Name</div>
-            <div style={{...fonts(boardSize).large, color: '#fff'}}>Hans Muster</div>
+            <div style={{...fonts(boardSize).large, color: '#fff'}}>{avatar.name}</div>
           </div>
           <div style={{display: 'block', width: '30%', alignItems: 'center'}}>
             <div style={{...fonts(boardSize).tiny, color: '#fff'}}>Datum</div>
@@ -72,22 +72,19 @@ const Score = ({gameState, setGameState, field, width, boardSize, startingBalanc
           </div>
         </div>
         <div>
-          {
-            spent > 0 &&
-            <div>
-              <div style={{...fonts(boardSize).tiny, color: '#fff', borderTop: '0px solid #fff', marginTop: padding/2, paddingTop: padding, paddingBottom: padding/2}}>Ausgaben {gameState.round > 1 ? `in den vergangenen ${gameState.round} Monaten` : `im laufenden Monat`}: {formatAmount(spent)}</div>
-              <svg width={chartWidth} height={chartHeight}>
-                <g transform={'translate(1,1)'}>
-                {
-                  stackedValues.map(({x0, x, cat}) => <rect x={xScale(x0)} width={xScale(x)-xScale(x0)} stroke={'#fff'} height={chartHeight-2*chartPadding} fill={theme.categories[cat]} />)
-                }
-                </g>
-              </svg>
-              <div style={{...fonts(boardSize).tiny, color: '#fff'}}>
-                  <LegendSymbol size={9} /> Alltag <LegendSymbol size={9} color={theme.categories.leisure} /> Freizeit <LegendSymbol size={9} color={theme.categories.clothing} /> Kleidung <LegendSymbol size={9} color={theme.categories.mobility} /> Mobilität <LegendSymbol size={9} color={theme.categories.media} /> Medien 
-              </div>
-            </div>
-          }
+        {/* <div>
+          <div style={{...fonts(boardSize).tiny, color: '#fff', borderTop: '0px solid #fff', marginTop: padding/2, paddingTop: padding, paddingBottom: padding/2}}>Ausgaben {gameState.round > 1 ? `in den vergangenen ${gameState.round} Monaten` : `im laufenden Monat`}: {formatAmount(spent)}</div>
+          <svg width={chartWidth} height={chartHeight}>
+            <g transform={'translate(1,1)'}>
+            {
+              stackedValues.map(({x0, x, cat}) => <rect x={xScale(x0)} width={xScale(x)-xScale(x0)} stroke={'#fff'} height={chartHeight-2*chartPadding} fill={theme.categories[cat]} />)
+            }
+            </g>
+          </svg>
+          <div style={{...fonts(boardSize).tiny, color: '#fff'}}>
+              <LegendSymbol size={9} /> Alltag <LegendSymbol size={9} color={theme.categories.leisure} /> Freizeit <LegendSymbol size={9} color={theme.categories.clothing} /> Kleidung <LegendSymbol size={9} color={theme.categories.mobility} /> Mobilität <LegendSymbol size={9} color={theme.categories.media} /> Medien 
+          </div>
+        </div> */}
         </div>
       </div>
     </div>

@@ -15,8 +15,7 @@ const Dialog = ({field, width, height, advanceGame, boardSize, show}) => {
 
   React.useEffect(
     () => {
-      const delay = setTimeout(() => setExpand(true), 300)
-      return () => clearTimeout(delay)
+      setExpand(true)
     },
     [show]
   )

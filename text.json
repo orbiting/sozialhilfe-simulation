@@ -1,26 +1,26 @@
 {
-  "updated": "2019-04-22T14:47:49.773Z",
+  "updated": "2019-04-25T07:41:51.469Z",
   "title": "text",
   "data": [
     {
       "key": "avatar1title",
-      "value": "Hans Mustermann, Bern, 52 Jahre"
+      "value": "Felix Mustermann, Bern, 58 Jahre"
     },
     {
       "key": "avatar1body",
-      "value": "Hans Mustermann hat 30 Jahre lang bei der Post gearbeitet, bis seine Poststelle geschlossen wurde. Er bezog die letzten zwei Jahre lang Arbeitslosenversicherung, hat sich noch ein Jahr mit seinem angesparten Vermögen durchgekämpft und bezieht nun Sozialhilfe. Er lebt mit seinem Hund in einer Berner Einzimmerwohnung und singt einmal pro Woche im Männerchor."
+      "value": "Felix hat 30 Jahre lang bei der Post gearbeitet, bis seine Poststelle geschlossen wurde. Er bezog die letzten zwei Jahre lang Arbeitslosenversicherung, hat sich noch ein Jahr mit seinem angesparten Vermögen durchgekämpft und bezieht nun Sozialhilfe. Er lebt mit seinem Hund «Fidi» in einer Stadt-Berner Einzimmerwohnung und singt einmal pro Woche im Männerchor."
     },
     {
       "key": "avatar2title",
-      "value": "Barbara Beispiel, Dübendorf, 34 Jahre"
+      "value": "Barbara Oliveira, Zürich, 34 Jahre"
     },
     {
       "key": "avatar2body",
-      "value": "Barbara ist alleinerziehende Mutter. Ihr Mann ist vor fünf Jahren bei einem Autounfall ums Leben gekommen. Keine Lebensversicherung. Sie ist früh Mutter geworden und findet heute in ihrem Beruf als Coiffeure keine Arbeit mehr. Bisher konnte sie ihre Familie noch mit dem angesparten Vermögen über die Runden bringen. Nun ist das Geld weg. Sie muss für sich und ihre Familie Sozialhilfe beziehen. Ihre drei minderjährigen Kinder spielen Fussball und besuchen die Primarschule."
+      "value": "Barbara ist alleinerziehende Mutter. Ihr Mann ist vor fünf Jahren bei einem Autounfall ums Leben gekommen. Keine Lebensversicherung. Sie ist früh Mutter geworden und findet heute in ihrem Beruf als Coiffeure keine Arbeit mehr. Bisher konnte sie ihre Familie noch mit dem angesparten Vermögen über die Runden bringen. Nun ist das Geld weg. Sie muss für sich und ihre Familie Sozialhilfe beziehen. Ihre zwei minderjährigen Kinder, Luva und Silvana, sind 10 und 14 Jahre alt. "
     },
     {
       "key": "intro1",
-      "value": "Guten Tag Herr Mustermann."
+      "value": "Guten Tag {name}."
     },
     {
       "key": "intro2",
@@ -28,11 +28,27 @@
     },
     {
       "key": "intro3",
-      "value": "Monatlich wird Ihnen einen Grundbedarf von 960 Schweizer Franken ausbezahlt. Die restlichen Kosten für die Wohnung und medizinische Grundversorgung übernimmt unsere Gemeinde direkt."
+      "value": "Monatlich wird Ihnen einen Grundbedarf von {amount} Schweizer Franken ausbezahlt. Die restlichen Kosten für die Wohnung und medizinische Grundversorgung übernimmt unsere Gemeinde direkt."
     },
     {
       "key": "intro4",
       "value": "Mit den 960 Schweizer Franken müssen sie ihren täglichen Lebensunterhalt bestreiten. Das Geld soll ihnen auch ein ausgeglichenes Sozialleben und etwas Freizeitgestaltung ermöglichen."
+    },
+    {
+      "key": "intro5",
+      "value": "Schaffen Sie es, mit diesem Betrach sechs Monate lang nicht pleite zu gehen? "
+    },
+    {
+      "key": "outro6",
+      "value": "Sie haben es geschafft, sechs Monate lang mit dem Grundbedarf von {amount} nicht pleite zu gehen. Dafür haben Sie verzichtet: {list} "
+    },
+    {
+      "key": "outro7",
+      "value": "In Bern soll der Grundbedarf nun um 8 Prozent sinken. Darüber stimmt der Kanton am 19. Mai ab. In weiteren Kantonen werden ähnlliche Deabtten folgen. Halten Sie das für eine gute Idee? Bekommen Sozialhilfeempfänger zu viel – ode zu wenig. Diskutieren Sie in unserer Debatte mit den Republik Journalisten Elia Blülle, Andreas Moor und Urs Bruderer."
+    },
+    {
+      "key": "outro8",
+      "value": "Sie sind pleite! Sie haben es nicht geschafft, sechs Monate lang mit dem Grundbedarf von {amount} nicht pleite zu gehen. Wollen Sie es noch einmal versuchen? "
     }
   ]
 }

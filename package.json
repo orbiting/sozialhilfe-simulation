@@ -79,6 +79,7 @@
     "d3-transition": "^1.2.0",
     "glamorous": "^5.0.0",
     "lodash": "^4.17.11",
-    "react": "^16.8.0"
+    "react": "^16.8.0",
+    "react-swipeable": "^5.2.0"
   }
 }
