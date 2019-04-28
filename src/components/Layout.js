@@ -16,7 +16,9 @@ import { scrollIt } from './scroll'
 import Board from './Board'
 import { HEADER_HEIGHT_MOBILE, HEADER_HEIGHT } from './constants'
 import Text, { fonts, formatAmount } from './Text'
-import { Avatar1, Avatar2, Continue, Cancel } from './icons'
+import fields from '../../fields.json'
+import AVATARS from './avatars'
+import { Cancel } from './icons'
 
 import textRaw from '../../text.json'
 
@@ -26,55 +28,35 @@ const text = textRaw.data.reduce((acc, { key, value }) => {
 }, {})
 const maxHeight = 900
 
-export const AVATARS = [
-  {
-    id: 0,
-    name: 'Hans Muster',
-    startingBalance: 986,
-    Icon: Avatar1,
-  },
-  {
-    id: 1,
-    name: 'Barbara Beispiel',
-    startingBalance: 1834,
-    Icon: Avatar2
-  },
-]
-
 const Layout = () => {
   const [size, setSize] = useState(null)
+  const [started, setStarted] = useState(false)
   const [avatar, setAvatar] = useState(null)
   const centerRef = useRef(null)
   const gameRef = useRef(null)
 
-  const [introState, setIntroState] = useState({
-    avatar: undefined,
-    stage: 0,
-  })
-
   const measure = () => {
-    if (centerRef.current) {
+    if (centerRef.current && gameRef.current) {
       const mobile = window.innerWidth < mediaQueries.mBreakPoint
-      const headerHeight = mobile
-        ? HEADER_HEIGHT_MOBILE
-        : HEADER_HEIGHT
-      const {
-        width,
-        height,
-      } = centerRef.current.getBoundingClientRect()
-      const offsetTop = gameRef.current.offsetTop - headerHeight
-      const innerWidth = window.innerWidth
+      const headerHeight = 0 //mobile ? HEADER_HEIGHT_MOBILE : HEADER_HEIGHT
+      const { offsetWidth, offsetHeight } = centerRef.current
+      const width = offsetWidth
+      const height = offsetHeight
+      const offsetY = gameRef.current.offsetTop - headerHeight
+      const innerWidth = window.document.body.clientWidth
       const innerHeight =
-        size && size.innerHeight - window.innerHeight === 75
+        size &&
+        size.innerHeight - window.document.body.innerHeight === 75
           ? size.innerHeight
           : window.innerHeight
       const marginWidth = (innerWidth - width) / 2
       const panelHeight =
         Math.min(maxHeight, innerHeight) - headerHeight
+
       setSize({
         centerWidth: width,
         centerHeight: height,
-        offsetTop,
+        offsetY,
         innerWidth,
         innerHeight,
         mobile,
@@ -95,24 +77,23 @@ const Layout = () => {
 
   const activate = avatar => {
     setAvatar(avatar)
-    scrollIt(size.offsetTop)
+    scrollIt(gameRef.current.offsetTop)
   }
 
-  const AvatarButton = ({avatar, activeAvatar}) =>
-    (!activeAvatar || activeAvatar.id === avatar.id) ? (
+  const AvatarButton = ({ avatar, activeAvatar }) =>
+    !activeAvatar || activeAvatar.id === avatar.id ? (
       <div
         style={{
           width: '50%',
           textAlign: 'center',
-          opacity: activeAvatar && activeAvatar.id === avatar.id ? 1 : 0.5,
+          opacity:
+            activeAvatar && activeAvatar.id === avatar.id ? 1 : 0.6,
         }}
         onClick={() => activate(avatar)}
       >
         <avatar.Icon width={80} height={80} />
         <Interaction.P>
-          <span style={{ color: '#fff' }}>
-            {avatar.name}
-          </span>
+          <span style={{ color: '#fff' }}>{avatar.name}</span>
         </Interaction.P>
       </div>
     ) : (
@@ -120,53 +101,114 @@ const Layout = () => {
         style={{
           width: '50%',
           textAlign: 'center',
-          opacity: 0.5,
+          opacity: 0.6,
         }}
         onClick={() => setAvatar(null)}
       >
         <Cancel width={80} height={80} />
         <Interaction.P>
-          <span style={{ color: '#fff' }}>
-            Abbrechen
-          </span>
+          <span style={{ color: '#fff' }}>Abbrechen</span>
         </Interaction.P>
-      </div>  
+      </div>
     )
-
 
   return (
     <>
       <Center style={{ paddingBottom: 0 }}>
-        <div
-          ref={centerRef}
-          style={{
-            background: theme.background,
-            padding: '5%',
-            position: 'relative',
-            display: 'flex',
-          }}
-        >
-          <AvatarButton avatar={AVATARS[0]} activeAvatar={avatar} />
-          <AvatarButton avatar={AVATARS[1]} activeAvatar={avatar} />
+        <div ref={centerRef}>
+          {size ? (
+            <div
+              style={{
+                background: theme.background,
+                position: 'relative',
+                padding: size.centerWidth*0.05
+              }}
+            >
+            <Interaction.H3 style={{color: '#fff', paddingBottom: '5%'}}>Das Spielbrett</Interaction.H3>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+            }}>
+            <Interaction.P style={{color: '#fff', width: '100%', textAlign: 'center', padding: '0 20%'}}>
+              Auf den Ereignisfeldern treffen Sie auf alltägliche Ausgaben
+            </Interaction.P>
+            </div>
+            <svg
+              width={size.centerWidth * 0.9}
+              height={size.centerWidth * 0.9}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+            <Board boardSize={size.centerWidth * 0.9} />
+            </svg>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              paddingBottom: '5%'
+            }}>
+              <div style={{display: 'flex'}}>
+                <Interaction.P style={{color: '#fff', width: '50%', paddingRight: '5%', textAlign: 'left'}}>
+                  Auf den «Chance»-Feldern entscheiden Sie über grössere Beträge.
+                </Interaction.P>
+                <Interaction.P style={{color: '#fff', width: '50%', paddingLeft: '5%', textAlign: 'right'}}>
+                  Auf «Start» erhalten Sie den monatlichen Grundbedarf.
+                </Interaction.P>
+              </div>
+            </div>
+            <Interaction.H3 style={{color: '#fff', paddingBottom: '5%'}}>Wählen Sie Ihren Avatar</Interaction.H3>
+            <div
+              style={{
+                display: 'flex',
+                padding: '5% 0 5% 0',
+              }}
+            >
+              <AvatarButton
+                avatar={AVATARS[0]}
+                activeAvatar={avatar}
+              />
+              <AvatarButton
+                avatar={AVATARS[1]}
+                activeAvatar={avatar}
+              />
+            </div>
+          </div>
+        ) : null}
         </div>
       </Center>
-      <div ref={gameRef} onClick={() => scrollIt(size.offsetTop)}>
-        {avatar && (
+      <div
+        ref={gameRef}
+        onClick={() => {
+          setStarted(true)
+          scrollIt(gameRef.current.offsetTop)
+        }}
+      >
+        {size && (
           <div
             style={{
-              background: theme.background,
               width: size.innerWidth,
-              height: size.panelHeight,
-              display: 'flex',
+              height: avatar ? size.panelHeight : 0,
+              transition: 'height 0.5s ease-in-out',
+              position: 'relative',
+              overflow: 'hidden',
             }}
           >
-            <App
-              centerWidth={size.centerWidth}
-              marginWidth={size.marginWidth}
-              height={size.panelHeight}
-              mobile={size.mobile}
-              avatar={avatar}
-            />
+            <div
+              style={{
+                position: 'absolute',
+                top: avatar ? 0 : -size.panelHeight,
+                transition: 'top 0.5s ease-in-out',
+              }}
+            >
+              {avatar && (
+                <App
+                  centerWidth={size.centerWidth}
+                  marginWidth={size.marginWidth}
+                  height={size.panelHeight}
+                  mobile={size.mobile}
+                  avatar={avatar}
+                  showInfo={!started}
+                />
+              )}
+            </div>
           </div>
         )}
       </div>

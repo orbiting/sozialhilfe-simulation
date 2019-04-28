@@ -16,7 +16,6 @@ import theme from './theme'
 import chunk from 'lodash/chunk'
 import Dialog from './Dialog'
 import GameOver from './GameOver'
-import { AVATARS } from './Layout'
 
 export const GAME_INITIAL_STATE = {
   score: {
@@ -29,6 +28,7 @@ export const GAME_INITIAL_STATE = {
     general: 0,
   },
   transactions: {
+    completed: [],
     accepted: [],
     rejected: [],
   },
@@ -45,10 +45,12 @@ const App = ({
   height,
   mobile,
   avatar,
+  showInfo
 }) => {
+
   const INITIAL_STATE = {
     score: {
-      balance: avatar.startingBalance,
+      balance: avatar ? avatar.startingBalance : 986,
       spent: 0,
       mobility: 0,
       clothing: 0,
@@ -57,6 +59,7 @@ const App = ({
       general: 0,
     },
     transactions: {
+      completed: [],
       accepted: [],
       rejected: [],
     },
@@ -69,21 +72,24 @@ const App = ({
   const boardRef = useRef(null)
   const buttonRef = useRef(null)
 
+  const [gameState, setGameState] = useState(INITIAL_STATE)
+  const currentFieldIdx = gameState.activeField - 1
+
   let fieldData
 
-  switch (avatar.game) {
-    case 2:
-      fieldData = fields2.data
-      break
-    case 3:
+  switch (avatar ? avatar.id : undefined) {
+    case 0:
+      fieldData = currentFieldIdx > 1 ? fields2.data : fields.data
+      break;
+    case 1:
       fieldData = fields3.data
-      break
+      break;
     default:
-      fieldData = fields.data
-      break
+      fieldData = []
+      break;
   }
 
-  const [gameState, setGameState] = useState(INITIAL_STATE)
+  const currentField = fieldData[currentFieldIdx]
 
   const gameData = fieldData.slice(0, 96).map(d => {
     if (d.dependency) {
@@ -101,6 +107,7 @@ const App = ({
   })
 
   const fieldDataChunks = chunk(gameData, 16)
+
   // display last 4 old fields while on first 5 fields of round
   let displayData =
     gameState.round > 1 &&
@@ -109,9 +116,6 @@ const App = ({
           .slice(0, 12)
           .concat(fieldDataChunks[gameState.round - 2].slice(12, 16))
       : fieldDataChunks[gameState.round - 1]
-
-  const currentFieldIdx = gameState.activeField - 1
-  const currentField = fieldData[currentFieldIdx]
 
   const width = centerWidth + 2 * marginWidth
   const zoomScale = scaleLinear()
@@ -137,20 +141,22 @@ const App = ({
     currentFieldIdx > 0 && currentField.type === 'chance'
 
   const advanceGame = (field, reject = false) => {
-    appRef.current && appRef.current.scrollIntoView()
+    //appRef.current && appRef.current.scrollIntoView()
+
+    const completed = [ ...gameState.transactions.completed, { field, reject } ]
 
     const accepted =
-      field.id > 0 && (field && !reject)
+      (field && !reject)
         ? gameState.transactions.accepted.concat(field)
         : gameState.transactions.accepted
     const rejected =
-      field && reject
+      (field && reject)
         ? gameState.transactions.rejected.concat(field)
         : gameState.transactions.rejected
 
-    const sumTransactions = category =>
+    const sumTransactions = category => 
       accepted
-        .filter(t => t.category === category)
+        .filter(t => t.category === category || t.type === category)
         .reduce((acc, cur) => acc + cur.amount, 0)
 
     const general = accepted
@@ -167,7 +173,9 @@ const App = ({
 
     setGameState({
       ...gameState,
+      started: true,
       transactions: {
+        completed,
         accepted,
         rejected,
       },
@@ -267,16 +275,19 @@ const App = ({
               resetGame={resetGame}
               show={gameOver}
               boardSize={boardSize}
+              avatar={avatar}
             />
             <Score
               avatar={avatar}
               gameState={gameState}
               field={currentField}
+              currentFieldIdx={currentFieldIdx}
               setGameState={setGameState}
               boardSize={boardSize}
               height={height}
               width={centerWidth}
               mobile={mobile}
+              showInfo={showInfo}
             />
           </div>
           <svg
@@ -300,6 +311,7 @@ const App = ({
                 />
               </g>
             </g>
+            <rect width={width} height={height} fill={'#fff'} opacity={showInfo ? 0.7 : 0} />
             <g
               style={{
                 display: currentFieldIdx < 1 ? undefined : 'none',
@@ -314,7 +326,7 @@ const App = ({
                 fill={'red'}
               />
               <circle
-                opacity={0.3}
+                opacity={0.6}
                 cx={marginWidth + centerWidth * 0.5}
                 cy={height * 0.7}
                 r={40}
@@ -338,7 +350,6 @@ App.defaultProps = {
   centerWidth: 400,
   marginWidth: 50,
   height: 700,
-  avatar: AVATARS[0],
 }
 
 export default App

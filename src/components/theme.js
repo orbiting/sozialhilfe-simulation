@@ -4,7 +4,9 @@ const classic = {
   background: '#888',
   border: '#333',
   field: '#FFFDF3',
-  placeholder: '#dbd6bd',
+  placeholder: '#C3C5C9',
+  placeholderDark: '#9497A1',
+  chance: '#DC007C',
   score: '#333',
   text: '#222',
   categories: {

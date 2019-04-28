@@ -5,10 +5,10 @@ import range from 'lodash/range'
 import {FIELD_SIDE_RATIO} from './constants'
 import Lane from './Lane'
 import { GAME_INITIAL_STATE } from './App';
-import { AVATARS } from './Layout';
+import AVATARS from './avatars';
 
-const Board = ({ fields, boardSize, gameState, avatar }) => {
-
+const Board = ({ fields, boardSize, gameState = GAME_INITIAL_STATE, avatar, blink }) => {
+  
 	const [bottom, left, top, right] = chunk(fields, 4)
 
 	const shortSide = boardSize / (3 + 2 * FIELD_SIDE_RATIO)
@@ -18,10 +18,10 @@ const Board = ({ fields, boardSize, gameState, avatar }) => {
 	return (
 
 		<g>
-			<Lane avatar={avatar} gameState={gameState} boardSize={boardSize} fields={bottom} x={longSide} y={laneSize} start />
-			<Lane gameState={gameState} boardSize={boardSize} fields={left} rotate={90} x={longSide} y={longSide} />
-			<Lane gameState={gameState} boardSize={boardSize} fields={right} rotate={-90} x={laneSize} y={laneSize} />
-			<Lane gameState={gameState} boardSize={boardSize} fields={top} rotate={180} x={laneSize} y={longSide} />
+			<Lane blink={blink} avatar={avatar} gameState={gameState} boardSize={boardSize} fields={bottom} x={longSide} y={laneSize} start />
+			<Lane blink={blink} gameState={gameState} boardSize={boardSize} fields={left} rotate={90} x={longSide} y={longSide} />
+			<Lane blink={blink} gameState={gameState} boardSize={boardSize} fields={right} rotate={-90} x={laneSize} y={laneSize} />
+			<Lane blink={blink} gameState={gameState} boardSize={boardSize} fields={top} rotate={180} x={laneSize} y={longSide} />
 		</g>
 
 	)

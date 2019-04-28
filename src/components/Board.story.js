@@ -4,12 +4,20 @@ import Board from './Board'
 
 import fields from '../../fields.json'
 import { GAME_INITIAL_STATE } from './App'
+import { AVATARS } from './Layout';
 
 storiesOf('Board', module)
   .add('default', () => (
-    <svg width={700} height={700} xmlns='http://www.w3.org/2000/svg'>
+    <svg width={510} height={510} xmlns='http://www.w3.org/2000/svg'>
       <g transform='translate(5,5)'>
-        <Board fields={fields.data} gameState={GAME_INITIAL_STATE} />
+        <Board fields={fields.data} gameState={GAME_INITIAL_STATE} avatar={AVATARS[0]} />
+      </g>
+    </svg>
+  ))
+  .add('blink', () => (
+    <svg width={510} height={510} xmlns='http://www.w3.org/2000/svg'>
+      <g transform='translate(5,5)' fill={'#fff'}>
+        <Board boardSize={500} fields={fields.data} gameState={GAME_INITIAL_STATE} avatar={AVATARS[0]} blink />
       </g>
     </svg>
   ))
@@ -20,6 +28,8 @@ storiesOf('Board', module)
   ))
   .add('empty', () => (
     <svg width={700} height={700} xmlns='http://www.w3.org/2000/svg'>
-      <Board  gameState={GAME_INITIAL_STATE} />
+      <g transform='translate(5,5)'>
+        <Board />
+      </g>
     </svg>
   ))

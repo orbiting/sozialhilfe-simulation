@@ -1,5 +1,5 @@
 {
-  "updated": "2019-04-25T07:41:51.469Z",
+  "updated": "2019-04-28T09:14:37.223Z",
   "title": "Game 1",
   "data": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "id": 2,
-      "description": "Grundgebühr Handy-Abo",
+      "description": "Handy-Abo",
       "amount": -19,
       "yes": null,
       "no": null,
@@ -57,14 +57,14 @@
     },
     {
       "id": 4,
-      "description": "Neue Socken",
-      "amount": -29.85,
+      "description": "Internet, Telefon und TV",
+      "amount": -49.8,
       "yes": null,
       "no": null,
       "gameOverText": null,
-      "source": "https://www.coopathome.ch/de/supermarkt/sch%C3%B6nheit-hygiene-bekleidung-baby/bekleidung/socken-unterw%C3%A4sche/naturaline-socken-men-schwarz-gr%C3%B6sse-40-42/p/6295082001",
+      "source": "https://shop.m-budget.migros.ch/de/kombiangebote",
       "type": "event",
-      "category": "clothing",
+      "category": "media",
       "dependency": null,
       "altYes": null,
       "altNo": null,
@@ -75,10 +75,10 @@
     },
     {
       "id": 5,
-      "description": "Dein geliebter Hund «Fidi» hat Hunger und braucht neues Hundesfutter. Kannst du dir das noch leisten? ",
+      "description": "Dein Hund Fidi hat Hunger. Er braucht neues Hundesfutter. Kannst du dir das leisten? ",
       "amount": -50,
-      "yes": "Ja klar. «Fidi» ist mein Freund. ",
-      "no": "Nein. «Fidi» muss ins Heim.",
+      "yes": "Ja klar. ",
+      "no": "Nein. Fidi muss ins Tierheim.",
       "gameOverText": "Sie haben Ihren Hund abgegeben. ",
       "source": "http://m.tierwelt.ch/?rub=4486&id=43310",
       "type": "chance",
@@ -143,7 +143,7 @@
     },
     {
       "id": 9,
-      "description": "Sie singen im Männerchor. Das Hilight der Woche. Jetzt steht der neue Mitgliederbeitrag an. ",
+      "description": "Sie singen im Männerchor. Das Highlight der Woche. Jetzt steht der neue Mitgliederbeitrag an. ",
       "amount": -150,
       "yes": "Sicher. Das bezahle ich!",
       "no": "Geht nicht mehr. Ich muss austreten. ",
@@ -211,11 +211,11 @@
     },
     {
       "id": 13,
-      "description": "Ersten Sommertage: Für Ihren Balkon möchtest Sie einen Holzkohlegrill kaufen.",
+      "description": "Erste Sommertage: Für Ihren Balkon möchten Sie einen Holzkohlegrill kaufen.",
       "amount": -80,
       "yes": "Was für ein Schnäppchen!",
       "no": "Ufff... zu teuer. ",
-      "gameOverText": "Sie haben aufs Grillieren verzichtet. ",
+      "gameOverText": "Sie haben auf den Balkongrill verzichtet. ",
       "source": "https://www.obi.ch/holzkohlegrills/obi-premium-kugelgrill-cleveland-43-cm/p/4952388",
       "type": "chance",
       "category": "leisure",
@@ -228,20 +228,21 @@
     },
     {
       "id": 14,
-      "description": "Grundgebühr für Internet, Telefon und TV",
-      "amount": -49.8,
+      "description": "Neue Socken",
+      "amount": -29.85,
       "yes": null,
       "no": null,
       "gameOverText": null,
-      "source": "https://shop.m-budget.migros.ch/de/kombiangebote",
+      "source": "https://www.coopathome.ch/de/supermarkt/sch%C3%B6nheit-hygiene-bekleidung-baby/bekleidung/socken-unterw%C3%A4sche/naturaline-socken-men-schwarz-gr%C3%B6sse-40-42/p/6295082001",
       "type": "event",
-      "category": "media",
+      "category": "clothing",
       "dependency": null,
       "altYes": null,
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "undefined": "TRUE"
     },
     {
       "id": 15,
@@ -276,7 +277,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": -87.09999999999997
+      "undefined": -87.09999999999991
     },
     {
       "id": 17,
@@ -297,7 +298,7 @@
     },
     {
       "id": 18,
-      "description": "Grundgebühr Handy-Abo",
+      "description": "Handy-Abo",
       "amount": -19,
       "yes": null,
       "no": null,
@@ -314,7 +315,7 @@
     },
     {
       "id": 19,
-      "description": "Monatsration Hundefutter",
+      "description": "Hundefutter",
       "amount": -60,
       "yes": "",
       "no": "",
@@ -331,7 +332,7 @@
     },
     {
       "id": 20,
-      "description": "Besuch Zentrum Paul Klee (Legi)",
+      "description": "Besuch Zentrum Paul Klee (mit Kulturlegi)",
       "amount": -10,
       "yes": null,
       "no": null,
@@ -352,7 +353,7 @@
       "amount": -20,
       "yes": "Ja, klar. Lohn sich. ",
       "no": "Zu teuer. ",
-      "gameOverText": "Sie haben Ihre Kultur-Legi nicht verlängern.",
+      "gameOverText": "Sie haben Ihre Kultur-Legi nicht verlängert.",
       "source": null,
       "type": "chance",
       "category": "leisure",
@@ -416,7 +417,7 @@
     },
     {
       "id": 25,
-      "description": "Geburtstag! Ihr Patenkind wird 10 Jahre alt. Sie möchte mir ihr den Tierpark Dälhölzli.",
+      "description": "Geburtstag! Ihr Patenkind wird 10 Jahre alt. Sie möchte mir ihr den Tierpark Dälhölzli besuchen.",
       "amount": -20,
       "yes": "Einladen!",
       "no": "Hmmm... heute wohl eher nicht.",
@@ -433,7 +434,7 @@
     },
     {
       "id": 26,
-      "description": "YB-Match + Meisterfeier mit Kulturlegi",
+      "description": "YB-Match + Meisterfeier (mit Kulturlegi)",
       "amount": -17.5,
       "yes": "",
       "no": "",
@@ -484,7 +485,7 @@
     },
     {
       "id": 29,
-      "description": "Sie möchteset Ihr Französisch wieder auffrischen. Dafür wurdeIhnen eine App empfohlen. Die kostet. ",
+      "description": "Sie möchten Ihr Französisch wieder auffrischen. Sie wollen sich dafür eine Sprach-App leisten. ",
       "amount": -89.4,
       "yes": "Leiste ich mir. ",
       "no": "Viel zu teuer. ",
@@ -535,7 +536,7 @@
     },
     {
       "id": 32,
-      "description": "Jassrunde im Pyrenées",
+      "description": "Jassrunde im Cafe des Pyrenées",
       "amount": -22,
       "yes": null,
       "no": null,
@@ -570,7 +571,7 @@
     },
     {
       "id": 34,
-      "description": "Grundgebühr Handy-Abo",
+      "description": "Handy-Abo",
       "amount": -19,
       "yes": null,
       "no": null,
@@ -587,7 +588,7 @@
     },
     {
       "id": 35,
-      "description": "Monatsration Hundefutter",
+      "description": "Hundefutter",
       "amount": -60,
       "yes": "",
       "no": "",
@@ -638,7 +639,7 @@
     },
     {
       "id": 38,
-      "description": "SonntagsBlick-Schnupper-Abo",
+      "description": "Schnupper-Abo SonntagsBlick",
       "amount": -17.9,
       "yes": null,
       "no": null,
@@ -672,7 +673,7 @@
     },
     {
       "id": 40,
-      "description": "Verlängertes Wochenende beim Bruder in Interlaken",
+      "description": "Verlängertes Wochenende beim Bruder",
       "amount": -28,
       "yes": null,
       "no": null,
@@ -740,7 +741,7 @@
     },
     {
       "id": 44,
-      "description": "Vorstellungsgespräch in Burgdorf (Halbtax)",
+      "description": "Termin in in Burgdorf (Halbtax)",
       "amount": -11.6,
       "yes": "",
       "no": "",
@@ -791,7 +792,7 @@
     },
     {
       "id": 47,
-      "description": "Tradition: Geburtstags-Schockolade an die Schwester im Ausland verschicken",
+      "description": "Tradition: Schockolade an die Schwester in den USA verschicken",
       "amount": -20,
       "yes": null,
       "no": null,
@@ -843,7 +844,7 @@
     },
     {
       "id": 50,
-      "description": "Ihnen wird der Betrag aus dem Lottogewinn abgezogen. Sie dürfen kein Geld verdienen. ",
+      "description": "Lottogewinn abgezogen. Sie dürfen kein Geld verdienen. ",
       "amount": -100,
       "yes": null,
       "no": null,
@@ -898,7 +899,7 @@
       "amount": -50,
       "yes": "Ja. Daumen drücken!",
       "no": "Kann ich mir nicht leisten.",
-      "gameOverText": "Sie haben Ihr Portemonnaie verloren.",
+      "gameOverText": "Sie konnten sich keinen Suchauftrag leisten.",
       "source": null,
       "type": "chance",
       "category": "leisure",
@@ -911,7 +912,7 @@
     },
     {
       "id": 54,
-      "description": "Portemonnaie nicht gefunden. Neues Passfotos",
+      "description": "Portemonnaie nicht gefunden. Neues Passfotos.",
       "amount": -10,
       "yes": null,
       "no": null,
@@ -1013,7 +1014,7 @@
     },
     {
       "id": 60,
-      "description": "Monatsration Hundefutter",
+      "description": "Hundefutter",
       "amount": -60,
       "yes": "",
       "no": "",
@@ -1081,7 +1082,7 @@
     },
     {
       "id": 64,
-      "description": "Sparten ",
+      "description": "Sparen",
       "amount": -15,
       "yes": null,
       "no": null,
@@ -1133,7 +1134,7 @@
     },
     {
       "id": 67,
-      "description": "Monatsration Hundefutter",
+      "description": "Hundefutter",
       "amount": -60,
       "yes": "",
       "no": "",
@@ -1167,10 +1168,10 @@
     },
     {
       "id": 69,
-      "description": "Gutes Angebot: Occasion Laptop. Sie brauchen einen für Ihre Bewerbungsschreiben.",
+      "description": "Gutes Angebot: Occasion-Laptop. Sie brauchen ihn für die Bewerbungsschreiben.",
       "amount": -300,
       "yes": "Ja. Endlich. ",
-      "no": "Ich muss wohl künftig ins Internetcafé.",
+      "no": "Nein. Ich muss wohl weiterhin ins Internetcafé.",
       "gameOverText": "Sie konnten sich keinen Labtop leisten.",
       "source": null,
       "type": "chance",
@@ -1201,7 +1202,7 @@
     },
     {
       "id": 71,
-      "description": "Bratwurst auf dem Markt",
+      "description": "Döner Kebab",
       "amount": -6,
       "yes": null,
       "no": null,
@@ -1239,7 +1240,7 @@
       "amount": -50,
       "yes": "Ja, das wird toll. ",
       "no": "Nein. Ich kann mich doch nicht einladen lassen.",
-      "gameOverText": "Sie mussten auf Ihr Date verzichten.",
+      "gameOverText": "Sie haben Ihr Date versetzt..",
       "source": null,
       "type": "chance",
       "category": "leisure",
@@ -1406,7 +1407,7 @@
     },
     {
       "id": 83,
-      "description": "Monatsration Hundefutter",
+      "description": "Hundefutter",
       "amount": -60,
       "yes": "",
       "no": "",
@@ -1440,7 +1441,7 @@
     },
     {
       "id": 85,
-      "description": "Langeweile zermürbt. Sollen Sie sich an der Uni Bern als Gasthörer für Geschichte einschreiben?",
+      "description": "Langeweile zermürbt. Wollen Sie sich an der Uni Bern als Gasthörer für Geschichte einschreiben? ",
       "amount": -250,
       "yes": "Ja, das wird spannend!",
       "no": "Nein, lieber nicht.",
@@ -1512,7 +1513,7 @@
       "amount": -120,
       "yes": "Yay!",
       "no": "Nay!",
-      "gameOverText": " ",
+      "gameOverText": "Sie haben aufs Republik-Abo verzichtet. ",
       "source": null,
       "type": "event",
       "category": "media",
@@ -1645,7 +1646,7 @@
     },
     {
       "id": 101,
-      "description": "Monatsration Hundefutter",
+      "description": "Hundefutter",
       "amount": -60,
       "yes": null,
       "no": null,
@@ -1747,7 +1748,7 @@
     },
     {
       "id": 107,
-      "description": "YB-Match + Meisterfeier mit Kulturlegi",
+      "description": "YB-Match + Meisterfeier (mit Kulturlegi)",
       "amount": -17.5,
       "yes": null,
       "no": null,
@@ -1764,7 +1765,7 @@
     },
     {
       "id": 108,
-      "description": "YB-Match + Meisterfeier ohne Kulturlegi",
+      "description": "YB-Match + Meisterfeier (ohne Kulturlegi)",
       "amount": -35,
       "yes": null,
       "no": null,
@@ -1798,7 +1799,7 @@
     },
     {
       "id": 110,
-      "description": "Ihr bester Freund Hugo hat einen Wanderausflug mit Übernachtung organisiert. Gehen Sie mit?",
+      "description": "Hugo hat einen Wanderausflug mit Übernachtung geplant. Gehen Sie mit?",
       "amount": -100,
       "yes": null,
       "no": null,
@@ -1883,7 +1884,7 @@
     },
     {
       "id": 115,
-      "description": "Vorstellungsgespräch in Burgdorf (Halbtax)",
+      "description": "Termin in in Burgdorf (Halbtax)",
       "amount": -11.6,
       "yes": null,
       "no": null,
@@ -1900,7 +1901,7 @@
     },
     {
       "id": 116,
-      "description": "Vorstellungsgespräch in Burgdorf (ohne Halbtax)",
+      "description": "Termin in in Burgdorf (ohne Halbtax)",
       "amount": -23.2,
       "yes": null,
       "no": null,
@@ -1968,7 +1969,7 @@
     },
     {
       "id": 120,
-      "description": "Bustickett für Untersuchung im Insel-Spital (ohne Halbtax)",
+      "description": "Busbillett für Untersuchung im Insel-Spital (ohne Halbtax)",
       "amount": -5.2,
       "yes": null,
       "no": null,
@@ -2087,7 +2088,7 @@
     },
     {
       "id": 127,
-      "description": "Ihnen wird der Betrag aus dem Lottogewinn abgezogen. Sie dürfen kein Geld verdienen. ",
+      "description": "Lottogewinn abgezogen. Sie dürfen kein Geld verdienen. ",
       "amount": -100,
       "yes": null,
       "no": null,
@@ -2104,7 +2105,7 @@
     },
     {
       "id": 128,
-      "description": "Ihnen wird der Lohn vom Streichen abgezogen. Sie dürfen kein Geld verdienen.",
+      "description": "Lohn vom Streichen abgezogen. Sie dürfen kein Geld verdienen.",
       "amount": -60,
       "yes": null,
       "no": null,

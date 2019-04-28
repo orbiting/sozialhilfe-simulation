@@ -5,8 +5,10 @@ import Text from './Text'
 import {FIELD_SIDE_RATIO} from './constants'
 import { css } from 'glamor'
 import { styles } from './Field'
+import AVATARS from './avatars';
 
-const Start = ({field: { description, amount }, boardSize, x, y, rotate, active, highlight, avatar }) => {
+
+const Start = ({field = {}, boardSize, x, y, rotate, active, highlight, avatar }) => {
 
   const s = boardSize / 6 * FIELD_SIDE_RATIO
   const dy = s / 10
@@ -16,7 +18,7 @@ const Start = ({field: { description, amount }, boardSize, x, y, rotate, active,
       <rect width={s} height={s} fill={theme.field}  />
       <g transform={`translate(${s/2},${s/2})`}>
         <Text boardSize={boardSize} type='huge' y={-2*dy}>Start</Text>
-        <Text boardSize={boardSize} type='regular' y={dy} charsPerLine={18}>{`Sie erhalten zu Beginn des Monats ${avatar.staringBalance} Franken für den Grundbedarf`}</Text>
+        <Text boardSize={boardSize} type='regular' y={dy} charsPerLine={18}>{`Sie erhalten zu Beginn des Monats ${avatar ? avatar.startingBalance : 0} Franken für den Grundbedarf`}</Text>
       </g>
       <rect width={s} height={s} {...(highlight ? styles.highlightOn : styles.highlightOff)} />
       <rect width={s} height={s} strokeWidth={boardSize/200} stroke={theme.border} fill='none' />
@@ -34,7 +36,7 @@ Start.defaultProps = {
   x: 0,
   y: 0,
   rotate: 0,
-  active: false
+  active: false,
 }
 
 export default Start

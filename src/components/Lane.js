@@ -6,7 +6,7 @@ import get from 'lodash/get'
 import reverse from 'lodash/reverse'
 import { GAME_INITIAL_STATE } from './App';
 
-const Lane = ({fields, gameState, boardSize, rotate, x, y, start, avatar}) => {
+const Lane = ({fields, gameState, boardSize, rotate, x, y, start, avatar, blink}) => {
 
   const shortSide = boardSize / 6
   const activeField = gameState.activeField
@@ -23,7 +23,7 @@ const Lane = ({fields, gameState, boardSize, rotate, x, y, start, avatar}) => {
               ? <Start avatar={avatar} highlight={field.id === activeField} boardSize={boardSize} x={w} />
               : <Chance highlight={field.id === activeField} boardSize={boardSize} field={field} x={w} />
           } else {
-            return <Field boardSize={boardSize} field={field} x={w-i*shortSide} highlight={field.id === activeField} active={field.id-5 <= activeField && field.id <= activeField}/>
+            return <Field blink={blink} boardSize={boardSize} field={field} x={w-i*shortSide} highlight={field.id === activeField} active={field.id-5 <= activeField && field.id <= activeField}/>
           }
         })
       }

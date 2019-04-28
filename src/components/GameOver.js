@@ -10,7 +10,7 @@ import textRaw from '../../text.json'
 const text = textRaw.data.reduce((acc,{key,value}) => {  acc[key] = value; return acc }, {})
 
 
-const GameOver = ({gameState, width, height, resetGame, boardSize, show}) => {
+const GameOver = ({gameState, width, height, resetGame, boardSize, show, avatar}) => {
 
   const { balance } = gameState.score
 
@@ -55,20 +55,24 @@ const GameOver = ({gameState, width, height, resetGame, boardSize, show}) => {
     margin: '8% 0',
     cursor: 'pointer',
   })
-
-
+  
   return (
     <div {...wrapper}>
       <div {...base}>
       {
         balance < 0 ? (
           <>
-            <p {...textStyle}>{text.outro8}</p>
+            <p {...textStyle}>{text.outro8.replace('{amount}', formatAmount(avatar.startingBalance))}</p>
             <Button black onClick={resetGame}>Neu starten</Button>
           </>
         ) : (
           <div>
-            <p {...textStyle}>{text.outro6}</p>
+            <p {...textStyle}>{text.outro6.replace('{amount}', formatAmount(avatar.startingBalance))}</p>
+            <ul>
+              {
+                gameState.transactions.completed.filter(t => t.reject).map(t => <li>{t.field.outro}</li>)
+              }
+            </ul>
             <p {...textStyle}>{text.outro7}</p>
           </div>
         )

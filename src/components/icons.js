@@ -27,6 +27,19 @@ export const Leisure = props => (
   </svg>
 )
 
+export const General = props => (
+  <svg
+    stroke={0}
+    fill="#000"
+    strokeWidth={0}
+    viewBox="0 0 24 24"
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+  </svg>
+)
+
 export const Mobility = props => (
   <svg
     stroke={0}
@@ -331,5 +344,13 @@ export default {
   mobility: {
     color: theme.categories.mobility,
     Icon: Mobility,
+  },
+  general: {
+    color: theme.categories.general,
+    Icon: General,
+  },
+  start: {
+    color: theme.categories.general,
+    Icon: General,
   },
 }

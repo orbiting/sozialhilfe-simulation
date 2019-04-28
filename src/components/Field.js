@@ -5,6 +5,7 @@ import Text, { formatAmount } from './Text'
 import { css } from 'glamor'
 import { select } from 'd3-selection'
 import icons from './icons';
+import random from 'lodash/random'
 
 export const styles = {
   active: css({
@@ -27,7 +28,7 @@ export const styles = {
   }),
 }
 
-const Field = ({field: { description, amount, category, id }, boardSize, x, y, rotate, offsetY, active, highlight = false }) => {
+const Field = ({field: { description, amount, category, id }, boardSize, x, y, rotate, offsetY, active, highlight = false, blink }) => {
 
   const width = boardSize / 6
   const height = FIELD_SIDE_RATIO*width
@@ -50,7 +51,9 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
     <>
       <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${width/2}, ${width/2} ) translate(0, ${offsetY})`}>
         <rect width={width} height={height} fill={theme.field} />
-        <rect ref={curtainRef} width={width} height={2*heightUnit} fill={theme.categories[category]} strokeWidth={boardSize/200} stroke={theme.border}  />
+        <rect ref={curtainRef} width={width} height={2*heightUnit} fill={theme.categories[category] || theme.placeholderDark} strokeWidth={boardSize/200} stroke={theme.border}>
+          { blink && <animate attributeName="fill-opacity" from="1" to="0.6" dur={random(0.5,1,true)} repeatCount={'indefinite'} /> }
+        </rect>
         <icon.Icon x={width/2-heightUnit} y={1.25*heightUnit} width={2*widthUnit} height={2*widthUnit} fillOpacity={highlight ? 0.6 : 0} fill={'#fff'} style={{transition: 'fill-opacity 0.3s ease-in-out'}} />
         <>
           <Text boardSize={boardSize} x={width/2} y={4*heightUnit} charsPerLine={15} fillOpacity={1} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)}>{description}</Text>

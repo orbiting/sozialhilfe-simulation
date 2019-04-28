@@ -4,7 +4,7 @@ import theme from './theme'
 import { fonts, formatAmount } from './Text'
 import icons from './icons';
 
-const Dialog = ({field, width, height, advanceGame, boardSize, show}) => {
+const Dialog = ({field = {}, width, height, advanceGame, boardSize, show}) => {
 
   const {description, yes, no, id, amount, category} = field
 
