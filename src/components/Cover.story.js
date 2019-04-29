@@ -7,3 +7,6 @@ storiesOf('Cover', module)
   .add('default', () => (
     <Cover />
   ))
+  .add('square', () => (
+    <Cover cols={4} loop='indefinite' />
+  ))

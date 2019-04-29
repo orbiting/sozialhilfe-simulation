@@ -16,7 +16,7 @@ import { Cancel } from './icons'
 
 const maxHeight = 900
 
-const AvatarButton = ({ avatar, activeAvatar, activate }) =>
+const AvatarButton = ({ avatar, activeAvatar, activate, setAvatar }) =>
   !activeAvatar || activeAvatar.id === avatar.id ? (
     <div
       style={{
@@ -214,6 +214,7 @@ const Layout = () => {
                   avatar={AVATARS[1]}
                   activeAvatar={avatar}
                   activate={activate}
+                  setAvatar={setAvatar}
                 />
               </div>
             </div>
@@ -224,7 +225,9 @@ const Layout = () => {
         ref={gameRef}
         onClick={() => {
           setStarted(true)
-          scrollIt(gameRef.current.offsetTop - size.headerHeight)
+          setTimeout(() => {
+            scrollIt(gameRef.current.offsetTop - size.headerHeight)            
+          }, 300);
         }}
       >
         {size && (

@@ -228,7 +228,7 @@ const Score = ({
             width: (10 * width) / 7,
           })}
         >
-          {started ? reverse(transactionLog).slice(0,10) : <LogInfo />}
+          {started ? reverse(transactionLog).slice(0,15) : <LogInfo />}
         </div>
       </div>
     </div>

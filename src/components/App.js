@@ -60,7 +60,7 @@ const App = ({
 
   const currentField = fieldData[currentFieldIdx]
 
-  const gameData = useMemo(() => fieldData.slice(0, 96).map(d => {
+  const gameData = fieldData.slice(0, 96).map(d => {
     if (d.dependency) {
       const isRejected = gameState.transactions.some(
         e => e.field.id === d.dependency,
@@ -73,7 +73,7 @@ const App = ({
     } else {
       return d
     }
-  }), fieldData, gameState)
+  })
 
   const fieldDataChunks = chunk(gameData, 16)
 
