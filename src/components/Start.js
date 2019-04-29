@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
-import { fontFamilies } from '@project-r/styleguide'
 import theme from './theme'
 import Text from './Text'
 import {FIELD_SIDE_RATIO} from './constants'
-import { css } from 'glamor'
 import { styles } from './Field'
-import AVATARS from './avatars';
 
 
 const Start = ({field = {}, boardSize, x, y, rotate, active, highlight, avatar }) => {

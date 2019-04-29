@@ -10,9 +10,9 @@ import textRaw from '../../text.json'
 const text = textRaw.data.reduce((acc,{key,value}) => {  acc[key] = value; return acc }, {})
 
 
-const GameOver = ({gameState, width, height, resetGame, boardSize, show, avatar}) => {
+const GameOver = ({gameState, width, height, tryAgain, resetGame, boardSize, show, avatar}) => {
 
-  const { balance } = gameState.score
+  const { balance } = gameState
 
   const wrapper = css({
     position: 'absolute',
@@ -41,19 +41,10 @@ const GameOver = ({gameState, width, height, resetGame, boardSize, show, avatar}
     ...fonts(boardSize).regular,
     color: '#fff'
   })
-  const action = css({
-    ...fonts(boardSize).bold,
-    cursor: 'pointer',
-    width: '50%',
-    padding: '0 3%',
-    marginTop: 0,
-    textAlign: 'center',
-  })
-  const price = css({
-    ...fonts(boardSize).large,
-    textAlign: 'center',
-    margin: '8% 0',
-    cursor: 'pointer',
+
+  const listItem = css({
+    ...fonts(boardSize).small,
+    color: '#fff'
   })
   
   return (
@@ -63,16 +54,17 @@ const GameOver = ({gameState, width, height, resetGame, boardSize, show, avatar}
         balance < 0 ? (
           <>
             <p {...textStyle}>{text.outro8.replace('{amount}', formatAmount(avatar.startingBalance))}</p>
-            <Button black onClick={resetGame}>Neu starten</Button>
+            <Button black onClick={tryAgain}>Neu starten</Button>
           </>
         ) : (
           <div>
             <p {...textStyle}>{text.outro6.replace('{amount}', formatAmount(avatar.startingBalance))}</p>
             <ul>
               {
-                gameState.transactions.completed.filter(t => t.reject).map(t => <li>{t.field.outro}</li>)
+                gameState.transactions.filter(t => t.reject).map(t => <li {...listItem}>{t.field.outro}</li>)
               }
             </ul>
+            <Button black onClick={resetGame}>Nochmals spielen</Button>
             <p {...textStyle}>{text.outro7}</p>
           </div>
         )

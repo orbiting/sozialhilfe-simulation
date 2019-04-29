@@ -1,11 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { mediaQueries } from '@project-r/styleguide'
+import React, { useEffect, useRef, useState, useMemo } from 'react'
 
 import Board from './Board'
 import { transition } from 'd3-transition'
 import { select } from 'd3-selection'
 import { scaleLinear } from 'd3-scale'
-import { easeCubicOut, easeCubicIn, easeCubicInOut } from 'd3-ease'
+import { easeCubicIn } from 'd3-ease'
 import { Swipeable } from 'react-swipeable'
 
 import fields from '../../fields.json'
@@ -16,28 +15,18 @@ import theme from './theme'
 import chunk from 'lodash/chunk'
 import Dialog from './Dialog'
 import GameOver from './GameOver'
+import memoize from 'lodash/memoize'
 
-export const GAME_INITIAL_STATE = {
-  score: {
-    balance: 986,
-    spent: 0,
-    mobility: 0,
-    clothing: 0,
-    leisure: 0,
-    media: 0,
-    general: 0,
-  },
-  transactions: {
-    completed: [],
-    accepted: [],
-    rejected: [],
-  },
+const dα = 360 / 16
+
+export const getInitialState = memoize((avatar) => ({
+  tryAgain: false,
+  balance: avatar ? avatar.startingBalance : 986,
+  transactions: [],
   round: 1,
   activeField: 1,
   avatar: undefined,
-}
-
-const dα = 360 / 16
+}))
 
 const App = ({
   centerWidth,
@@ -48,38 +37,18 @@ const App = ({
   started
 }) => {
 
-  const INITIAL_STATE = {
-    score: {
-      balance: avatar ? avatar.startingBalance : 986,
-      spent: 0,
-      mobility: 0,
-      clothing: 0,
-      leisure: 0,
-      media: 0,
-      general: 0,
-    },
-    transactions: {
-      completed: [],
-      accepted: [],
-      rejected: [],
-    },
-    round: 1,
-    activeField: 1,
-    avatar: undefined,
-  }
-
   const appRef = useRef(null)
   const boardRef = useRef(null)
   const buttonRef = useRef(null)
 
-  const [gameState, setGameState] = useState(INITIAL_STATE)
+  const [gameState, setGameState] = useState(getInitialState(avatar))
   const currentFieldIdx = gameState.activeField - 1
 
   let fieldData
 
   switch (avatar ? avatar.id : undefined) {
     case 0:
-      fieldData = currentFieldIdx > 1 ? fields2.data : fields.data
+      fieldData = gameState.tryAgain ? fields2.data : fields.data
       break;
     case 1:
       fieldData = fields3.data
@@ -91,10 +60,10 @@ const App = ({
 
   const currentField = fieldData[currentFieldIdx]
 
-  const gameData = fieldData.slice(0, 96).map(d => {
+  const gameData = useMemo(() => fieldData.slice(0, 96).map(d => {
     if (d.dependency) {
-      const isRejected = gameState.transactions.rejected.some(
-        e => e.id === d.dependency,
+      const isRejected = gameState.transactions.some(
+        e => e.field.id === d.dependency,
       )
       let replacement = fieldData.find(e => e.id === d.altYes)
       if (isRejected) {
@@ -104,7 +73,7 @@ const App = ({
     } else {
       return d
     }
-  })
+  }), fieldData, gameState)
 
   const fieldDataChunks = chunk(gameData, 16)
 
@@ -136,57 +105,17 @@ const App = ({
   const boardOffsetY = -boardSize + height * 0.9
 
   const gameOver =
-    currentFieldIdx === 95 || gameState.score.balance < 0
+    currentFieldIdx === 95 || gameState.balance < 0
   const gamePaused =
     currentFieldIdx > 0 && currentField.type === 'chance'
 
   const advanceGame = (field, reject = false) => {
-    //appRef.current && appRef.current.scrollIntoView()
-
-    const completed = [ ...gameState.transactions.completed, { field, reject } ]
-
-    const accepted =
-      (field && !reject)
-        ? gameState.transactions.accepted.concat(field)
-        : gameState.transactions.accepted
-    const rejected =
-      (field && reject)
-        ? gameState.transactions.rejected.concat(field)
-        : gameState.transactions.rejected
-
-    const sumTransactions = category => 
-      accepted
-        .filter(t => t.category === category || t.type === category)
-        .reduce((acc, cur) => acc + cur.amount, 0)
-
-    const general = accepted
-      .concat(rejected)
-      .reduce((acc, cur) => acc + cur.pauschal, 0)
-    const start = sumTransactions('start')
-    const mobility = sumTransactions('mobility')
-    const clothing = sumTransactions('clothing')
-    const leisure = sumTransactions('leisure')
-    const media = sumTransactions('media')
-    const balance =
-      start + general + mobility + clothing + leisure + media
-    const spent = Math.abs(Math.min(balance - start, 0))
-
+    const transactions = [ ...gameState.transactions, { field, reject } ]
+    const balance = transactions.filter(({reject}) => !reject).reduce((acc,cur) => acc + cur.field.amount + cur.field.pauschal, 0)
     setGameState({
       ...gameState,
-      transactions: {
-        completed,
-        accepted,
-        rejected,
-      },
-      score: {
-        balance,
-        spent,
-        general,
-        mobility,
-        clothing,
-        leisure,
-        media,
-      },
+      transactions,
+      balance,
       round:
         gameState.activeField > 0 && gameState.activeField % 16 === 0
           ? gameState.round + 1
@@ -195,9 +124,8 @@ const App = ({
     })
   }
 
-  useEffect(() => setGameState(INITIAL_STATE), [avatar])
-
-  const resetGame = () => setGameState(INITIAL_STATE)
+  const resetGame = () => setGameState(getInitialState(avatar))
+  const tryAgain = () => setGameState({...getInitialState(avatar), tryAgain: true})
 
   useEffect(() => {
     const btn = select(buttonRef.current)
@@ -273,6 +201,7 @@ const App = ({
               gameState={gameState}
               width={centerWidth}
               height={height}
+              tryAgain={tryAgain}
               resetGame={resetGame}
               show={gameOver}
               boardSize={boardSize}
@@ -317,7 +246,7 @@ const App = ({
             <rect width={width} height={height} fill={'#fff'} opacity={started ? 0 : 0.6} />
             <g
               style={{
-                opacity: currentFieldIdx > 0 ? 0 : 1,
+                opacity: started ? 0 : 1,
                 transform: `opacity 1s ease-in-out`
               }}
             >
@@ -337,9 +266,7 @@ const App = ({
                 onClick={() =>
                   !gameOver &&
                   !gamePaused &&
-                  setTimeout(() => {
-                    advanceGame(currentField)
-                  }, 400)
+                  advanceGame(currentField)
                 }
               />
             </g>

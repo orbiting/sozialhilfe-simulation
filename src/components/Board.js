@@ -4,10 +4,9 @@ import chunk from 'lodash/chunk'
 import range from 'lodash/range'
 import {FIELD_SIDE_RATIO} from './constants'
 import Lane from './Lane'
-import { GAME_INITIAL_STATE } from './App';
 import AVATARS from './avatars';
 
-const Board = ({ fields, boardSize, gameState = GAME_INITIAL_STATE, avatar, blink }) => {
+const Board = ({ fields, boardSize, gameState, avatar, blink }) => {
   
 	const [bottom, left, top, right] = chunk(fields, 4)
 
@@ -30,7 +29,7 @@ const Board = ({ fields, boardSize, gameState = GAME_INITIAL_STATE, avatar, blin
 Board.defaultProps = {
 	boardSize: 500,
   fields: range(0,96).map(i => ({})),
-  gameState: GAME_INITIAL_STATE,
+  gameState: { transactions: [], round: 1, activeField: 1 },
   avatar: AVATARS[0]
 }
 

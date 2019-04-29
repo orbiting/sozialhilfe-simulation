@@ -4,8 +4,9 @@ import theme from './theme'
 import chunk from 'lodash/chunk'
 import last from 'lodash/last'
 import { format } from 'd3-format'
+import memoize from 'lodash/memoize'
 
-export const fonts = (boardSize) => ({
+export const fonts = memoize((boardSize) => ({
   tiny: {
     fontFamily: fontFamilies.sansSerifRegular,
     fontSize: boardSize / 75,
@@ -38,7 +39,7 @@ export const fonts = (boardSize) => ({
     fontFamily: fontFamilies.serifTitle,
     fontSize: boardSize / 10,
   }
-})
+}))
 
 const f = format(".2f");
 export const formatAmount = (amount, showMinusSign = false) => {

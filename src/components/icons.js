@@ -158,9 +158,9 @@ export const Avatar1 = props => (
     <g
       id="Page-1"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g id="Oval-Copy-2" transform="translate(1.448276, 1.000000)">
         <mask id="mask-2" fill="white">
@@ -180,7 +180,7 @@ export const Avatar1 = props => (
         <use
           id="Mask-Copy"
           stroke="#FFFFFF"
-          stroke-width="2"
+          strokeWidth="2"
           xlinkHref="#path-3"
         />
       </g>
@@ -205,7 +205,7 @@ export const Avatar2 = props => (
     <defs>
         <circle id="path-1" cx="18" cy="18" r="18"></circle>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Oval-Copy-2" transform="translate(0.551724, 1.000000)">
             <mask id="mask-2" fill="white">
                 <use xlinkHref="#path-1"></use>
@@ -218,7 +218,7 @@ export const Avatar2 = props => (
         <circle id="Oval-Copy" fill="#E02121" cx="18.5517241" cy="10" r="6"></circle>
         <circle id="Oval-Copy-3" fill="#E02121" cx="29.5517241" cy="18" r="4"></circle>
         <circle id="Oval-Copy-4" fill="#E02121" cx="8" cy="18" r="4"></circle>
-        <circle id="Mask-Copy" stroke="#FFFFFF" stroke-width="2" cx="19.4482759" cy="19" r="18"></circle>
+        <circle id="Mask-Copy" stroke="#FFFFFF" strokeWidth="2" cx="19.4482759" cy="19" r="18"></circle>
     </g>
   </svg>
 )
@@ -236,9 +236,9 @@ export const Continue = props => (
     <g
       id="Page-1"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g id="Group-2">
         <mask id="mask-2" fill="white">
@@ -293,9 +293,9 @@ export const Cancel = props => (
     <g
       id="Page-1"
       stroke="none"
-      stroke-width="1"
+      strokeWidth="1"
       fill="none"
-      fill-rule="evenodd"
+      fillRule="evenodd"
     >
       <g id="Group-2-Copy">
         <mask id="mask-2" fill="white">
@@ -306,14 +306,14 @@ export const Cancel = props => (
           d="M10.5073956,9.2586282 L26.7413718,25.4926044 C27.0862094,25.837442 27.0862094,26.3965342 26.7413718,26.7413718 L26.7413718,26.7413718 C26.3965342,27.0862094 25.837442,27.0862094 25.4926044,26.7413718 L9.2586282,10.5073956 C8.9137906,10.162558 8.9137906,9.60346579 9.2586282,9.2586282 L9.2586282,9.2586282 C9.60346579,8.9137906 10.162558,8.9137906 10.5073956,9.2586282 Z"
           id="Rectangle"
           stroke="#E04646"
-          stroke-width="2"
+          strokeWidth="2"
           fill="#E02121"
         />
         <path
           d="M9.2586282,25.4926044 L25.4926044,9.2586282 C25.837442,8.9137906 26.3965342,8.9137906 26.7413718,9.2586282 L26.7413718,9.2586282 C27.0862094,9.60346579 27.0862094,10.162558 26.7413718,10.5073956 L10.5073956,26.7413718 C10.162558,27.0862094 9.60346579,27.0862094 9.2586282,26.7413718 L9.2586282,26.7413718 C8.9137906,26.3965342 8.9137906,25.837442 9.2586282,25.4926044 Z"
           id="Rectangle-Copy"
           stroke="#E04646"
-          stroke-width="2"
+          strokeWidth="2"
           fill="#E02121"
         />
       </g>
@@ -325,29 +325,36 @@ export default {
   media: {
     color: theme.categories.media,
     Icon: Media,
+    label: 'Medien',
   },
   leisure: {
     color: theme.categories.leisure,
     Icon: Leisure,
+    label: 'Freizeit',
   },
   clothing: {
     color: theme.categories.clothing,
     Icon: Clothing,
+    label: 'Kleider',
   },
   mobility: {
     color: theme.categories.mobility,
     Icon: Mobility,
+    label: 'Mobilität',
   },
   life: {
     color: theme.categories.general,
     Icon: Life,
+    label: 'Leben',
   },
   start: {
     color: theme.categories.general,
     Icon: Start,
+    label: 'Start',
   },
   general: {
     color: theme.categories.general,
     Icon: General,
+    label: 'Alltag',
   },
 }
