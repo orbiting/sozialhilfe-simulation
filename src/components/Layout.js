@@ -61,24 +61,21 @@ const Layout = () => {
       const headerHeight = mobile
         ? HEADER_HEIGHT_MOBILE
         : HEADER_HEIGHT
-      const { offsetWidth, offsetHeight } = centerRef.current
+      const { offsetWidth } = centerRef.current
       const width = offsetWidth
-      const height = offsetHeight
-      const offsetY = gameRef.current.offsetTop - headerHeight
       const innerWidth = window.document.body.clientWidth
       const innerHeight =
         size &&
         size.innerHeight - window.document.body.innerHeight === 75
           ? size.innerHeight
           : window.innerHeight
+
       const marginWidth = (innerWidth - width) / 2
       const panelHeight =
         Math.min(maxHeight, innerHeight) - headerHeight
 
       setSize({
         centerWidth: width,
-        centerHeight: height,
-        offsetY,
         innerWidth,
         innerHeight,
         mobile,
@@ -100,7 +97,7 @@ const Layout = () => {
 
   const activate = avatar => {
     setAvatar(avatar)
-    scrollIt(gameRef.current.offsetTop - size.headerHeight)
+    scrollIt(gameRef.current.offsetTop - size.headerHeight, 550)
   }
 
   return (

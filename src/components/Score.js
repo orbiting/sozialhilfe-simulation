@@ -48,7 +48,7 @@ const Score = ({
       const icon = icons[t.field.category] || icons.general
       const generalIcon = icons.general
       return (
-        <span style={{ background: theme.score }}>
+        <span key={`t${i}`} style={{ background: theme.score }}>
           {!t.reject && (
             <div
               key={`p${t.field.id}`}
@@ -225,10 +225,10 @@ const Score = ({
           {...css({
             display: 'flex',
             whiteSpace: 'nowrap',
-            width: (96 * width) / 7,
+            width: (10 * width) / 7,
           })}
         >
-          {started ? reverse(transactionLog) : <LogInfo />}
+          {started ? reverse(transactionLog).slice(0,10) : <LogInfo />}
         </div>
       </div>
     </div>

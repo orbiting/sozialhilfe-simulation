@@ -28,7 +28,7 @@ export const styles = {
   }),
 }
 
-const Field = ({field: { description, amount, category, id }, boardSize, x, y, rotate, offsetY, active, highlight = false, blink }) => {
+const Field = ({field: { description, amount, category, id }, boardSize, x, y, rotate, active, highlight = false, blink }) => {
 
   const width = boardSize / 6
   const height = FIELD_SIDE_RATIO*width
@@ -46,10 +46,10 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
     },
     [highlight]
   )
-  
+
   return (
     <>
-      <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${width/2}, ${width/2} ) translate(0, ${offsetY})`}>
+      <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${width/2}, ${width/2} )`}>
         <rect width={width} height={height} fill={theme.field} />
         <rect ref={curtainRef} width={width} height={2*heightUnit} fill={theme.categories[category] || theme.placeholderDark} strokeWidth={boardSize/200} stroke={theme.border}>
           { blink && <animate attributeName="fill-opacity" from="1" to="0.6" dur={random(0.5,1,true)} repeatCount={'indefinite'} /> }
