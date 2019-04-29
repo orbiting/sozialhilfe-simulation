@@ -44,7 +44,6 @@ const f = format(".2f");
 export const formatAmount = (amount, showMinusSign = false) => {
   const sign = amount < 0 ? (showMinusSign ? '-' : '') : '+'
   if (Math.round(amount) === amount) {
-    console.log("Math.floor(amount) , amount", Math.round(amount) , amount)
     return `${sign}${Math.abs(amount)}.–`
   } else {
     return `${sign}${f(Math.abs(amount))}`

@@ -18,7 +18,7 @@ import { HEADER_HEIGHT_MOBILE, HEADER_HEIGHT } from './constants'
 import Text, { fonts, formatAmount } from './Text'
 import fields from '../../fields.json'
 import AVATARS from './avatars'
-import { Cancel } from './icons'
+import icons, { Cancel, Arrows } from './icons'
 
 import textRaw from '../../text.json'
 
@@ -125,22 +125,24 @@ const Layout = () => {
                 padding: size.centerWidth*0.05
               }}
             >
-            <Interaction.H3 style={{color: '#fff', paddingBottom: '5%'}}>Spielbrett</Interaction.H3>
             <div style={{
-              position: 'absolute',
-              top: size.centerWidth*0.37,
-              width: size.centerWidth * 0.9
+              position: size.mobile ? 'relative' : 'absolute',
+              top: size.mobile ? 0 : size.centerWidth*0.3,
+              marginLeft: size.mobile ? 0 : size.centerWidth * 0.25,
+              marginRight: size.mobile ? 0 : size.centerWidth * 0.25,
+              width: size.mobile ? size.centerWidth * 0.9 : size.centerWidth * 0.4,
+              textAlign: 'center',
             }}>
-              <Interaction.P style={{color: '#fff', textAlign: 'center', padding: '0 30%', lineHeight: 1.2}}>
+              <Interaction.P style={{color: '#fff', textAlign: 'center', paddingTop: '2%', lineHeight: 1.2}}>
                 Auf den Ereignisfeldern tätigen Sie alltägliche Ausgaben.
               </Interaction.P>
             </div>
             <svg
               width={size.centerWidth * 0.9}
-              height={size.centerWidth * 0.81}
+              height={size.centerWidth * 0.85}
               xmlns="http://www.w3.org/2000/svg"
             >
-            <g transform={`translate(${size.centerWidth * 0.05},${size.centerWidth * 0})`}>
+            <g transform={`translate(${size.centerWidth * 0.05},${size.centerWidth * 0.025})`}>
               <Board boardSize={size.centerWidth * 0.8} />
             </g>
             </svg>
@@ -158,7 +160,6 @@ const Layout = () => {
                 </Interaction.P>
               </div>
             </div>
-            <Interaction.H3 style={{color: '#fff'}}>Avatar</Interaction.H3>
             { avatar
                 ? <Interaction.P style={{color: '#fff', paddingBottom: '5%'}}>Sie sind unterwegs als</Interaction.P>
                 : <Interaction.P style={{color: '#fff', paddingBottom: '5%'}}>Durch Klick auf ein Symbol wählen Sie Ihren Avatar</Interaction.P>
@@ -194,7 +195,7 @@ const Layout = () => {
             style={{
               width: size.innerWidth,
               height: avatar ? size.panelHeight : 0,
-              transition: 'height 0.5s ease-in-out',
+              transition: 'height 0.3s ease-in-out',
               position: 'relative',
               overflow: 'hidden',
             }}

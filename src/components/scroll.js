@@ -6,7 +6,7 @@ let scrollTimer
 
 export const scrollIt = (
   destination,
-  duration = 600
+  duration = 500
 ) => {
   if (scrollTimer) {
     scrollTimer.stop()
