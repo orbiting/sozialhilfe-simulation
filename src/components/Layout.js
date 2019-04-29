@@ -128,19 +128,19 @@ const Layout = () => {
             <Interaction.H3 style={{color: '#fff', paddingBottom: '5%'}}>Spielbrett</Interaction.H3>
             <div style={{
               position: 'absolute',
-              top: size.centerWidth*0.4,
+              top: size.centerWidth*0.37,
               width: size.centerWidth * 0.9
             }}>
               <Interaction.P style={{color: '#fff', textAlign: 'center', padding: '0 30%', lineHeight: 1.2}}>
-                Auf den Ereignisfeldern treffen Sie auf alltägliche Ausgaben
+                Auf den Ereignisfeldern tätigen Sie alltägliche Ausgaben.
               </Interaction.P>
             </div>
             <svg
               width={size.centerWidth * 0.9}
-              height={size.centerWidth * 0.85}
+              height={size.centerWidth * 0.81}
               xmlns="http://www.w3.org/2000/svg"
             >
-            <g transform={`translate(${size.centerWidth * 0.05},${size.centerWidth * 0.025})`}>
+            <g transform={`translate(${size.centerWidth * 0.05},${size.centerWidth * 0})`}>
               <Board boardSize={size.centerWidth * 0.8} />
             </g>
             </svg>
