@@ -45,7 +45,7 @@ const App = ({
   height,
   mobile,
   avatar,
-  showInfo
+  started
 }) => {
 
   const INITIAL_STATE = {
@@ -173,7 +173,6 @@ const App = ({
 
     setGameState({
       ...gameState,
-      started: true,
       transactions: {
         completed,
         accepted,
@@ -246,13 +245,14 @@ const App = ({
   return (
     <Swipeable
       onSwipedRight={({ velocity }) =>
+        started &&
         !gameOver &&
         !gamePaused &&
         advanceGame(currentField)
       }
     >
       <div ref={appRef} style={{ position: 'relative' }}>
-        <div style={{ position: 'absolute', width, height }}>
+        <div style={{ position: 'absolute', width, minHeight: height }}>
           <div
             style={{
               position: 'relative',
@@ -267,6 +267,7 @@ const App = ({
               field={currentField}
               advanceGame={advanceGame}
               show={gamePaused}
+              mobile={mobile}
             />
             <GameOver
               gameState={gameState}
@@ -287,16 +288,18 @@ const App = ({
               height={height}
               width={centerWidth}
               mobile={mobile}
-              showInfo={showInfo}
+              started={started}
             />
           </div>
           <svg
             width={width}
             height={height}
-            style={{ background: theme.background }}
+            style={{ 
+              background: theme.background,
+            }}
             viewBox={`0 0 ${width} ${height}`}
             onClick={() =>
-              !gameOver && !gamePaused && advanceGame(currentField)
+              started && !gameOver && !gamePaused && advanceGame(currentField)
             }
           >
             <g
@@ -311,30 +314,32 @@ const App = ({
                 />
               </g>
             </g>
-            <rect width={width} height={height} fill={'#fff'} opacity={showInfo ? 0.7 : 0} />
+            <rect width={width} height={height} fill={'#fff'} opacity={started ? 0 : 0.6} />
             <g
               style={{
-                display: currentFieldIdx < 1 ? undefined : 'none',
+                opacity: currentFieldIdx > 0 ? 0 : 1,
+                transform: `opacity 1s ease-in-out`
               }}
             >
               <circle
                 ref={buttonRef}
-                opacity={0}
                 cx={marginWidth + centerWidth * 0.5}
                 cy={height * 0.7}
                 r={40}
-                fill={'red'}
+                fill={theme.help}
               />
               <circle
                 opacity={0.6}
                 cx={marginWidth + centerWidth * 0.5}
                 cy={height * 0.7}
                 r={40}
-                fill={'red'}
+                fill={theme.help}
                 onClick={() =>
                   !gameOver &&
                   !gamePaused &&
-                  advanceGame(currentField)
+                  setTimeout(() => {
+                    advanceGame(currentField)
+                  }, 400)
                 }
               />
             </g>

@@ -46,7 +46,7 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
     },
     [highlight]
   )
-
+  
   return (
     <>
       <g transform={`translate(${x}, ${y}) rotate(${rotate}, ${width/2}, ${width/2} ) translate(0, ${offsetY})`}>
@@ -58,7 +58,7 @@ const Field = ({field: { description, amount, category, id }, boardSize, x, y, r
         <>
           <Text boardSize={boardSize} x={width/2} y={4*heightUnit} charsPerLine={15} fillOpacity={1} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)}>{description}</Text>
           <Text boardSize={boardSize} x={width/2} y={9.25*heightUnit} type={'bold'} fill={highlight ? '#fff' : undefined} {...(!active ? styles.active : styles.inactive)} charsPerLine={5}>
-            {formatAmount(Math.abs(amount))}
+            {formatAmount(amount)}
           </Text>
         </>
         <>

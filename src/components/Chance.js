@@ -19,7 +19,7 @@ const Chance = ({field: { description, amount }, boardSize, x, y, rotate, highli
           <Text>{description}</Text>
         ) : (
           <g>
-            <Text boardSize={boardSize} type='display' y={-s/7} fill={theme.chance}>?</Text>
+            <Text boardSize={boardSize} type='display' y={-s/7} fill={theme.help}>?</Text>
             <Text boardSize={boardSize} type='large'  y={s/6}>Chance</Text>
           </g>
         )

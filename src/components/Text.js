@@ -41,11 +41,13 @@ export const fonts = (boardSize) => ({
 })
 
 const f = format(".2f");
-export const formatAmount = (amount) => {
-  if (Math.floor(amount) === amount) {
-    return `${amount}.–`
+export const formatAmount = (amount, showMinusSign = false) => {
+  const sign = amount < 0 ? (showMinusSign ? '-' : '') : '+'
+  if (Math.round(amount) === amount) {
+    console.log("Math.floor(amount) , amount", Math.round(amount) , amount)
+    return `${sign}${Math.abs(amount)}.–`
   } else {
-    return f(amount)
+    return `${sign}${f(Math.abs(amount))}`
   }
 }
 

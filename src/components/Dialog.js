@@ -4,7 +4,7 @@ import theme from './theme'
 import { fonts, formatAmount } from './Text'
 import icons from './icons';
 
-const Dialog = ({field = {}, width, height, advanceGame, boardSize, show}) => {
+const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile}) => {
 
   const {description, yes, no, id, amount, category} = field
 
@@ -38,10 +38,11 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show}) => {
     position: 'absolute',
     minHeight: height/2,
     padding: 15,
-    paddingBottom: 50,
+    paddingBottom: 60,
+    margin: width*(mobile ? 0 : 0.15),
     background: theme.field,
     bottom: show && expand ? -border : -height,
-    width,
+    width: width*(mobile ? 1 : 0.8),
     transition: 'bottom 0.3s ease-in-out',
     boxSizing: 'border-box',
     background: icon ? icon.color : '#333',
@@ -63,7 +64,7 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show}) => {
     textAlign: 'center',
   })
   const price = css({
-    ...fonts(boardSize).large,
+    ...fonts(boardSize).xlarge,
     textAlign: 'center',
     margin: '8% 0',
     cursor: 'pointer',
@@ -82,7 +83,7 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show}) => {
           { description }
         </div>
         <div {...price}>
-          { formatAmount(Math.abs(amount)) }
+          { formatAmount(amount) }
         </div>
         <div style={{display: 'flex'}}>
           <p {...action} onClick={() => collapse(field, false)}>{yes}</p>

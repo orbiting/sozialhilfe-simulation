@@ -1,20 +1,23 @@
 import { fontFamilies } from '@project-r/styleguide'
 
 const classic = {
-  background: '#888',
-  border: '#333',
+  background: '#807E79',
+  border: '#403F3D',
   field: '#FFFDF3',
-  placeholder: '#C3C5C9',
-  placeholderDark: '#9497A1',
+  placeholder: '#E6E4DA',
+  placeholderDark: '#A6A59D',
   chance: '#DC007C',
-  score: '#333',
+  score: '#403F3D',
   text: '#222',
+  help: '#e02121',
   categories: {
-    general: '#aaa',
-    leisure: '#E54444',
+    start: '#e02121',
+    life: '#EAD45E',
+    general: '#A6A59D',
+    leisure: '#ef6f25',
     mobility: '#543B9D',
     media: '#36B736',
-    clothing: '#E5C944',
+    clothing: '#1ec3ff',
   }
 }
 

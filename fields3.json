@@ -1,5 +1,5 @@
 {
-  "updated": "2019-04-28T09:14:37.223Z",
+  "updated": "2019-04-29T09:45:41.987Z",
   "title": "Game 3",
   "data": [
     {
@@ -18,6 +18,7 @@
       "month": 1,
       "pauschal": -57.875,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 986
     },
     {
@@ -36,6 +37,7 @@
       "month": 1,
       "pauschal": -57.875,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 583
     },
     {
@@ -53,7 +55,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 4,
@@ -70,7 +73,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 5,
@@ -87,7 +91,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 6,
@@ -104,7 +109,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 7,
@@ -121,7 +127,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 8,
@@ -138,7 +145,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 9,
@@ -155,7 +163,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 10,
@@ -172,7 +181,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 11,
@@ -189,7 +199,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 12,
@@ -206,7 +217,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 13,
@@ -223,7 +235,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 14,
@@ -240,7 +253,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 15,
@@ -257,7 +271,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 16,
@@ -275,6 +290,7 @@
       "month": 2,
       "pauschal": -57.875,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 1.0499999999999545
     },
     {
@@ -292,7 +308,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 18,
@@ -309,7 +326,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 19,
@@ -326,7 +344,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 20,
@@ -343,7 +362,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 21,
@@ -360,7 +380,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 22,
@@ -377,11 +398,12 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 23,
-      "description": "Geburtstagsgeschenk für Silvana",
+      "description": "Geschenk für Silvana",
       "amount": -80,
       "yes": null,
       "no": null,
@@ -394,7 +416,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 24,
@@ -411,7 +434,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 25,
@@ -428,7 +452,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 26,
@@ -440,12 +465,13 @@
       "source": null,
       "category": "leisure",
       "outro": null,
-      "dependency": null,
-      "altYes": null,
-      "altNo": null,
+      "dependency": 5,
+      "altYes": 101,
+      "altNo": 102,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 27,
@@ -462,7 +488,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 28,
@@ -479,7 +506,8 @@
       "altNo": 105,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 29,
@@ -496,7 +524,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 30,
@@ -513,7 +542,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 31,
@@ -530,7 +560,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 32,
@@ -548,6 +579,7 @@
       "month": 2,
       "pauschal": -57.875,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 38.25
     },
     {
@@ -565,7 +597,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 34,
@@ -582,7 +615,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 35,
@@ -599,7 +633,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 36,
@@ -616,11 +651,12 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 37,
-      "description": "Sommerferien: Fünf Tage im Reka-Feriendorf Hasliberg?\n",
+      "description": "Sommerferien: Fünf Tage im Reka-Ferien in Hasliberg?\n",
       "amount": -800,
       "yes": "Ich muss raus hier. Unbedingt!",
       "no": "Nops.",
@@ -633,7 +669,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 38,
@@ -650,7 +687,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 39,
@@ -667,7 +705,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 40,
@@ -684,7 +723,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 41,
@@ -701,7 +741,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 42,
@@ -718,7 +759,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 43,
@@ -735,7 +777,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 44,
@@ -752,7 +795,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 45,
@@ -769,7 +813,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 46,
@@ -786,7 +831,8 @@
       "altNo": 118,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 47,
@@ -803,7 +849,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 48,
@@ -821,6 +868,7 @@
       "month": 3,
       "pauschal": -57.875,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 76.30000000000018
     },
     {
@@ -838,7 +886,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 50,
@@ -855,7 +904,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 51,
@@ -872,7 +922,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 52,
@@ -889,7 +940,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 53,
@@ -906,7 +958,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 54,
@@ -923,11 +976,12 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 55,
-      "description": "Schulanfang: Neue Materialaustattung",
+      "description": "Schulanfang: Neue Material",
       "amount": -40,
       "yes": null,
       "no": null,
@@ -940,7 +994,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 56,
@@ -957,7 +1012,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 57,
@@ -974,7 +1030,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 58,
@@ -991,7 +1048,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 59,
@@ -1008,7 +1066,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 60,
@@ -1025,7 +1084,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 61,
@@ -1037,12 +1097,13 @@
       "source": null,
       "category": "leisure",
       "outro": "Sie liessen den FCZ-Match sausen.",
-      "dependency": null,
-      "altYes": null,
-      "altNo": null,
+      "dependency": 25,
+      "altYes": 109,
+      "altNo": 1120,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 62,
@@ -1059,7 +1120,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 63,
@@ -1076,7 +1138,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 64,
@@ -1088,12 +1151,13 @@
       "source": null,
       "category": "mobility",
       "outro": null,
-      "dependency": null,
-      "altYes": null,
-      "altNo": null,
+      "dependency": 5,
+      "altYes": 106,
+      "altNo": 107,
       "month": 4,
       "pauschal": -57.875,
       "FALSE": "TRUE",
+      "Funktionalität": "TRUE",
       "undefined": -46.94999999999982
     },
     {
@@ -1111,7 +1175,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 66,
@@ -1128,7 +1193,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 67,
@@ -1145,7 +1211,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 68,
@@ -1162,7 +1229,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 69,
@@ -1179,7 +1247,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 70,
@@ -1196,7 +1265,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 71,
@@ -1213,7 +1283,8 @@
       "altNo": 112,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 72,
@@ -1230,7 +1301,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 73,
@@ -1247,7 +1319,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 74,
@@ -1264,7 +1337,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 75,
@@ -1276,12 +1350,13 @@
       "source": null,
       "category": "leisure",
       "outro": null,
-      "dependency": null,
-      "altYes": null,
-      "altNo": null,
+      "dependency": 57,
+      "altYes": 113,
+      "altNo": 114,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 76,
@@ -1298,7 +1373,8 @@
       "altNo": 116,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 77,
@@ -1315,7 +1391,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 78,
@@ -1332,11 +1409,12 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 79,
-      "description": "Neuer Instrumentenkoffer für Kinder",
+      "description": "Neue Instrumentenkoffer für Kinder",
       "amount": -100,
       "yes": null,
       "no": null,
@@ -1349,7 +1427,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 80,
@@ -1367,6 +1446,7 @@
       "month": 5,
       "pauschal": -57.875,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": -288.14999999999964
     },
     {
@@ -1384,7 +1464,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 82,
@@ -1401,7 +1482,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 83,
@@ -1418,7 +1500,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 84,
@@ -1435,7 +1518,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 85,
@@ -1452,7 +1536,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 86,
@@ -1469,7 +1554,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 87,
@@ -1481,12 +1567,13 @@
       "source": null,
       "category": "leisure",
       "outro": null,
-      "dependency": null,
-      "altYes": null,
-      "altNo": null,
+      "dependency": 57,
+      "altYes": 113,
+      "altNo": 114,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 88,
@@ -1503,7 +1590,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 89,
@@ -1520,7 +1608,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 90,
@@ -1537,7 +1626,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 91,
@@ -1549,12 +1639,13 @@
       "source": null,
       "category": "leisure",
       "outro": null,
-      "dependency": null,
-      "altYes": null,
-      "altNo": null,
+      "dependency": 25,
+      "altYes": 119,
+      "altNo": 120,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 92,
@@ -1571,33 +1662,35 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 93,
-      "description": "Wollen Sie Ihre Cousine in Lausanne besuchen?",
-      "amount": -120,
+      "description": "Wollen Sie Ihre Cousine in Lausanne besuchen? (Halbtax)",
+      "amount": -75,
       "yes": "Ja, das wird toll",
       "no": "Nein, bin gerade etwas erkältet.",
       "type": "chance",
       "source": null,
       "category": "mobility",
-      "outro": "Sie haben Ihre Cousine in Laussen nicht besucht,",
-      "dependency": 25,
-      "altYes": 119,
-      "altNo": 120,
+      "outro": "Sie haben Ihre Cousine in Laussen nicht besucht.",
+      "dependency": 5,
+      "altYes": 120,
+      "altNo": 121,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 94,
       "description": "Skateboard Luca kaputt",
-      "amount": -60,
+      "amount": -65,
       "yes": null,
       "no": null,
       "type": "event",
-      "source": null,
+      "source": "https://www.sport-thieme.ch/Freizeitspiele/Skateboarding/art=2160809?pe=w9_o9_googlech_gshopping&gclid=Cj0KCQjwnpXmBRDUARIsAEo71tTbZ_O9S3wsb4ohpACidZ93gsHn7pQs1bVJM4CcYfwElIkHhqvt_KEaAu7CEALw_wcB",
       "category": "leisure",
       "outro": null,
       "dependency": null,
@@ -1605,7 +1698,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 95,
@@ -1622,7 +1716,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -57.875,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 96,
@@ -1640,7 +1735,26 @@
       "month": 6,
       "pauschal": -57.875,
       "FALSE": "TRUE",
-      "undefined": -422.09999999999945
+      "Funktionalität": "FALSE",
+      "undefined": -382.09999999999945
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "outro": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 101,
@@ -1657,7 +1771,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 102,
@@ -1674,7 +1789,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 103,
@@ -1691,7 +1807,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 104,
@@ -1708,7 +1825,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 105,
@@ -1725,7 +1843,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 106,
@@ -1742,7 +1861,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 107,
@@ -1759,7 +1879,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 108,
@@ -1776,7 +1897,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 109,
@@ -1793,7 +1915,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 110,
@@ -1810,7 +1933,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 111,
@@ -1827,7 +1951,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 112,
@@ -1844,7 +1969,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 113,
@@ -1861,7 +1987,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 114,
@@ -1878,7 +2005,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 115,
@@ -1895,7 +2023,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 116,
@@ -1912,7 +2041,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 117,
@@ -1929,7 +2059,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 118,
@@ -1946,7 +2077,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 119,
@@ -1963,7 +2095,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 120,
@@ -1980,12 +2113,13 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 121,
-      "description": null,
-      "amount": null,
+      "description": "Wollen Sie Ihre Cousine in Lausanne besuchen? (Halbtax)",
+      "amount": -75,
       "yes": null,
       "no": null,
       "type": null,
@@ -1997,12 +2131,13 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 122,
-      "description": null,
-      "amount": null,
+      "description": "Wollen Sie Ihre Cousine in Lausanne besuchen? (ohne Halbtax)",
+      "amount": -152,
       "yes": null,
       "no": null,
       "type": null,
@@ -2014,7 +2149,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 123,
@@ -2031,7 +2167,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 124,
@@ -2048,7 +2185,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 125,
@@ -2065,7 +2203,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 126,
@@ -2082,7 +2221,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 127,
@@ -2099,7 +2239,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 128,
@@ -2116,7 +2257,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 129,
@@ -2133,7 +2275,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 130,
@@ -2150,7 +2293,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 131,
@@ -2167,7 +2311,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 132,
@@ -2184,7 +2329,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     },
     {
       "id": 133,
@@ -2201,7 +2347,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": null
     }
   ]
 }

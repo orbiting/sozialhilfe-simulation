@@ -1,5 +1,5 @@
 {
-  "updated": "2019-04-28T09:14:37.223Z",
+  "updated": "2019-04-29T09:45:41.987Z",
   "title": "Game 1",
   "data": [
     {
@@ -18,6 +18,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Check Function": "FALSE",
       "undefined": 986
     },
     {
@@ -36,6 +37,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Check Function": "FALSE",
       "undefined": 583
     },
     {
@@ -53,7 +55,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 4,
@@ -71,6 +74,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Check Function": "FALSE",
       "undefined": "x"
     },
     {
@@ -88,7 +92,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 6,
@@ -105,7 +110,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 7,
@@ -122,7 +128,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 8,
@@ -139,7 +146,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 9,
@@ -156,7 +164,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 10,
@@ -173,11 +182,12 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 11,
-      "description": "Porto für Bewerbungsschreiben",
+      "description": "Porto für Bewerbungen",
       "amount": -5,
       "yes": null,
       "no": null,
@@ -190,7 +200,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 12,
@@ -207,7 +218,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 13,
@@ -224,7 +236,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 14,
@@ -242,6 +255,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Check Function": "FALSE",
       "undefined": "TRUE"
     },
     {
@@ -259,7 +273,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 16,
@@ -277,6 +292,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Check Function": "FALSE",
       "undefined": -87.09999999999991
     },
     {
@@ -294,7 +310,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 18,
@@ -311,7 +328,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 19,
@@ -328,7 +346,8 @@
       "altNo": 102,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 20,
@@ -345,7 +364,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 21,
@@ -362,11 +382,12 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 22,
-      "description": "Bewerbungs- unterlagen ausdrucken lassen",
+      "description": "Bewerbungen ausdrucken lassen",
       "amount": -10,
       "yes": null,
       "no": null,
@@ -379,7 +400,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 23,
@@ -396,11 +418,12 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 24,
-      "description": "Erde und Töpfe für Balkonpflanzen ",
+      "description": "Erde und Töpfe für Pflanzen ",
       "amount": -15,
       "yes": null,
       "no": null,
@@ -413,7 +436,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 25,
@@ -430,7 +454,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Check Function": "FALSE"
     },
     {
       "id": 26,
@@ -447,7 +472,8 @@
       "altNo": 108,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 27,
@@ -464,7 +490,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 28,
@@ -481,7 +508,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 29,
@@ -498,11 +526,12 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Check Function": "FALSE"
     },
     {
       "id": 30,
-      "description": "Porto für fünf neue Bewerbungsschreiben",
+      "description": "Porto für Bewerbungen",
       "amount": -5,
       "yes": null,
       "no": null,
@@ -515,7 +544,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 31,
@@ -532,7 +562,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 32,
@@ -550,6 +581,7 @@
       "month": 2,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Check Function": "FALSE",
       "undefined": 111.10000000000014
     },
     {
@@ -567,7 +599,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 34,
@@ -584,7 +617,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 35,
@@ -601,7 +635,8 @@
       "altNo": 103,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 36,
@@ -618,7 +653,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 37,
@@ -635,7 +671,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "FALSE",
+      "Check Function": "FALSE"
     },
     {
       "id": 38,
@@ -652,7 +689,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 39,
@@ -669,7 +707,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 40,
@@ -686,7 +725,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 41,
@@ -703,11 +743,12 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 42,
-      "description": "Flasche Wein als Gastgeschenk",
+      "description": "Wein als Gastgeschenk",
       "amount": -15,
       "yes": null,
       "no": null,
@@ -720,11 +761,12 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 43,
-      "description": "Zwei Glaces mit Patenkind",
+      "description": "Glace mit Patenkind",
       "amount": -6,
       "yes": null,
       "no": null,
@@ -737,7 +779,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 44,
@@ -754,7 +797,8 @@
       "altNo": 116,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 45,
@@ -771,7 +815,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 46,
@@ -788,11 +833,12 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 47,
-      "description": "Tradition: Schockolade an die Schwester in den USA verschicken",
+      "description": "Tradition: Schockolade an die Schwester verschicken",
       "amount": -20,
       "yes": null,
       "no": null,
@@ -805,7 +851,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 48,
@@ -823,7 +870,8 @@
       "month": 3,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": 42.20000000000027
+      "Check Function": "TRUE",
+      "undefined": 122.20000000000027
     },
     {
       "id": 49,
@@ -840,7 +888,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 50,
@@ -857,7 +906,8 @@
       "altNo": 128,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 51,
@@ -874,7 +924,8 @@
       "altNo": 118,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 52,
@@ -891,7 +942,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 53,
@@ -908,7 +960,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Check Function": "FALSE"
     },
     {
       "id": 54,
@@ -925,7 +978,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 55,
@@ -942,11 +996,12 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 56,
-      "description": "Bankkarten und Fahrausweis erneuern, Bargeldverlust",
+      "description": "Bankkarte, Fahrausweis, Bargeldverlust",
       "amount": -100,
       "yes": null,
       "no": null,
@@ -959,7 +1014,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 57,
@@ -976,7 +1032,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 58,
@@ -993,11 +1050,12 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 59,
-      "description": "«Häbet nech am Bänkli»: Saisonauftakt im Stade de Suisse (KulturLegi)",
+      "description": "Saisonauftakt im Stade de Suisse (KulturLegi)",
       "amount": -17.5,
       "yes": "",
       "no": "",
@@ -1010,7 +1068,8 @@
       "altNo": 112,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 60,
@@ -1027,7 +1086,8 @@
       "altNo": 103,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 61,
@@ -1044,11 +1104,12 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 62,
-      "description": "Dem Hund geht es schlecht. Tierarzt!",
+      "description": "Fidi geht es schlecht. Tierarzt!",
       "amount": -140,
       "yes": "",
       "no": "",
@@ -1061,7 +1122,8 @@
       "altNo": 105,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 63,
@@ -1078,25 +1140,27 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 64,
-      "description": "Sparen",
-      "amount": -15,
+      "description": "Hundetaxe",
+      "amount": -115,
       "yes": null,
       "no": null,
       "gameOverText": null,
       "source": null,
       "type": "event",
       "category": "leisure",
-      "dependency": null,
-      "altYes": null,
-      "altNo": null,
+      "dependency": 5,
+      "altYes": 129,
+      "altNo": 130,
       "month": 4,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": -236.74999999999955
+      "Check Function": "TRUE",
+      "undefined": -256.74999999999955
     },
     {
       "id": 65,
@@ -1113,7 +1177,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 66,
@@ -1130,7 +1195,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 67,
@@ -1147,7 +1213,8 @@
       "altNo": 104,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 68,
@@ -1164,7 +1231,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 69,
@@ -1181,7 +1249,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 70,
@@ -1198,7 +1267,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 71,
@@ -1215,11 +1285,12 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 72,
-      "description": "Neue Schreibmaterialien ",
+      "description": "Schreibmaterialien ",
       "amount": -10,
       "yes": null,
       "no": null,
@@ -1232,7 +1303,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 73,
@@ -1249,7 +1321,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 74,
@@ -1266,7 +1339,8 @@
       "altNo": 124,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 75,
@@ -1283,11 +1357,12 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 76,
-      "description": "Bewerbungsunterlagen ausdrucken",
+      "description": "Bewerbunen ausdrucken lassen",
       "amount": -5,
       "yes": null,
       "no": null,
@@ -1300,11 +1375,12 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 77,
-      "description": "Aboverlängerung Kornhausbibliothek (mit KulturLegi)",
+      "description": "Abo Kornhausbibliothek (mit KulturLegi)",
       "amount": -25,
       "yes": "Ja!",
       "no": "Nein!",
@@ -1317,7 +1393,8 @@
       "altNo": 114,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 78,
@@ -1334,7 +1411,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 79,
@@ -1351,11 +1429,12 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 80,
-      "description": "Busbillett für Untersuchung im Insel-Spital (Halbtax)",
+      "description": "Busbillett zum Insel-Spital (Halbtax)",
       "amount": -4,
       "yes": null,
       "no": null,
@@ -1369,7 +1448,8 @@
       "month": 5,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": -332.74999999999955
+      "Check Function": "TRUE",
+      "undefined": -352.74999999999955
     },
     {
       "id": 81,
@@ -1386,7 +1466,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 82,
@@ -1403,7 +1484,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 83,
@@ -1417,10 +1499,11 @@
       "category": "leisure",
       "dependency": 5,
       "altYes": 101,
-      "altNo": 104,
+      "altNo": 103,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 84,
@@ -1437,7 +1520,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 85,
@@ -1454,7 +1538,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 86,
@@ -1471,7 +1556,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 87,
@@ -1488,7 +1574,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 88,
@@ -1505,7 +1592,8 @@
       "altNo": 126,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "TRUE"
     },
     {
       "id": 89,
@@ -1522,7 +1610,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 90,
@@ -1539,7 +1628,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 91,
@@ -1556,7 +1646,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 92,
@@ -1573,7 +1664,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 93,
@@ -1590,7 +1682,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 94,
@@ -1607,7 +1700,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 95,
@@ -1624,7 +1718,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Check Function": "FALSE"
     },
     {
       "id": 96,
@@ -1642,7 +1737,566 @@
       "month": 5,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": -523.6499999999996
+      "Check Function": "FALSE",
+      "undefined": -543.6499999999996
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 101,
@@ -1659,11 +2313,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 102,
-      "description": "Bratwurst am Markt",
+      "description": "Kautabak",
       "amount": -6,
       "yes": null,
       "no": null,
@@ -1676,7 +2331,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 103,
@@ -1693,7 +2349,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 104,
@@ -1710,7 +2367,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 105,
@@ -1727,11 +2385,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 106,
-      "description": "Dem Hund geht es schlecht. Tierarzt!",
+      "description": "Fidi geht es schlecht. Tierarzt!",
       "amount": -140,
       "yes": null,
       "no": null,
@@ -1744,7 +2403,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 107,
@@ -1761,7 +2421,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 108,
@@ -1778,7 +2439,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 109,
@@ -1795,7 +2457,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 110,
@@ -1812,11 +2475,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 111,
-      "description": "«Häbet nech am Bänkli»: Saisonauftakt im Stade de Suisse (KulturLegi)",
+      "description": "Saisonauftakt im Stade de Suisse (KulturLegi)",
       "amount": -17.5,
       "yes": null,
       "no": null,
@@ -1829,11 +2493,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 112,
-      "description": "«Häbet nech am Bänkli»: Saisonauftakt im Stade de Suisse (ohne KulturLegi)",
+      "description": "Saisonauftakt im Stade de Suisse (ohne KulturLegi)",
       "amount": -35,
       "yes": null,
       "no": null,
@@ -1846,11 +2511,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 113,
-      "description": "Aboverlängerung Kornhausbibliothek (mit KulturLegi)",
+      "description": "Abo Kornhausbibliothek (mit KulturLegi)",
       "amount": -25,
       "yes": null,
       "no": null,
@@ -1863,11 +2529,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 114,
-      "description": "Aboverlängerung Kornhausbibliothek (ohne KulturLegi)",
+      "description": "Abo Kornhausbibliothek (ohne KulturLegi)",
       "amount": -50,
       "yes": null,
       "no": null,
@@ -1880,7 +2547,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 115,
@@ -1897,7 +2565,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 116,
@@ -1914,7 +2583,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 117,
@@ -1931,7 +2601,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 118,
@@ -1948,11 +2619,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 119,
-      "description": "Busbillett für Untersuchung im Insel-Spital (Halbtax)",
+      "description": "Busbillett zum Insel-Spital (Halbtax)",
       "amount": -4,
       "yes": null,
       "no": null,
@@ -1965,11 +2637,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 120,
-      "description": "Busbillett für Untersuchung im Insel-Spital (ohne Halbtax)",
+      "description": "Busbillett zum Insel-Spital (ohne Halbtax)",
       "amount": -5.2,
       "yes": null,
       "no": null,
@@ -1982,7 +2655,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 121,
@@ -1999,7 +2673,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 122,
@@ -2016,7 +2691,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 123,
@@ -2033,7 +2709,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 124,
@@ -2050,7 +2727,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 125,
@@ -2067,7 +2745,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 126,
@@ -2084,7 +2763,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 127,
@@ -2101,7 +2781,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
     },
     {
       "id": 128,
@@ -2118,7 +2799,134 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": 129,
+      "description": "Hundetaxe",
+      "amount": -115,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": 130,
+      "description": "Regenschirm",
+      "amount": -10,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "gameOverText": null,
+      "source": null,
+      "type": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Check Function": "FALSE"
     }
   ]
 }

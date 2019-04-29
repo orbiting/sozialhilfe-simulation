@@ -38,7 +38,7 @@ const Layout = () => {
   const measure = () => {
     if (centerRef.current && gameRef.current) {
       const mobile = window.innerWidth < mediaQueries.mBreakPoint
-      const headerHeight = 0 //mobile ? HEADER_HEIGHT_MOBILE : HEADER_HEIGHT
+      const headerHeight = mobile ? HEADER_HEIGHT_MOBILE : HEADER_HEIGHT
       const { offsetWidth, offsetHeight } = centerRef.current
       const width = offsetWidth
       const height = offsetHeight
@@ -62,6 +62,7 @@ const Layout = () => {
         mobile,
         marginWidth,
         panelHeight,
+        headerHeight
       })
     }
   }
@@ -77,7 +78,7 @@ const Layout = () => {
 
   const activate = avatar => {
     setAvatar(avatar)
-    scrollIt(gameRef.current.offsetTop)
+    scrollIt(gameRef.current.offsetTop - size.headerHeight)
   }
 
   const AvatarButton = ({ avatar, activeAvatar }) =>
@@ -124,21 +125,24 @@ const Layout = () => {
                 padding: size.centerWidth*0.05
               }}
             >
-            <Interaction.H3 style={{color: '#fff', paddingBottom: '5%'}}>Das Spielbrett</Interaction.H3>
+            <Interaction.H3 style={{color: '#fff', paddingBottom: '5%'}}>Spielbrett</Interaction.H3>
             <div style={{
-              display: 'flex',
-              justifyContent: 'space-between',
+              position: 'absolute',
+              top: size.centerWidth*0.4,
+              width: size.centerWidth * 0.9
             }}>
-            <Interaction.P style={{color: '#fff', width: '100%', textAlign: 'center', padding: '0 20%'}}>
-              Auf den Ereignisfeldern treffen Sie auf alltägliche Ausgaben
-            </Interaction.P>
+              <Interaction.P style={{color: '#fff', textAlign: 'center', padding: '0 30%', lineHeight: 1.2}}>
+                Auf den Ereignisfeldern treffen Sie auf alltägliche Ausgaben
+              </Interaction.P>
             </div>
             <svg
               width={size.centerWidth * 0.9}
-              height={size.centerWidth * 0.9}
+              height={size.centerWidth * 0.85}
               xmlns="http://www.w3.org/2000/svg"
             >
-            <Board boardSize={size.centerWidth * 0.9} />
+            <g transform={`translate(${size.centerWidth * 0.05},${size.centerWidth * 0.025})`}>
+              <Board boardSize={size.centerWidth * 0.8} />
+            </g>
             </svg>
             <div style={{
               display: 'flex',
@@ -146,19 +150,23 @@ const Layout = () => {
               paddingBottom: '5%'
             }}>
               <div style={{display: 'flex'}}>
-                <Interaction.P style={{color: '#fff', width: '50%', paddingRight: '5%', textAlign: 'left'}}>
+                <Interaction.P style={{color: '#fff', width: '50%', paddingRight: '10%', textAlign: 'left', lineHeight: 1.2}}>
                   Auf den «Chance»-Feldern entscheiden Sie über grössere Beträge.
                 </Interaction.P>
-                <Interaction.P style={{color: '#fff', width: '50%', paddingLeft: '5%', textAlign: 'right'}}>
+                <Interaction.P style={{color: '#fff', width: '50%', paddingLeft: '10%', textAlign: 'right', lineHeight: 1.2}}>
                   Auf «Start» erhalten Sie den monatlichen Grundbedarf.
                 </Interaction.P>
               </div>
             </div>
-            <Interaction.H3 style={{color: '#fff', paddingBottom: '5%'}}>Wählen Sie Ihren Avatar</Interaction.H3>
+            <Interaction.H3 style={{color: '#fff'}}>Avatar</Interaction.H3>
+            { avatar
+                ? <Interaction.P style={{color: '#fff', paddingBottom: '5%'}}>Sie sind unterwegs als</Interaction.P>
+                : <Interaction.P style={{color: '#fff', paddingBottom: '5%'}}>Durch Klick auf ein Symbol wählen Sie Ihren Avatar</Interaction.P>
+            }
             <div
               style={{
                 display: 'flex',
-                padding: '5% 0 5% 0',
+                padding: '0 0 1% 0',
               }}
             >
               <AvatarButton
@@ -178,7 +186,7 @@ const Layout = () => {
         ref={gameRef}
         onClick={() => {
           setStarted(true)
-          scrollIt(gameRef.current.offsetTop)
+          scrollIt(gameRef.current.offsetTop - size.headerHeight)
         }}
       >
         {size && (
@@ -197,6 +205,7 @@ const Layout = () => {
                 top: avatar ? 0 : -size.panelHeight,
                 transition: 'top 0.5s ease-in-out',
               }}
+              onClick={e => setStarted(true)}
             >
               {avatar && (
                 <App
@@ -205,7 +214,7 @@ const Layout = () => {
                   height={size.panelHeight}
                   mobile={size.mobile}
                   avatar={avatar}
-                  showInfo={!started}
+                  started={started}
                 />
               )}
             </div>

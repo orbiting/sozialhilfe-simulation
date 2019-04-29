@@ -27,6 +27,19 @@ export const Leisure = props => (
   </svg>
 )
 
+export const Start = props => (
+  <svg
+    stroke={0}
+    fill="#000"
+    strokeWidth={0}
+    viewBox="0 0 24 24"
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+  </svg>
+)
+
 export const General = props => (
   <svg
     stroke={0}
@@ -36,7 +49,20 @@ export const General = props => (
     {...props}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+    <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z" />
+  </svg>
+)
+
+export const Life = props => (
+  <svg
+    stroke={0}
+    fill="#000"
+    strokeWidth={0}
+    viewBox="0 0 24 24"
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M12 22c4.97 0 9-4.03 9-9-4.97 0-9 4.03-9 9zM5.6 10.25c0 1.38 1.12 2.5 2.5 2.5.53 0 1.01-.16 1.42-.44l-.02.19c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5l-.02-.19c.4.28.89.44 1.42.44 1.38 0 2.5-1.12 2.5-2.5 0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25 0-1.38-1.12-2.5-2.5-2.5-.53 0-1.01.16-1.42.44l.02-.19C14.5 2.12 13.38 1 12 1S9.5 2.12 9.5 3.5l.02.19c-.4-.28-.89-.44-1.42-.44-1.38 0-2.5 1.12-2.5 2.5 0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8s1.12-2.5 2.5-2.5zM3 13c0 4.97 4.03 9 9 9 0-4.97-4.03-9-9-9z" />
   </svg>
 )
 
@@ -108,12 +134,13 @@ export const Calendar = props => (
 export const Avatar1 = props => (
   <svg
     {...props}
-    viewBox="0 0 37 36"
+    viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>
       <circle id="path-1" cx="18" cy="18" r="18" />
+      <circle id="path-3" cx="18" cy="18" r="18" />
     </defs>
     <g
       id="Page-1"
@@ -122,28 +149,35 @@ export const Avatar1 = props => (
       fill="none"
       fill-rule="evenodd"
     >
-      <g id="Group">
-        <g id="Oval-Copy-2" transform="translate(0.448276, 0.000000)">
-          <mask id="mask-2" fill="white">
-            <use xlinkHref="#path-1" />
-          </mask>
-          <use id="Mask" fill="#D8D8D8" xlinkHref="#path-1" />
-          <circle
-            fill="#FFFFFF"
-            mask="url(#mask-2)"
-            cx="18.1551724"
-            cy="34.2931034"
-            r="15.362069"
-          />
-        </g>
+      <g id="Oval-Copy-2" transform="translate(1.448276, 1.000000)">
+        <mask id="mask-2" fill="white">
+          <use xlinkHref="#path-1" />
+        </mask>
+        <use id="Mask" fill="#FFFFFF" xlinkHref="#path-1" />
         <circle
-          id="Oval-Copy"
-          fill="#FFFFFF"
-          cx="18.4482759"
-          cy="10"
-          r="7"
+          fill="#E02121"
+          mask="url(#mask-2)"
+          cx="18.1551724"
+          cy="34.2931034"
+          r="15.362069"
+        />
+        <mask id="mask-4" fill="white">
+          <use xlinkHref="#path-3" />
+        </mask>
+        <use
+          id="Mask-Copy"
+          stroke="#FFFFFF"
+          stroke-width="2"
+          xlinkHref="#path-3"
         />
       </g>
+      <circle
+        id="Oval-Copy"
+        fill="#E02121"
+        cx="19.4482759"
+        cy="11"
+        r="7"
+      />
     </g>
   </svg>
 )
@@ -151,75 +185,27 @@ export const Avatar1 = props => (
 export const Avatar2 = props => (
   <svg
     {...props}
-    viewBox="0 0 37 36"
+    viewBox="0 0 40 40"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>
-      <circle id="path-1" cx="18" cy="18" r="18" />
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
     </defs>
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
-      <g id="Group-Copy">
-        <g id="Oval-Copy-2" transform="translate(0.551724, 0.000000)">
-          <mask id="mask-2" fill="white">
-            <use xlinkHref="#path-1" />
-          </mask>
-          <use id="Mask" fill="#D8D8D8" xlinkHref="#path-1" />
-          <ellipse
-            id="Oval-Copy-5"
-            fill="#E8E8E8"
-            mask="url(#mask-2)"
-            cx="7.29310345"
-            cy="37.3965517"
-            rx="11.3275862"
-            ry="15.362069"
-          />
-          <ellipse
-            id="Oval-Copy-6"
-            fill="#E8E8E8"
-            mask="url(#mask-2)"
-            cx="29.637931"
-            cy="37.3965517"
-            rx="11.3275862"
-            ry="15.362069"
-          />
-          <ellipse
-            fill="#FFFFFF"
-            mask="url(#mask-2)"
-            cx="18.1551724"
-            cy="31.9827586"
-            rx="9"
-            ry="15.362069"
-          />
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval-Copy-2" transform="translate(0.551724, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlinkHref="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlinkHref="#path-1"></use>
+            <ellipse id="Oval-Copy-5" fill="#F79292" mask="url(#mask-2)" cx="7.29310345" cy="37.3965517" rx="11.3275862" ry="15.362069"></ellipse>
+            <ellipse id="Oval-Copy-6" fill="#F79292" mask="url(#mask-2)" cx="29.637931" cy="37.3965517" rx="11.3275862" ry="15.362069"></ellipse>
+            <ellipse fill="#E02121" mask="url(#mask-2)" cx="18.1551724" cy="31.9827586" rx="9" ry="15.362069"></ellipse>
         </g>
-        <circle
-          id="Oval-Copy"
-          fill="#FFFFFF"
-          cx="18.5517241"
-          cy="9"
-          r="6"
-        />
-        <circle
-          id="Oval-Copy-3"
-          fill="#FFFFFF"
-          cx="29.5517241"
-          cy="17"
-          r="4"
-        />
-        <circle
-          id="Oval-Copy-4"
-          fill="#FFFFFF"
-          cx="8"
-          cy="17"
-          r="4"
-        />
-      </g>
+        <circle id="Oval-Copy" fill="#E02121" cx="18.5517241" cy="10" r="6"></circle>
+        <circle id="Oval-Copy-3" fill="#E02121" cx="29.5517241" cy="18" r="4"></circle>
+        <circle id="Oval-Copy-4" fill="#E02121" cx="8" cy="18" r="4"></circle>
+        <circle id="Mask-Copy" stroke="#FFFFFF" stroke-width="2" cx="19.4482759" cy="19" r="18"></circle>
     </g>
   </svg>
 )
@@ -303,25 +289,19 @@ export const Cancel = props => (
           <use xlinkHref="#path-1" />
         </mask>
         <use id="Mask" fill="#D8D8D8" xlinkHref="#path-1" />
-        <rect
+        <path
+          d="M10.5073956,9.2586282 L26.7413718,25.4926044 C27.0862094,25.837442 27.0862094,26.3965342 26.7413718,26.7413718 L26.7413718,26.7413718 C26.3965342,27.0862094 25.837442,27.0862094 25.4926044,26.7413718 L9.2586282,10.5073956 C8.9137906,10.162558 8.9137906,9.60346579 9.2586282,9.2586282 L9.2586282,9.2586282 C9.60346579,8.9137906 10.162558,8.9137906 10.5073956,9.2586282 Z"
           id="Rectangle"
-          fill="#FFFFFF"
-          transform="translate(18.000000, 18.000000) rotate(45.000000) translate(-18.000000, -18.000000) "
-          x="4"
-          y="17"
-          width="28"
-          height="2"
-          rx="1"
+          stroke="#E04646"
+          stroke-width="2"
+          fill="#E02121"
         />
-        <rect
+        <path
+          d="M9.2586282,25.4926044 L25.4926044,9.2586282 C25.837442,8.9137906 26.3965342,8.9137906 26.7413718,9.2586282 L26.7413718,9.2586282 C27.0862094,9.60346579 27.0862094,10.162558 26.7413718,10.5073956 L10.5073956,26.7413718 C10.162558,27.0862094 9.60346579,27.0862094 9.2586282,26.7413718 L9.2586282,26.7413718 C8.9137906,26.3965342 8.9137906,25.837442 9.2586282,25.4926044 Z"
           id="Rectangle-Copy"
-          fill="#FFFFFF"
-          transform="translate(18.000000, 18.000000) rotate(-45.000000) translate(-18.000000, -18.000000) "
-          x="4"
-          y="17"
-          width="28"
-          height="2"
-          rx="1"
+          stroke="#E04646"
+          stroke-width="2"
+          fill="#E02121"
         />
       </g>
     </g>
@@ -345,11 +325,15 @@ export default {
     color: theme.categories.mobility,
     Icon: Mobility,
   },
-  general: {
+  life: {
     color: theme.categories.general,
-    Icon: General,
+    Icon: Life,
   },
   start: {
+    color: theme.categories.general,
+    Icon: Start,
+  },
+  general: {
     color: theme.categories.general,
     Icon: General,
   },

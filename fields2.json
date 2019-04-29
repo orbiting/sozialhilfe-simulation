@@ -1,5 +1,5 @@
 {
-  "updated": "2019-04-28T09:14:37.223Z",
+  "updated": "2019-04-29T09:45:41.987Z",
   "title": "Game 2",
   "data": [
     {
@@ -18,6 +18,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 986
     },
     {
@@ -36,6 +37,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 583
     },
     {
@@ -53,7 +55,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 4,
@@ -70,7 +73,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 5,
@@ -87,7 +91,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 6,
@@ -104,7 +109,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 7,
@@ -121,7 +127,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 8,
@@ -138,7 +145,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 9,
@@ -155,11 +163,12 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 10,
-      "description": "Porto Bewerbungsschreiben",
+      "description": "Porto Bewerbungen",
       "amount": -5,
       "yes": null,
       "no": null,
@@ -172,7 +181,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 11,
@@ -189,7 +199,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 12,
@@ -206,7 +217,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 13,
@@ -223,7 +235,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 14,
@@ -240,7 +253,8 @@
       "altNo": 104,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 15,
@@ -257,7 +271,8 @@
       "altNo": null,
       "month": 1,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 16,
@@ -275,6 +290,7 @@
       "month": 1,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 15.45000000000016
     },
     {
@@ -292,7 +308,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 18,
@@ -309,7 +326,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 19,
@@ -326,7 +344,8 @@
       "altNo": 102,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 20,
@@ -343,7 +362,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 21,
@@ -360,7 +380,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 22,
@@ -377,7 +398,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 23,
@@ -394,11 +416,12 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 24,
-      "description": "Bewerbungsunterlagen drucken",
+      "description": "Bewerbungen drucken",
       "amount": -5,
       "yes": null,
       "no": null,
@@ -411,7 +434,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 25,
@@ -428,7 +452,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 26,
@@ -445,7 +470,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 27,
@@ -462,7 +488,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 28,
@@ -479,7 +506,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 29,
@@ -496,7 +524,8 @@
       "altNo": 110,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 30,
@@ -513,7 +542,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 31,
@@ -530,7 +560,8 @@
       "altNo": null,
       "month": 2,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 32,
@@ -548,6 +579,7 @@
       "month": 2,
       "pauschal": -31.125,
       "FALSE": "TRUE",
+      "Funktionalität": "FALSE",
       "undefined": 142.95000000000027
     },
     {
@@ -565,7 +597,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 34,
@@ -582,7 +615,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 35,
@@ -599,7 +633,8 @@
       "altNo": 102,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 36,
@@ -616,7 +651,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 37,
@@ -633,7 +669,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 38,
@@ -650,7 +687,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 39,
@@ -667,7 +705,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 40,
@@ -684,7 +723,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 41,
@@ -701,7 +741,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 42,
@@ -718,7 +759,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 43,
@@ -735,7 +777,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 44,
@@ -748,11 +791,12 @@
       "source": "SBB",
       "category": "mobility",
       "dependency": 41,
-      "altYes": 115,
-      "altNo": 116,
+      "altYes": 111,
+      "altNo": 112,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 45,
@@ -769,12 +813,13 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 46,
-      "description": "Schreibmaterial",
-      "amount": -10,
+      "description": "Hundetaxe",
+      "amount": -115,
       "yes": null,
       "no": null,
       "outro": null,
@@ -786,11 +831,12 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 47,
-      "description": "Tradition: Schockolade verschicken an die Schwester in den USA",
+      "description": "Tradition: Schockolade an die Schwester verschicken",
       "amount": -20,
       "yes": null,
       "no": null,
@@ -803,7 +849,8 @@
       "altNo": null,
       "month": 3,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 48,
@@ -821,7 +868,8 @@
       "month": 3,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": 178.75000000000023
+      "Funktionalität": "FALSE",
+      "undefined": 73.75000000000023
     },
     {
       "id": 49,
@@ -838,7 +886,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 50,
@@ -855,7 +904,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 51,
@@ -872,7 +922,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 52,
@@ -889,7 +940,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 53,
@@ -906,7 +958,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 54,
@@ -918,12 +971,13 @@
       "type": "event",
       "source": null,
       "category": "leisure",
-      "dependency": 5,
-      "altYes": 101,
-      "altNo": 102,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 55,
@@ -940,7 +994,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 56,
@@ -957,7 +1012,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 57,
@@ -974,7 +1030,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 58,
@@ -991,7 +1048,8 @@
       "altNo": 133,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 59,
@@ -1008,11 +1066,12 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 60,
-      "description": "Fidi gestorben. Tierkörpersammelstelle.",
+      "description": "Fidi gestorben. Sammelstelle Tierkörper.",
       "amount": -40,
       "yes": "",
       "no": "",
@@ -1025,7 +1084,8 @@
       "altNo": 115,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 61,
@@ -1042,7 +1102,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "FALSE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 62,
@@ -1059,7 +1120,8 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 63,
@@ -1076,11 +1138,12 @@
       "altNo": null,
       "month": 4,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 64,
-      "description": "Busticket für Untersuchung im Insel-Spital (ohne Halbtax)",
+      "description": "Busticket zum Insel-Spital (ohne Halbtax)",
       "amount": -15,
       "yes": null,
       "no": null,
@@ -1094,7 +1157,8 @@
       "month": 4,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": 48.5
+      "Funktionalität": "TRUE",
+      "undefined": 43.5
     },
     {
       "id": 65,
@@ -1111,7 +1175,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 66,
@@ -1128,7 +1193,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 67,
@@ -1141,11 +1207,12 @@
       "source": null,
       "category": "leisure",
       "dependency": 5,
-      "altYes": 102,
+      "altYes": 101,
       "altNo": 132,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 68,
@@ -1162,7 +1229,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 69,
@@ -1179,7 +1247,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 70,
@@ -1196,7 +1265,8 @@
       "altNo": 120,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 71,
@@ -1213,7 +1283,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 72,
@@ -1230,7 +1301,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 73,
@@ -1247,11 +1319,12 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 74,
-      "description": "Aboverlängerung Kornhausbibliothek (mit KulturLegi)",
+      "description": "Abo Kornhausbibliothek (mit KulturLegi)",
       "amount": -25,
       "yes": "",
       "no": "",
@@ -1264,7 +1337,8 @@
       "altNo": 122,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 75,
@@ -1281,7 +1355,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 76,
@@ -1298,7 +1373,8 @@
       "altNo": 124,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 77,
@@ -1315,7 +1391,8 @@
       "altNo": 114,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 78,
@@ -1332,7 +1409,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 79,
@@ -1349,11 +1427,12 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 80,
-      "description": "Massage wegen Rückenschmerzen und Matraze",
+      "description": "Massage wegen Rückenschmerzen",
       "amount": -100,
       "yes": "",
       "no": "",
@@ -1361,13 +1440,14 @@
       "type": "event",
       "source": null,
       "category": "life",
-      "dependency": 41,
+      "dependency": 69,
       "altYes": 125,
       "altNo": 126,
       "month": 5,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": -127.5
+      "Funktionalität": "TRUE",
+      "undefined": -132.5
     },
     {
       "id": 81,
@@ -1384,7 +1464,8 @@
       "altNo": null,
       "month": 5,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 82,
@@ -1401,7 +1482,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 83,
@@ -1418,7 +1500,8 @@
       "altNo": 132,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 84,
@@ -1435,7 +1518,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 85,
@@ -1452,7 +1536,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 86,
@@ -1469,7 +1554,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 87,
@@ -1486,7 +1572,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 88,
@@ -1503,7 +1590,8 @@
       "altNo": 127,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 89,
@@ -1520,7 +1608,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 90,
@@ -1537,7 +1626,8 @@
       "altNo": 129,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 91,
@@ -1554,7 +1644,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 92,
@@ -1571,7 +1662,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 93,
@@ -1588,11 +1680,12 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "FALSE"
+      "FALSE": "FALSE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 94,
-      "description": "Hallenbad-Eintritt (mit Legi) ",
+      "description": "Hallenbad Eintritt (mit Legi) ",
       "amount": -3,
       "yes": "",
       "no": "",
@@ -1605,7 +1698,8 @@
       "altNo": 131,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "TRUE"
     },
     {
       "id": 95,
@@ -1622,7 +1716,8 @@
       "altNo": null,
       "month": 6,
       "pauschal": -31.125,
-      "FALSE": "TRUE"
+      "FALSE": "TRUE",
+      "Funktionalität": "FALSE"
     },
     {
       "id": 96,
@@ -1640,7 +1735,62 @@
       "month": 6,
       "pauschal": -31.125,
       "FALSE": "TRUE",
-      "undefined": 29.90000000000009
+      "Funktionalität": "FALSE",
+      "undefined": 24.90000000000009
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 101,
@@ -1657,7 +1807,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 102,
@@ -1674,7 +1825,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 103,
@@ -1691,7 +1843,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 104,
@@ -1708,7 +1861,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 105,
@@ -1725,7 +1879,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 106,
@@ -1742,7 +1897,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 107,
@@ -1759,7 +1915,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 108,
@@ -1776,7 +1933,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 109,
@@ -1793,7 +1951,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 110,
@@ -1810,7 +1969,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 111,
@@ -1827,7 +1987,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 112,
@@ -1844,7 +2005,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 113,
@@ -1861,7 +2023,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 114,
@@ -1878,11 +2041,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 115,
-      "description": "Fidi gestorben. Tierkörpersammelstelle.",
+      "description": "Fidi gestorben. Sammelstelle Tierkörper.",
       "amount": -40,
       "yes": null,
       "no": null,
@@ -1895,7 +2059,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 116,
@@ -1912,11 +2077,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 117,
-      "description": "Busticket für Untersuchung im Insel-Spital (mit Halbtax)",
+      "description": "Busticket zum Insel-Spital (mit Halbtax)",
       "amount": -4,
       "yes": null,
       "no": null,
@@ -1929,11 +2095,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 118,
-      "description": "Busticket für Untersuchung im Insel-Spital (ohne Halbtax)",
+      "description": "Busticket zum Insel-Spital (ohne Halbtax)",
       "amount": -5.2,
       "yes": null,
       "no": null,
@@ -1946,7 +2113,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 119,
@@ -1963,7 +2131,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 120,
@@ -1980,11 +2149,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 121,
-      "description": "Aboverlängerung Kornhausbibliothek (mit KulturLegi)",
+      "description": "Abo Kornhausbibliothek (mit KulturLegi)",
       "amount": -25,
       "yes": null,
       "no": null,
@@ -1997,11 +2167,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 122,
-      "description": "Aboverlängerung Kornhausbibliothek (ohne KulturLegi)",
+      "description": "Abo Kornhausbibliothek (ohne KulturLegi)",
       "amount": -50,
       "yes": null,
       "no": null,
@@ -2014,7 +2185,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 123,
@@ -2031,7 +2203,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 124,
@@ -2048,11 +2221,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 125,
-      "description": "Massage wegen Rückenschmerzen und Matraze",
+      "description": "Massage wegen Rückenschmerzen",
       "amount": -100,
       "yes": null,
       "no": null,
@@ -2065,7 +2239,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 126,
@@ -2082,7 +2257,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 127,
@@ -2099,7 +2275,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 128,
@@ -2116,7 +2293,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 129,
@@ -2133,11 +2311,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 130,
-      "description": "Hallenbad-Eintritt (mit Legi) ",
+      "description": "Hallenbad Eintritt (mit Legi) ",
       "amount": -3,
       "yes": null,
       "no": null,
@@ -2150,11 +2329,12 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 131,
-      "description": "Hallenbad-Eintritt (ohne Legi)",
+      "description": "Hallenbad Eintritt (ohne Legi)",
       "amount": -7,
       "yes": null,
       "no": null,
@@ -2167,7 +2347,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 132,
@@ -2184,7 +2365,8 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     },
     {
       "id": 133,
@@ -2201,7 +2383,206 @@
       "altNo": null,
       "month": null,
       "pauschal": null,
-      "FALSE": null
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": 134,
+      "description": "Hundetaxe",
+      "amount": -115,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": 135,
+      "description": "Regenschirm",
+      "amount": -10,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
+    },
+    {
+      "id": null,
+      "description": null,
+      "amount": null,
+      "yes": null,
+      "no": null,
+      "outro": null,
+      "type": null,
+      "source": null,
+      "category": null,
+      "dependency": null,
+      "altYes": null,
+      "altNo": null,
+      "month": null,
+      "pauschal": null,
+      "FALSE": null,
+      "Funktionalität": "FALSE"
     }
   ]
 }
