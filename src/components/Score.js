@@ -41,7 +41,6 @@ const Score = ({
 }) => {
 
   const padding = boardSize / 120
-  const w = width - 2 * padding
 
   const transactionLog = gameState.transactions.map(
     (t, i, arr) => {
@@ -109,15 +108,14 @@ const Score = ({
 
   return (
     <div
-      style={{
+      {...css({
         position: 'absolute',
         width,
         height,
-        boxSizing: 'border-box',
         pointerEvents: 'none',
-      }}
+      })}
     >
-      <div {...css({ width: w * 1, background: theme.score, padding })}>
+      <div {...css({ width, background: theme.score, padding, boxSizing: 'border-box', })}>
         <div
           {...css({ display: 'flex', justifyContent: 'space-between' })}
         >
@@ -183,7 +181,7 @@ const Score = ({
                 color: '#fff',
                 top: '130%',
                 width: '100%',
-                left: '-5%',
+                right: 0,
                 opacity: started ? 0 : 1,
                 transform: 'opacity 0.3s ease-in-out',
               })}
