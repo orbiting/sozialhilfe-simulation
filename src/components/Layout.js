@@ -16,7 +16,7 @@ import { Cancel } from './icons'
 
 const maxHeight = 900
 
-const AvatarButton = ({ avatar, activeAvatar, activate, setAvatar }) =>
+const AvatarButton = ({ avatar, activeAvatar, setAvatar }) =>
   !activeAvatar || activeAvatar.id === avatar.id ? (
     <div
       style={{
@@ -25,7 +25,7 @@ const AvatarButton = ({ avatar, activeAvatar, activate, setAvatar }) =>
         opacity:
           activeAvatar && activeAvatar.id === avatar.id ? 1 : 0.6,
       }}
-      onClick={() => activate(avatar)}
+      onClick={() => setAvatar(avatar)}
     >
       <avatar.Icon width={80} height={80} />
       <Interaction.P>
@@ -56,7 +56,7 @@ const Layout = () => {
   const gameRef = useRef(null)
 
   const measure = () => {
-    if (centerRef.current && gameRef.current) {
+    if (centerRef.current) {
       const mobile = window.innerWidth < mediaQueries.mBreakPoint
       const headerHeight = mobile
         ? HEADER_HEIGHT_MOBILE
@@ -95,10 +95,9 @@ const Layout = () => {
     return () => window.removeEventListener('resize', measure)
   })
 
-  const activate = avatar => {
-    setAvatar(avatar)
-    scrollIt(gameRef.current.offsetTop - size.headerHeight, 550)
-  }
+  useEffect(() => {
+    avatar && scrollIt(gameRef.current.offsetTop - size.headerHeight);
+  }, [avatar])
 
   return (
     <>
@@ -208,12 +207,11 @@ const Layout = () => {
                 <AvatarButton
                   avatar={AVATARS[0]}
                   activeAvatar={avatar}
-                  activate={activate}
+                  setAvatar={setAvatar}
                 />
                 <AvatarButton
                   avatar={AVATARS[1]}
                   activeAvatar={avatar}
-                  activate={activate}
                   setAvatar={setAvatar}
                 />
               </div>
@@ -225,9 +223,7 @@ const Layout = () => {
         ref={gameRef}
         onClick={() => {
           setStarted(true)
-          setTimeout(() => {
-            scrollIt(gameRef.current.offsetTop - size.headerHeight)            
-          }, 300);
+          scrollIt(gameRef.current.offsetTop - size.headerHeight)
         }}
       >
         {size && (
@@ -235,7 +231,6 @@ const Layout = () => {
             {...css({
               width: size.innerWidth,
               height: avatar ? size.panelHeight : 0,
-              transition: 'height 0.3s ease-in-out',
               position: 'relative',
               overflow: 'hidden',
             })}
@@ -246,7 +241,6 @@ const Layout = () => {
                 top: avatar ? 0 : -size.panelHeight,
                 transition: 'top 0.5s ease-in-out',
               })}
-              onClick={e => setStarted(true)}
             >
               {avatar && (
                 <App
