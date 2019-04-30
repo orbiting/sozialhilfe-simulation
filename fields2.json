@@ -649,11 +649,11 @@
   },
   {
     "id": 25,
-    "description": "Wollen Sie die Kultur-Legi beantragen? ",
+    "description": "Wollen Sie die KulturLegi beantragen? ",
     "amount": -10,
     "yes": "Ja.",
     "no": "Nein.",
-    "outro": "Sie haben keine Kultur-Legi beantragt.",
+    "outro": "Sie haben keine KulturLegi beantragt.",
     "type": "chance",
     "source": null,
     "category": "leisure",
@@ -1170,7 +1170,7 @@
     "type": "event",
     "source": "SBB",
     "category": "mobility",
-    "dependency": 41,
+    "dependency": 13,
     "altYes": 111,
     "altNo": 112,
     "month": 3,
@@ -1972,7 +1972,7 @@
   },
   {
     "id": 74,
-    "description": "Abo für die Kornhausbibliothek (mit Kultur-Legi)",
+    "description": "Abo für die Kornhausbibliothek (mit KulturLegi)",
     "amount": -25,
     "yes": null,
     "no": null,
@@ -2188,7 +2188,7 @@
   },
   {
     "id": 82,
-    "description": "Hallenbadeintritt (mit Legi) ",
+    "description": "Hallenbadeintritt (mit KulturLegi) ",
     "amount": -3,
     "yes": null,
     "no": null,
@@ -2404,7 +2404,7 @@
   },
   {
     "id": 90,
-    "description": "YB-Match (mit Legi)",
+    "description": "YB-Match (mit KulturLegi)",
     "amount": -15,
     "yes": null,
     "no": null,
@@ -3187,7 +3187,7 @@
   },
   {
     "id": 121,
-    "description": "Abo für die Kornhausbibliothek (mit Kultur-Legi)",
+    "description": "Abo für die Kornhausbibliothek (mit KulturLegi)",
     "amount": -25,
     "yes": null,
     "no": null,
@@ -3214,7 +3214,7 @@
   },
   {
     "id": 122,
-    "description": "Abo für die Kornhausbibliothek (ohne Kultur-Legi)",
+    "description": "Abo für die Kornhausbibliothek (ohne KulturLegi)",
     "amount": -50,
     "yes": null,
     "no": null,
@@ -3376,7 +3376,7 @@
   },
   {
     "id": 128,
-    "description": "YB-Match (mit Legi)",
+    "description": "YB-Match (mit KulturLegi)",
     "amount": -15,
     "yes": null,
     "no": null,
@@ -3403,7 +3403,7 @@
   },
   {
     "id": 129,
-    "description": "YB-Match (ohne Legi)",
+    "description": "YB-Match (ohne KulturLegi)",
     "amount": -30,
     "yes": null,
     "no": null,
@@ -3430,7 +3430,7 @@
   },
   {
     "id": 130,
-    "description": "Hallenbadeintritt (mit Legi) ",
+    "description": "Hallenbadeintritt (mit KulturLegi) ",
     "amount": -3,
     "yes": null,
     "no": null,
@@ -3457,7 +3457,7 @@
   },
   {
     "id": 131,
-    "description": "Hallenbadeintritt (ohne Legi)",
+    "description": "Hallenbadeintritt (ohne KuturLegi)",
     "amount": -7,
     "yes": null,
     "no": null,
