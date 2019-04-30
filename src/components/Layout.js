@@ -187,9 +187,9 @@ const Layout = () => {
                 </div>
               </div>
               <Interaction.P
-                {...css({ color: '#fff', paddingBottom: '8%', lineHeight: 1.2, textAlign: 'center' })}
+                {...css({ color: '#fff', paddingBottom: '5%', lineHeight: 1.2, textAlign: 'center' })}
               >
-                { avatar ? '' : 'Wählen Sie Ihren Avatar' }
+                Wählen Sie Ihren Avatar
               </Interaction.P>
               <div
                 {...css({

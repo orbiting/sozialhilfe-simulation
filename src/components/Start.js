@@ -39,10 +39,10 @@ const Start = ({
         } Franken für den Grundbedarf`}</Text>
       </g>
       
-      <g transform={`translate(${s/4}, ${s/2.4})`}>
+      <g transform={`translate(${s/6}, ${s/9})`}>
         <svg
-          width={s/2}
-          height="14px"
+          width={s/1.5}
+          height={s/1.5}
           viewBox="0 0 103 14"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

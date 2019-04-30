@@ -121,12 +121,15 @@ const App = ({
       ...gameState.transactions,
       { field, reject },
     ]
-    const balance = transactions
-      .filter(({ reject }) => !reject)
-      .reduce(
-        (acc, cur) => acc + cur.field.amount + cur.field.pauschal,
-        0,
-      )
+
+    const balance = transactions.reduce(
+      (acc, cur) =>
+        !cur.reject
+          ? acc + cur.field.amount + cur.field.pauschal
+          : acc + cur.field.pauschal,
+      0,
+    )
+
     setGameState({
       ...gameState,
       transactions,

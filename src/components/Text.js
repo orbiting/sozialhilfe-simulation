@@ -25,7 +25,7 @@ export const fonts = memoize((boardSize) => ({
   },
   large: {
     fontFamily: fontFamilies.sansSerifRegular,
-    fontSize: boardSize / 50,
+    fontSize: boardSize / 40,
   },
   xlarge: {
     fontFamily: fontFamilies.sansSerifRegular,

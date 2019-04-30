@@ -7,8 +7,6 @@ import icons, { Clothing, Leisure, Media, Mobility } from './icons'
 
 const fields = Object.values(icons).filter(i => i.color !== theme.categories.general)
 
-console.log("Cover.js:10", fields)
-
 const CoverField = ({height = 200, loop = 3, config: { Icon = Media, color = theme.categories.media }}) => {
   const unit = height/15
   return (

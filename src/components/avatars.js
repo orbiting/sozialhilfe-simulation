@@ -9,7 +9,7 @@ const AVATARS = [
   },
   {
     id: 1,
-    name: 'Erika Musterfrau',
+    name: 'Barbara Beispiel',
     startingBalance: 1834,
     Icon: Avatar2,
   }

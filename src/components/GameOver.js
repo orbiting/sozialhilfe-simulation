@@ -56,9 +56,8 @@ const GameOver = ({
   })
 
   const list = css({
-    listStyle: 'square inside',
+    listStyle: 'square',
     padding: 0,
-    margin: 0,
   })
 
   const listItem = css({
@@ -96,7 +95,7 @@ const GameOver = ({
             {outros.length > 0 && (
               <div
                 {...css({
-                  height: height / 3,
+                  maxHeight: height / 3,
                   overflowY: 'auto',
                 })}
               >
