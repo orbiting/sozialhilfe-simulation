@@ -57,15 +57,15 @@ const GameOver = ({gameState, width, height, tryAgain, resetGame, boardSize, sho
             <Button black onClick={tryAgain}>Neu starten</Button>
           </>
         ) : (
-          <div>
+          <div style={{overflowY: 'scroll'}}>
             <p {...textStyle}>{text.outro6.replace('{amount}', formatAmount(avatar.startingBalance))}</p>
-            <ul>
+            <ul {...listItem}>
               {
-                gameState.transactions.filter(t => t.reject).map(t => <li {...listItem}>{t.field.outro}</li>)
+                gameState.transactions.filter(t => t.reject).filter(t => t.field.outro).map(t => <li {...listItem}>{t.field.outro}</li>)
               }
             </ul>
-            <Button black onClick={resetGame}>Nochmals spielen</Button>
             <p {...textStyle}>{text.outro7}</p>
+            <Button black onClick={resetGame}>Nochmals spielen</Button>
           </div>
         )
       }

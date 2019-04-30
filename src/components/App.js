@@ -60,10 +60,11 @@ const App = ({
 
   const currentField = fieldData[currentFieldIdx]
 
+  // replace events with replacements
   const gameData = fieldData.slice(0, 96).map(d => {
     if (d.dependency) {
       const isRejected = gameState.transactions.some(
-        e => e.field.id === d.dependency,
+        t => t.reject && (t.field.id === d.dependency)
       )
       let replacement = fieldData.find(e => e.id === d.altYes)
       if (isRejected) {
@@ -86,6 +87,8 @@ const App = ({
           .concat(fieldDataChunks[gameState.round - 2].slice(12, 16))
       : fieldDataChunks[gameState.round - 1]
 
+
+  // calculate sizes
   const width = centerWidth + 2 * marginWidth
   const zoomScale = scaleLinear()
     .domain([0, 1000])
@@ -104,11 +107,13 @@ const App = ({
     (centerWidth - cornerFieldHeight) / 2
   const boardOffsetY = -boardSize + height * 0.9
 
+  // game status
   const gameOver =
     currentFieldIdx === 95 || gameState.balance < 0
   const gamePaused =
     currentFieldIdx > 0 && currentField.type === 'chance'
 
+  // move to next field
   const advanceGame = (field, reject = false) => {
     const transactions = [ ...gameState.transactions, { field, reject } ]
     const balance = transactions.filter(({reject}) => !reject).reduce((acc,cur) => acc + cur.field.amount + cur.field.pauschal, 0)
