@@ -13,7 +13,7 @@ const classic = {
   warning: '#ff9a99',
   categories: {
     start: '#e02121',
-    life: '#EAD45E',
+    life: '#d8c24b',
     general: '#A6A59D',
     leisure: '#ef6f25',
     mobility: '#543B9D',

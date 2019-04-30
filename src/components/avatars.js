@@ -4,7 +4,7 @@ const AVATARS = [
   {
     id: 0,
     name: 'Max Mustermann',
-    startingBalance: 986,
+    startingBalance: 977,
     Icon: Avatar1,
   },
   {

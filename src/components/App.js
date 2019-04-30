@@ -16,14 +16,14 @@ import chunk from 'lodash/chunk'
 import Dialog from './Dialog'
 import GameOver from './GameOver'
 import memoize from 'lodash/memoize'
-import { MAX_DEBIT } from './constants';
+import { MAX_DEBIT } from './constants'
 import debounce from 'lodash/debounce'
 
 const dα = 360 / 16
 
-export const getInitialState = memoize((avatar) => ({
+export const getInitialState = memoize(avatar => ({
   tryAgain: false,
-  balance: avatar ? avatar.startingBalance : 986,
+  balance: avatar ? avatar.startingBalance : 977,
   transactions: [],
   round: 1,
   activeField: 1,
@@ -36,9 +36,8 @@ const App = ({
   height,
   mobile,
   avatar,
-  started
+  started,
 }) => {
-
   const appRef = useRef(null)
   const boardRef = useRef(null)
   const buttonRef = useRef(null)
@@ -50,34 +49,36 @@ const App = ({
 
   switch (avatar ? avatar.id : undefined) {
     case 0:
-      fieldData = gameState.tryAgain ? fields2.data : fields.data
-      break;
+      fieldData = gameState.tryAgain ? fields2 : fields
+      break
     case 1:
-      fieldData = fields3.data
-      break;
+      fieldData = fields3
+      break
     default:
       fieldData = []
-      break;
+      break
   }
 
-  const currentField = fieldData[currentFieldIdx]
-
   // replace events with replacements
-  const gameData = fieldData.slice(0, 96).map(d => {
-    if (d.dependency) {
-      const isRejected = gameState.transactions.some(
-        t => t.reject && (t.field.id === d.dependency)
-      )
-      let replacement = fieldData.find(e => e.id === d.altYes)
-      if (isRejected) {
-        replacement = fieldData.find(e => e.id === d.altNo)
+  const gameData = fieldData
+    .slice(0, 96)
+    .map(d => ({ ...d, id: Math.round(d.id) }))
+    .map(d => {
+      if (d.dependency) {
+        const isRejected = gameState.transactions.some(
+          t => t.reject && t.field.id === d.dependency,
+        )
+        let replacement = fieldData.find(e => e.id === d.altYes)
+        if (isRejected) {
+          replacement = fieldData.find(e => e.id === d.altNo)
+        }
+        return { ...replacement, id: d.id }
+      } else {
+        return d
       }
-      return { ...replacement, id: d.id }
-    } else {
-      return d
-    }
-  })
+    })
 
+  const currentField = gameData[currentFieldIdx]
   const fieldDataChunks = chunk(gameData, 16)
 
   // display last 4 old fields while on first 5 fields of round
@@ -88,7 +89,6 @@ const App = ({
           .slice(0, 12)
           .concat(fieldDataChunks[gameState.round - 2].slice(12, 16))
       : fieldDataChunks[gameState.round - 1]
-
 
   // calculate sizes
   const width = centerWidth + 2 * marginWidth
@@ -117,8 +117,16 @@ const App = ({
 
   // move to next field
   const advanceGame = debounce((field, reject = false) => {
-    const transactions = [ ...gameState.transactions, { field, reject } ]
-    const balance = transactions.filter(({reject}) => !reject).reduce((acc,cur) => acc + cur.field.amount + cur.field.pauschal, 0)
+    const transactions = [
+      ...gameState.transactions,
+      { field, reject },
+    ]
+    const balance = transactions
+      .filter(({ reject }) => !reject)
+      .reduce(
+        (acc, cur) => acc + cur.field.amount + cur.field.pauschal,
+        0,
+      )
     setGameState({
       ...gameState,
       transactions,
@@ -131,9 +139,9 @@ const App = ({
     })
   }, 200)
 
-
   const resetGame = () => setGameState(getInitialState(avatar))
-  const tryAgain = () => setGameState({...getInitialState(avatar), tryAgain: true})
+  const tryAgain = () =>
+    setGameState({ ...getInitialState(avatar), tryAgain: true })
 
   useEffect(() => {
     const btn = select(buttonRef.current)
@@ -188,7 +196,9 @@ const App = ({
       }
     >
       <div ref={appRef} style={{ position: 'relative' }}>
-        <div style={{ position: 'absolute', width, minHeight: height }}>
+        <div
+          style={{ position: 'absolute', width, minHeight: height }}
+        >
           <div
             style={{
               position: 'relative',
@@ -224,12 +234,15 @@ const App = ({
           <svg
             width={width}
             height={height}
-            style={{ 
+            style={{
               background: theme.background,
             }}
             viewBox={`0 0 ${width} ${height}`}
             onClick={() =>
-              started && !gameOver && !gamePaused && advanceGame(currentField)
+              started &&
+              !gameOver &&
+              !gamePaused &&
+              advanceGame(currentField)
             }
           >
             <g
@@ -244,11 +257,16 @@ const App = ({
                 />
               </g>
             </g>
-            <rect width={width} height={height} fill={'#fff'} opacity={(started && !gameOver) ? 0 : 0.6} />
+            <rect
+              width={width}
+              height={height}
+              fill={'#fff'}
+              opacity={started && !gameOver ? 0 : 0.6}
+            />
             <g
               style={{
-                opacity: (started && currentFieldIdx > 1) ? 0 : 1,
-                transform: `opacity 1s ease-in-out`
+                opacity: started && currentFieldIdx > 1 ? 0 : 1,
+                transform: `opacity 1s ease-in-out`,
               }}
             >
               <circle

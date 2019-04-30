@@ -109,6 +109,7 @@ const Layout = () => {
                 background: theme.background,
                 position: 'relative',
                 padding: size.centerWidth * 0.05,
+                userSelect: 'none',
               })}
             >
               <div
@@ -135,8 +136,7 @@ const Layout = () => {
                     lineHeight: 1.2,
                   }}
                 >
-                  Auf den Ereignisfeldern tätigen Sie alltägliche
-                  Ausgaben.
+                  Auf den Ereignisfeldern fallen kleinere Auslagen an.
                 </Interaction.P>
               </div>
               <svg
@@ -185,19 +185,11 @@ const Layout = () => {
                   </Interaction.P>
                 </div>
               </div>
-              {avatar ? (
-                <Interaction.P
-                  style={{ color: '#fff', paddingBottom: '5%' }}
-                >
-                  Sie sind unterwegs als
-                </Interaction.P>
-              ) : (
-                <Interaction.P
-                  style={{ color: '#fff', paddingBottom: '5%' }}
-                >
-                  Durch Klick auf ein Symbol wählen Sie Ihren Avatar
-                </Interaction.P>
-              )}
+              <Interaction.P
+                {...css({ color: '#fff', paddingBottom: '8%', lineHeight: 1.2, textAlign: 'center' })}
+              >
+                { avatar ? '' : 'Wählen Sie Ihren Avatar' }
+              </Interaction.P>
               <div
                 {...css({
                   display: 'flex',

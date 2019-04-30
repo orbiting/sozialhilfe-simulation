@@ -12,16 +12,13 @@ console.log("Cover.js:10", fields)
 const CoverField = ({height = 200, loop = 3, config: { Icon = Media, color = theme.categories.media }}) => {
   const unit = height/15
   return (
-    <g transform={`translate(${0},${0}) rotate(0, ${2/3*height/2}, ${height/2})`}>
+    <g>
       <rect width={2/3*height} height={height} strokeWidth={unit/2} stroke={'#000'} fill={theme.field}>
       </rect>
       <rect width={2/3*height} height={height/3} fill={color}>
         <animate attributeName="fill-opacity" from="1" to="0.6" dur={random(1,4,true)} repeatCount={loop} />
       </rect>
       <rect width={2/3*height} height={height/3} strokeWidth={unit/2} stroke={'#000'} fill={'none'}/>
-      <g transform={`translate(${2/3*height/2-2.5*unit},${height/2})`}>
-        {/*<Icon width={5*unit} height={5*unit} fill={theme.background}/>*/}
-      </g>
     </g>
   )
 }
@@ -49,17 +46,17 @@ const CoverGroup = ({width, height, loop}) => {
 }
 
 
-const Cover = ({width, cols, rows, loop}) => {
+const Cover = ({size, cols, rows, loop, fill, margin}) => {
 
-  const size = (width/cols)*(6/5)
-  const offset = (5/6)*size
-  const height = 5/6 * rows * size
-  const margin = width/50
-
+  const offset = (5/6) * size
+  const width = cols * offset + 1/6 * size
+  const height = rows * offset + 1/6 * size
+  const w = width + 2 * margin
+  const h = height + 2 * margin
 
   return (
-    <svg width={width} height={height} xmlns='http://www.w3.org/2000/svg'>
-      <g transform={`scale(0.9) translate(${margin},${margin})`}>
+    <svg width={w} height={h} style={{background: fill ? theme.background : undefined}} xmlns='http://www.w3.org/2000/svg'>
+      <g transform={`translate(${margin},${margin})`}>
       {
         range(0,cols).map(i =>
           range(0,rows).map(j =>
@@ -76,11 +73,13 @@ const Cover = ({width, cols, rows, loop}) => {
 }
 
 Cover.defaultProps = {
-  width:1200,
-  cols: 10,
-  rows: 4,
-  loop: 5,
-  fields: fields.data
+  size:300,
+  cols: 3,
+  rows: 3,
+  loop: 1,
+  fields: fields.data,
+  fill: false,
+  margin: 3
 }
 
 export default Cover

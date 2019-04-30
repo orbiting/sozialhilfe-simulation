@@ -6,13 +6,19 @@ import reverse from 'lodash/reverse'
 import { css } from 'glamor'
 import icons from './icons'
 import AVATARS from './avatars'
-import GameOver from './GameOver';
-import { MAX_DEBIT } from './constants';
+import GameOver from './GameOver'
+import { MAX_DEBIT } from './constants'
 
-const MONTHS = ['Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt']
+const MONTHS = [
+  { name: 'Mai', days: 31 },
+  { name: 'Jun', days: 30 },
+  { name: 'Jul', days: 31 },
+  { name: 'Aug', days: 30 },
+  { name: 'Sep', days: 31 },
+  { name: 'Okt', days: 30 },
+]
 
-const LogInfoItem = ({boardSize, width, category}) => {
-
+const LogInfoItem = ({ boardSize, width, category }) => {
   const icon = icons[category] || icons.general
 
   return (
@@ -45,72 +51,103 @@ const Score = ({
   tryAgain,
   avatar,
 }) => {
-
   const padding = boardSize / 120
 
-  const transactionLog = gameState.transactions.map(
-    (t, i, arr) => {
-      const icon = icons[t.field.category] || icons.general
-      const generalIcon = icons.general
-      return (
-        <span key={`t${i}`} style={{ background: theme.score }}>
-          {!t.reject && (
-            <div
-              key={`p${t.field.id}`}
-              {...css({
-                ...fonts(boardSize).tiny,
-                display: 'inline-block',
-                width: width / 7,
-                padding: 5,
-                background:
-                  theme.categories[t.field.category] ||
-                  theme.placeholderDark,
-                color: '#fff',
-              })}
-            >
-              <span style={{
-                opacity: i === arr.length - 1 ? 1 : 0.5,
-              }}>
-                <icon.Icon fill={'#fff'} width={20} height={20} />
-                <br />
-                {formatAmount(t.field.amount, true)}
-              </span>
-            </div>
-          )}
+  const transactionLog = gameState.transactions.map((t, i, arr) => {
+    const icon = icons[t.field.category] || icons.general
+    const generalIcon = icons.general
+    return (
+      <span key={`t${i}`} style={{ background: theme.score }}>
+        {!t.reject && (
           <div
-            key={`a${t.field.id}`}
+            key={`p${t.field.id}`}
             {...css({
               ...fonts(boardSize).tiny,
               display: 'inline-block',
               width: width / 7,
               padding: 5,
-              background: theme.categories['general'],
+              background:
+                theme.categories[t.field.category] ||
+                theme.placeholderDark,
               color: '#fff',
             })}
           >
-            <span style={{
-              opacity: i === arr.length - 1 ? 1 : 0.4,
-            }}>
-              <generalIcon.Icon fill={'#fff'} width={20} height={20} />
+            <span
+              style={
+                {
+                  //opacity: i === arr.length - 1 ? 1 : 0.5,
+                }
+              }
+            >
+              <icon.Icon fill={'#fff'} width={20} height={20} />
               <br />
-              {formatAmount(t.field.pauschal, true)}
+              {formatAmount(t.field.amount, true)}
             </span>
           </div>
-        </span>
-      )
-    },
-  )
+        )}
+        <div
+          key={`a${t.field.id}`}
+          {...css({
+            ...fonts(boardSize).tiny,
+            display: 'inline-block',
+            width: width / 7,
+            padding: 5,
+            background: theme.categories['general'],
+            color: '#fff',
+          })}
+        >
+          <span
+            style={
+              {
+                // opacity: i === arr.length - 1 ? 1 : 0.4,
+              }
+            }
+          >
+            <generalIcon.Icon fill={'#fff'} width={20} height={20} />
+            <br />
+            {formatAmount(t.field.pauschal, true)}
+          </span>
+        </div>
+      </span>
+    )
+  })
 
   const LogInfo = () => (
     <>
-      <LogInfoItem boardSize={boardSize} category='general' width={width / 6} />
-      <LogInfoItem boardSize={boardSize} category='life' width={width / 6} />
-      <LogInfoItem boardSize={boardSize} category='leisure' width={width / 6} />
-      <LogInfoItem boardSize={boardSize} category='clothing' width={width / 6} />
-      <LogInfoItem boardSize={boardSize} category='mobility' width={width / 6} />
-      <LogInfoItem boardSize={boardSize} category='media' width={width / 6} />
+      <LogInfoItem
+        boardSize={boardSize}
+        category="general"
+        width={width / 6}
+      />
+      <LogInfoItem
+        boardSize={boardSize}
+        category="life"
+        width={width / 6}
+      />
+      <LogInfoItem
+        boardSize={boardSize}
+        category="leisure"
+        width={width / 6}
+      />
+      <LogInfoItem
+        boardSize={boardSize}
+        category="clothing"
+        width={width / 6}
+      />
+      <LogInfoItem
+        boardSize={boardSize}
+        category="mobility"
+        width={width / 6}
+      />
+      <LogInfoItem
+        boardSize={boardSize}
+        category="media"
+        width={width / 6}
+      />
     </>
   )
+
+  const month = MONTHS[gameState.round - 1]
 
   return (
     <div
@@ -121,9 +158,19 @@ const Score = ({
         pointerEvents: 'none',
       })}
     >
-      <div {...css({ width, background: theme.score, padding, boxSizing: 'border-box', })}>
+      <div
+        {...css({
+          width,
+          background: theme.score,
+          padding,
+          boxSizing: 'border-box',
+        })}
+      >
         <div
-          {...css({ display: 'flex', justifyContent: 'space-between' })}
+          {...css({
+            display: 'flex',
+            justifyContent: 'space-between',
+          })}
         >
           <div
             {...css({
@@ -132,10 +179,14 @@ const Score = ({
               alignItems: 'center',
             })}
           >
-            <div {...css({ ...fonts(boardSize).tiny, color: '#fff' })}>
+            <div
+              {...css({ ...fonts(boardSize).tiny, color: '#fff' })}
+            >
               Monat
             </div>
-            <div {...css({ ...fonts(boardSize).large, color: '#fff' })}>
+            <div
+              {...css({ ...fonts(boardSize).large, color: '#fff' })}
+            >
               {gameState.round}/6
             </div>
           </div>
@@ -163,11 +214,15 @@ const Score = ({
             >
               So viel Monat ist übrig.
             </div>
-            <div {...css({ ...fonts(boardSize).tiny, color: '#fff' })}>
+            <div
+              {...css({ ...fonts(boardSize).tiny, color: '#fff' })}
+            >
               Datum
             </div>
-            <div {...css({ ...fonts(boardSize).large, color: '#fff' })}>
-              {(field.id * 2 - 1) % 32}. {MONTHS[gameState.round - 1]}
+            <div
+              {...css({ ...fonts(boardSize).large, color: '#fff' })}
+            >
+              {Math.min((field.id * 2 - 1) % 32, month.days)}. {month.name}
             </div>
           </div>
           <div
@@ -194,11 +249,26 @@ const Score = ({
             >
               So viel Geld ist übrig.
             </div>
-            <div {...css({ ...fonts(boardSize).tiny, color: '#fff' })}>
+            <div
+              {...css({ ...fonts(boardSize).tiny, color: '#fff' })}
+            >
               Kontostand
             </div>
-            <div {...css({ ...fonts(boardSize).large, color: '#fff' })}>
-              <span style={{color: gameState.balance < 0 ? (gameState.balance < MAX_DEBIT ? theme.help : theme.warning) : undefined }}>{formatAmount(gameState.balance, true)}</span>
+            <div
+              {...css({ ...fonts(boardSize).large, color: '#fff' })}
+            >
+              <span
+                style={{
+                  color:
+                    gameState.balance < 0
+                      ? gameState.balance < MAX_DEBIT
+                        ? theme.help
+                        : theme.warning
+                      : undefined,
+                }}
+              >
+                {formatAmount(gameState.balance, true)}
+              </span>
             </div>
           </div>
         </div>
@@ -244,7 +314,11 @@ const Score = ({
             width: (10 * width) / 7,
           })}
         >
-          {started ? reverse(transactionLog).slice(0,15) : <LogInfo />}
+          {started ? (
+            reverse(transactionLog).slice(0, 15)
+          ) : (
+            <LogInfo />
+          )}
         </div>
       </div>
     </div>
