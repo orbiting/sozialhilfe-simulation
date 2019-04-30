@@ -4,7 +4,7 @@ import Lane from './Lane'
 
 import fields from '../../fields.json'
 import { GAME_INITIAL_STATE } from './App'
-import { AVATARS } from './Layout';
+import AVATARS from './avatars';
 
 storiesOf('Lane', module)
   .add('default',

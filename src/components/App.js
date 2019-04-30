@@ -247,7 +247,7 @@ const App = ({
             <rect width={width} height={height} fill={'#fff'} opacity={(started && !gameOver) ? 0 : 0.6} />
             <g
               style={{
-                opacity: started ? 0 : 1,
+                opacity: (started && currentFieldIdx > 1) ? 0 : 1,
                 transform: `opacity 1s ease-in-out`
               }}
             >

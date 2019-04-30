@@ -42,10 +42,9 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     position: 'absolute',
     minHeight: height/2,
     padding: 15,
-    paddingBottom: 60,
     margin: width*(mobile ? 0 : 0.15),
     background: theme.field,
-    bottom: show && expand ? -border : -height,
+    bottom: show && expand ? height/8 : -height,
     width: baseWidth,
     transition: 'bottom 0.3s ease-in-out',
     boxSizing: 'border-box',
@@ -62,8 +61,8 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
   const action = {
     ...fonts(boardSize).small,
     cursor: 'pointer',
-    minWidth: baseWidth*0.4,
-    width: baseWidth*0.4,
+    minWidth: baseWidth*0.425,
+    width: baseWidth*0.425,
     padding: '10px 5px',
     height: 'auto',
   }
