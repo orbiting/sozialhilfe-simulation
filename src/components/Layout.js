@@ -13,6 +13,7 @@ import Board from './Board'
 import { HEADER_HEIGHT_MOBILE, HEADER_HEIGHT } from './constants'
 import AVATARS from './avatars'
 import { Cancel } from './icons'
+import fields from '../../fields.json'
 
 const maxHeight = 900
 
@@ -118,13 +119,13 @@ const Layout = () => {
                   top: size.mobile ? 0 : size.centerWidth * 0.3,
                   marginLeft: size.mobile
                     ? 0
-                    : size.centerWidth * 0.25,
+                    : size.centerWidth * 0.3,
                   marginRight: size.mobile
                     ? 0
-                    : size.centerWidth * 0.25,
+                    : size.centerWidth * 0.3,
                   width: size.mobile
                     ? size.centerWidth * 0.9
-                    : size.centerWidth * 0.4,
+                    : size.centerWidth * 0.3,
                   textAlign: 'center',
                 })}
               >
@@ -136,7 +137,7 @@ const Layout = () => {
                     lineHeight: 1.2,
                   }}
                 >
-                  Auf den Ereignisfeldern fallen kleinere Auslagen an.
+                  Auf den farbigen Feldern fallen kleinere Auslagen an.
                 </Interaction.P>
               </div>
               <svg
@@ -148,7 +149,7 @@ const Layout = () => {
                   transform={`translate(${size.centerWidth *
                     0.05},${size.centerWidth * 0.025})`}
                 >
-                  <Board boardSize={size.centerWidth * 0.8} />
+                  <Board fields={fields.slice(16, 32)} boardSize={size.centerWidth * 0.8} />
                 </g>
               </svg>
               <div

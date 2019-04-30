@@ -14,6 +14,7 @@
   1. `csvjson game2.csv > fields2.json`
   1. `csvjson game3.csv > fields3.json`
   1. `csvjson text.csv > text.json`
+1. Search and replace floating point numbers by ints in all files
 1. Run `npm run build`
 1. Copy resulting `index.js` to AWS S3 `republik-assets/dynamic-components/sozialhilfe`
 1. Bust cache for path

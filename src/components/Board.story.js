@@ -29,7 +29,7 @@ storiesOf('Board', module)
   .add('empty', () => (
     <svg width={700} height={700} xmlns='http://www.w3.org/2000/svg'>
       <g transform='translate(5,5)'>
-        <Board />
+        <Board fields={fields.slice(16, 32)} />
       </g>
     </svg>
   ))

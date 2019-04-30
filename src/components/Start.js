@@ -38,53 +38,55 @@ const Start = ({
           avatar ? avatar.startingBalance : 0
         } Franken für den Grundbedarf`}</Text>
       </g>
-
-      <svg
-        width="103px"
-        height="14px"
-        viewBox="0 0 103 14"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      >
-        <g
-          id="Page-1"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
+      
+      <g transform={`translate(${s/4}, ${s/2.4})`}>
+        <svg
+          width={s/2}
+          height="14px"
+          viewBox="0 0 103 14"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g
-            id="Group-3"
-            transform="translate(-0.500000, 0.000000)"
-            fill="#E02121"
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
           >
-            <rect
-              id="Rectangle"
-              x="9.5"
-              y="4"
-              width="87"
-              height="5"
-            />
-            <polygon
-              id="Triangle"
-              transform="translate(6.500000, 7.000000) rotate(-90.000000) translate(-6.500000, -7.000000) "
-              points="6.5 1 13.5 13 -0.5 13"
-            />
-            <g id="Group" transform="translate(77.500000, 0.000000)">
-              <polygon
+            <g
+              id="Group-3"
+              transform="translate(-0.500000, 0.000000)"
+              fill="#E02121"
+            >
+              <rect
                 id="Rectangle"
-                points="2.65306122 0 26 0 23.3469388 7 0 7"
+                x="9.5"
+                y="4"
+                width="87"
+                height="5"
               />
               <polygon
-                id="Rectangle-Copy-3"
-                transform="translate(13.000000, 9.500000) scale(1, -1) translate(-13.000000, -9.500000) "
-                points="2.65306122 6 26 6 23.3469388 13 0 13"
+                id="Triangle"
+                transform="translate(6.500000, 7.000000) rotate(-90.000000) translate(-6.500000, -7.000000) "
+                points="6.5 1 13.5 13 -0.5 13"
               />
+              <g id="Group" transform="translate(77.500000, 0.000000)">
+                <polygon
+                  id="Rectangle"
+                  points="2.65306122 0 26 0 23.3469388 7 0 7"
+                />
+                <polygon
+                  id="Rectangle-Copy-3"
+                  transform="translate(13.000000, 9.500000) scale(1, -1) translate(-13.000000, -9.500000) "
+                  points="2.65306122 6 26 6 23.3469388 13 0 13"
+                />
+              </g>
             </g>
           </g>
-        </g>
-      </svg>
+        </svg>
+      </g>
 
       <rect
         width={s}
