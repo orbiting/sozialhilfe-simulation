@@ -5,7 +5,9 @@ import theme from './theme'
 
 import icons, { Clothing, Leisure, Media, Mobility } from './icons'
 
-const fields = Object.values(icons)
+const fields = Object.values(icons).filter(i => i.color !== theme.categories.general)
+
+console.log("Cover.js:10", fields)
 
 const CoverField = ({height = 200, loop = 3, config: { Icon = Media, color = theme.categories.media }}) => {
   const unit = height/15
@@ -56,7 +58,7 @@ const Cover = ({width, cols, rows, loop}) => {
 
 
   return (
-    <svg width={width} height={height} style={{background: theme.background}} xmlns='http://www.w3.org/2000/svg'>
+    <svg width={width} height={height} xmlns='http://www.w3.org/2000/svg'>
       <g transform={`scale(0.9) translate(${margin},${margin})`}>
       {
         range(0,cols).map(i =>
@@ -74,10 +76,10 @@ const Cover = ({width, cols, rows, loop}) => {
 }
 
 Cover.defaultProps = {
-  width:600,
+  width:1200,
   cols: 10,
   rows: 4,
-  loop: 1,
+  loop: 5,
   fields: fields.data
 }
 
