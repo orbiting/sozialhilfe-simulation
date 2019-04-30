@@ -17,6 +17,7 @@ import Dialog from './Dialog'
 import GameOver from './GameOver'
 import memoize from 'lodash/memoize'
 import { MAX_DEBIT } from './constants';
+import debounce from 'lodash/debounce'
 
 const dα = 360 / 16
 
@@ -115,7 +116,7 @@ const App = ({
     currentFieldIdx > 0 && currentField.type === 'chance'
 
   // move to next field
-  const advanceGame = (field, reject = false) => {
+  const advanceGame = debounce((field, reject = false) => {
     const transactions = [ ...gameState.transactions, { field, reject } ]
     const balance = transactions.filter(({reject}) => !reject).reduce((acc,cur) => acc + cur.field.amount + cur.field.pauschal, 0)
     setGameState({
@@ -128,7 +129,7 @@ const App = ({
           : gameState.round,
       activeField: gameState.activeField + 1,
     })
-  }
+  }, 200)
 
 
   const resetGame = () => setGameState(getInitialState(avatar))

@@ -3,6 +3,7 @@ import { css } from 'glamor'
 import theme from './theme'
 import { fonts, formatAmount } from './Text'
 import icons from './icons';
+import { Button } from '@project-r/styleguide';
 
 const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile}) => {
 
@@ -33,6 +34,9 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     pointerEvents: show ? 'all' : 'none',
     margin: 'auto',
   })
+
+  const baseWidth = width*(mobile ? 1 : 0.7)
+
   const base = css({
     border: `${border}px solid rgba(255,255,255,0.6)`,
     position: 'absolute',
@@ -42,7 +46,7 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     margin: width*(mobile ? 0 : 0.15),
     background: theme.field,
     bottom: show && expand ? -border : -height,
-    width: width*(mobile ? 1 : 0.7),
+    width: baseWidth,
     transition: 'bottom 0.3s ease-in-out',
     boxSizing: 'border-box',
     background: icon ? icon.color : '#333',
@@ -55,14 +59,14 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
   const text = css({
     ...fonts(boardSize).regular
   })
-  const action = css({
-    ...fonts(boardSize).bold,
+  const action = {
+    ...fonts(boardSize).small,
     cursor: 'pointer',
-    width: '50%',
-    padding: '0 3%',
-    marginTop: 0,
-    textAlign: 'center',
-  })
+    minWidth: baseWidth*0.4,
+    width: baseWidth*0.4,
+    padding: '10px 5px',
+    height: 'auto',
+  }
   const price = css({
     ...fonts(boardSize).xlarge,
     textAlign: 'center',
@@ -85,9 +89,9 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
         <div {...price}>
           { formatAmount(amount) }
         </div>
-        <div style={{display: 'flex'}}>
-          <p {...action} onClick={() => collapse(field, false)}>{yes}</p>
-          <p {...action} onClick={() => collapse(field, true) }>{no}</p>
+        <div style={{display: 'flex', width: baseWidth*0.89, justifyContent: 'space-between'}}>
+          <Button white style={action} onClick={() => collapse(field, false)}>{yes}</Button>
+          <Button white style={action} onClick={() => collapse(field, true) }>{no}</Button>
         </div>
       </div>
     </div>
