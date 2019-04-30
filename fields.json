@@ -1456,7 +1456,7 @@
     "description": "Kiosk: Versuchen Sie Ihr Glück im Lotto?",
     "amount": -15,
     "yes": "Wer weiss? Vielleicht habe ich ja Glück.",
-    "no": "Nein, Geldverschwendung!",
+    "no": "Nein, Geld-verschwendung!",
     "outro": null,
     "source": null,
     "type": "chance",

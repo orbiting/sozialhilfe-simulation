@@ -52,14 +52,15 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     color: '#fff',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    userSelect: 'none',
   })
 
   const text = css({
     ...fonts(boardSize).regular
   })
   const action = {
-    ...fonts(boardSize).small,
+    ...fonts(boardSize).regular,
     cursor: 'pointer',
     minWidth: baseWidth*0.425,
     width: baseWidth*0.425,
@@ -88,7 +89,7 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
         <div {...price}>
           { formatAmount(amount) }
         </div>
-        <div style={{display: 'flex', width: baseWidth*0.9, justifyContent: 'space-between'}}>
+        <div style={{display: 'flex', width: '100%', justifyContent: 'space-between'}}>
           <Button white style={action} onClick={() => collapse(field, false)}>{yes}</Button>
           <Button white style={action} onClick={() => collapse(field, true) }>{no}</Button>
         </div>

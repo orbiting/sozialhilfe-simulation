@@ -314,7 +314,7 @@ const Score = ({
             width: (10 * width) / 7,
           })}
         >
-          {started ? (
+          {transactionLog.length > 0 ? (
             reverse(transactionLog).slice(0, 15)
           ) : (
             <LogInfo />
