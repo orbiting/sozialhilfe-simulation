@@ -4,30 +4,62 @@ import Chance from './Chance'
 import Start from './Start'
 import get from 'lodash/get'
 
-const Lane = ({fields, gameState, boardSize, rotate, x, y, start, avatar, blink}) => {
-
+const Lane = ({
+  fields,
+  gameState,
+  boardSize,
+  rotate,
+  x,
+  y,
+  start,
+  avatar,
+  blink,
+}) => {
   const shortSide = boardSize / 6
   const activeField = gameState.activeField
 
-  const w = 3*shortSide
+  const w = 3 * shortSide
 
   return (
     <g transform={`translate(${x}, ${y}) rotate(${rotate})`}>
-      {
-        fields.map((c,i) => {
-          const field = get(fields, i)
-          if(i===0) {
-            return start
-              ? <Start avatar={avatar} highlight={field.id === activeField} boardSize={boardSize} x={w} />
-              : <Chance highlight={field.id === activeField} boardSize={boardSize} field={field} x={w} />
-          } else {
-            return <Field blink={blink} boardSize={boardSize} field={field} x={w-i*shortSide} highlight={field.id === activeField} active={field.id-5 <= activeField && field.id <= activeField}/>
-          }
-        })
-      }
+      {fields.map((c, i) => {
+        const field = get(fields, i)
+        if (i === 0) {
+          return start ? (
+            <Start
+              key={field.id}
+              avatar={avatar}
+              highlight={field.id === activeField}
+              boardSize={boardSize}
+              x={w}
+            />
+          ) : (
+            <Chance
+              key={field.id}
+              highlight={field.id === activeField}
+              boardSize={boardSize}
+              field={field}
+              x={w}
+            />
+          )
+        } else {
+          return (
+            <Field
+              key={field.id}
+              blink={blink}
+              boardSize={boardSize}
+              field={field}
+              x={w - i * shortSide}
+              highlight={field.id === activeField}
+              active={
+                field.id - 5 <= activeField && field.id <= activeField
+              }
+            />
+          )
+        }
+      })}
     </g>
   )
-
 }
 
 Lane.defaultProps = {
@@ -37,7 +69,7 @@ Lane.defaultProps = {
   x: 0,
   y: 0,
   start: false,
-  gameState: {}
+  gameState: {},
 }
 
 export default Lane

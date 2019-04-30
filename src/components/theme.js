@@ -10,6 +10,7 @@ const classic = {
   score: '#403F3D',
   text: '#222',
   help: '#e02121',
+  warning: '#ff9a99',
   categories: {
     start: '#e02121',
     life: '#EAD45E',

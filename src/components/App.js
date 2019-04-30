@@ -16,6 +16,7 @@ import chunk from 'lodash/chunk'
 import Dialog from './Dialog'
 import GameOver from './GameOver'
 import memoize from 'lodash/memoize'
+import { MAX_DEBIT } from './constants';
 
 const dα = 360 / 16
 
@@ -109,7 +110,7 @@ const App = ({
 
   // game status
   const gameOver =
-    currentFieldIdx === 95 || gameState.balance < 0
+    currentFieldIdx === 95 || gameState.balance < MAX_DEBIT
   const gamePaused =
     currentFieldIdx > 0 && currentField.type === 'chance'
 
@@ -128,6 +129,7 @@ const App = ({
       activeField: gameState.activeField + 1,
     })
   }
+
 
   const resetGame = () => setGameState(getInitialState(avatar))
   const tryAgain = () => setGameState({...getInitialState(avatar), tryAgain: true})
@@ -202,17 +204,10 @@ const App = ({
               show={gamePaused}
               mobile={mobile}
             />
-            <GameOver
-              gameState={gameState}
-              width={centerWidth}
-              height={height}
+            <Score
+              gameOver={gameOver}
               tryAgain={tryAgain}
               resetGame={resetGame}
-              show={gameOver}
-              boardSize={boardSize}
-              avatar={avatar}
-            />
-            <Score
               avatar={avatar}
               gameState={gameState}
               field={currentField}
@@ -248,7 +243,7 @@ const App = ({
                 />
               </g>
             </g>
-            <rect width={width} height={height} fill={'#fff'} opacity={started ? 0 : 0.6} />
+            <rect width={width} height={height} fill={'#fff'} opacity={(started && !gameOver) ? 0 : 0.6} />
             <g
               style={{
                 opacity: started ? 0 : 1,

@@ -6,6 +6,8 @@ import reverse from 'lodash/reverse'
 import { css } from 'glamor'
 import icons from './icons'
 import AVATARS from './avatars'
+import GameOver from './GameOver';
+import { MAX_DEBIT } from './constants';
 
 const MONTHS = ['Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt']
 
@@ -38,6 +40,10 @@ const Score = ({
   height,
   boardSize,
   started,
+  gameOver,
+  resetGame,
+  tryAgain,
+  avatar,
 }) => {
 
   const padding = boardSize / 120
@@ -192,11 +198,23 @@ const Score = ({
               Kontostand
             </div>
             <div {...css({ ...fonts(boardSize).large, color: '#fff' })}>
-              {formatAmount(gameState.balance)}
+              <span style={{color: gameState.balance < 0 ? (gameState.balance < MAX_DEBIT ? theme.help : theme.warning) : undefined }}>{formatAmount(gameState.balance, true)}</span>
             </div>
           </div>
         </div>
       </div>
+
+      <GameOver
+        gameState={gameState}
+        width={width}
+        height={height}
+        tryAgain={tryAgain}
+        resetGame={resetGame}
+        show={gameOver}
+        boardSize={boardSize}
+        avatar={avatar}
+      />
+
       <div
         {...css({
           position: 'absolute',

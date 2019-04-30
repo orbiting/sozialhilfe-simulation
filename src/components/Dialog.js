@@ -30,7 +30,7 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     width,
     height,
     overflow: 'hidden',
-    pointerEvents: show ? undefined : 'none',
+    pointerEvents: show ? 'all' : 'none',
     margin: 'auto',
   })
   const base = css({
@@ -42,7 +42,7 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     margin: width*(mobile ? 0 : 0.15),
     background: theme.field,
     bottom: show && expand ? -border : -height,
-    width: width*(mobile ? 1 : 0.8),
+    width: width*(mobile ? 1 : 0.7),
     transition: 'bottom 0.3s ease-in-out',
     boxSizing: 'border-box',
     background: icon ? icon.color : '#333',

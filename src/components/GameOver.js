@@ -3,10 +3,11 @@ import { css } from 'glamor'
 import theme from './theme'
 import { fonts, formatAmount } from './Text'
 import icons from './icons';
-import { Button } from '@project-r/styleguide'
+import { Button, Interaction } from '@project-r/styleguide'
 
 
 import textRaw from '../../text.json'
+import { MAX_DEBIT } from './constants';
 const text = textRaw.data.reduce((acc,{key,value}) => {  acc[key] = value; return acc }, {})
 
 
@@ -19,17 +20,18 @@ const GameOver = ({gameState, width, height, tryAgain, resetGame, boardSize, sho
     width,
     height,
     overflow: 'hidden',
-    pointerEvents: show ? undefined : 'none',
   })
 
   const base = css({
+    pointerEvents: show ? 'auto' : 'none',
     position: 'absolute',
-    height,
     padding: 15,
-    background: '#777',
-    opacity: show ? 1 : 0,
+    background: theme.help,
+    opacity: show ? 0.95 : 0,
     width,
-    transition: 'opacity 0.3s ease-in-out',
+    maxHeight: height*0.8,
+    overflowY: 'auto',
+    transition: 'opacity 0.1s ease-in-out',
     boxSizing: 'border-box',
     color: theme.text,
     display: 'flex',
@@ -39,7 +41,15 @@ const GameOver = ({gameState, width, height, tryAgain, resetGame, boardSize, sho
 
   const textStyle = css({
     ...fonts(boardSize).regular,
-    color: '#fff'
+    color: '#fff',
+    lineHeight: 1.2,
+    margin: '1rem 0'
+  })
+
+  const list = css({
+    listStyle: 'square inside', 
+    padding: 0,
+    margin: 0,
   })
 
   const listItem = css({
@@ -51,22 +61,27 @@ const GameOver = ({gameState, width, height, tryAgain, resetGame, boardSize, sho
     <div {...wrapper}>
       <div {...base}>
       {
-        balance < 0 ? (
+        (balance < MAX_DEBIT) ? (
           <>
-            <p {...textStyle}>{text.outro8.replace('{amount}', formatAmount(avatar.startingBalance))}</p>
-            <Button black onClick={tryAgain}>Neu starten</Button>
+            <p {...textStyle} style={{marginTop: 0}}>{text.outro8.replace('{amount}', avatar.startingBalance)}</p>
+            <Button white onClick={tryAgain}>Neu starten</Button>
           </>
         ) : (
-          <div style={{overflowY: 'scroll'}}>
-            <p {...textStyle}>{text.outro6.replace('{amount}', formatAmount(avatar.startingBalance))}</p>
-            <ul {...listItem}>
-              {
-                gameState.transactions.filter(t => t.reject).filter(t => t.field.outro).map(t => <li {...listItem}>{t.field.outro}</li>)
-              }
-            </ul>
-            <p {...textStyle}>{text.outro7}</p>
-            <Button black onClick={resetGame}>Nochmals spielen</Button>
-          </div>
+          <>
+            <Interaction.P {...textStyle} style={{marginTop: 0}}>{text.outro6.replace('{amount}', avatar.startingBalance)}</Interaction.P>
+            <div {...css({
+              height: height/3,
+              overflowY: 'auto',
+            })}>
+              <ul {...list}>
+                {
+                  gameState.transactions.filter(t => t.reject).filter(t => t.field.outro).map(t => <li {...listItem}>{t.field.outro}</li>)
+                }
+              </ul>
+            </div>
+            <Interaction.P {...textStyle}>{text.outro7}</Interaction.P>
+            <Button white onClick={resetGame}>Nochmals spielen</Button>
+          </>
         )
       }
 
