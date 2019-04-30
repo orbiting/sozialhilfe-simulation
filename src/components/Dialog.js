@@ -62,9 +62,9 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
   const action = {
     ...fonts(boardSize).regular,
     cursor: 'pointer',
-    minWidth: baseWidth*0.425,
-    width: baseWidth*0.425,
-    padding: '10px 5px',
+    minWidth: baseWidth*0.41,
+    width: baseWidth*0.41,
+    padding: '5px 5px',
     height: 'auto',
   }
   const price = css({
