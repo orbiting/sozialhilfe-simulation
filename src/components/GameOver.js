@@ -115,7 +115,7 @@ const GameOver = ({
                   color: '#fff',
                   ':hover': { color: '#fff', textDecoration: 'none' },
                 }}
-                href="http://republik.ch/2019/04/30/was-soll-die-sozialhilfe-leisten-und-was-nicht/diskussion"
+                href="https://www.republik.ch/2019/05/01/was-soll-die-sozialhilfe-leisten-und-was-nicht/diskussion"
               >
                 Diskutieren Sie in unserer Debatte.
               </A>
