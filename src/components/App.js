@@ -82,13 +82,7 @@ const App = ({
   const fieldDataChunks = chunk(gameData, 16)
 
   // display last 4 old fields while on first 5 fields of round
-  let displayData =
-    gameState.round > 1 &&
-    (gameState.activeField + gameState.round - 1) % 17 < 5
-      ? fieldDataChunks[gameState.round - 1]
-          .slice(0, 12)
-          .concat(fieldDataChunks[gameState.round - 2].slice(12, 16))
-      : fieldDataChunks[gameState.round - 1]
+  let displayData = fieldDataChunks[gameState.round - 1]
 
   // calculate sizes
   const width = centerWidth + 2 * marginWidth

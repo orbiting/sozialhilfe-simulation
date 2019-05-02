@@ -42,9 +42,9 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     position: 'absolute',
     minHeight: height/2,
     padding: 15,
-    margin: width*(mobile ? 0 : 0.15),
+    left: width*(mobile ? 0 : 0.15),
     background: theme.field,
-    bottom: show && expand ? height/8 : -height,
+    bottom: show && expand ? height*0.125 : -height,
     width: baseWidth,
     transition: 'bottom 0.3s ease-in-out',
     boxSizing: 'border-box',
@@ -64,7 +64,7 @@ const Dialog = ({field = {}, width, height, advanceGame, boardSize, show, mobile
     cursor: 'pointer',
     minWidth: baseWidth*0.41,
     width: baseWidth*0.41,
-    padding: '5px 5px',
+    padding: '10px 5px',
     height: 'auto',
   }
   const price = css({

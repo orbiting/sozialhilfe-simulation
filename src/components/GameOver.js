@@ -100,8 +100,8 @@ const GameOver = ({
                 })}
               >
                 <ul {...list}>
-                  {outros.map(t => (
-                    <li {...listItem}>{t.field.outro}</li>
+                  {outros.map((t,i) => (
+                    <li key={i} {...listItem}>{t.field.outro}</li>
                   ))}
                 </ul>
               </div>
