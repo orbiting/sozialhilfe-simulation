@@ -8,14 +8,14 @@ import fields from '../../fields.json'
 const ScoreStory = props => {
   const [gameState, setGameState] = useState({
     ...getInitialState(),
-    transactions: fields.data.map(d => ({ reject: false, field: d })),
+    transactions: fields.map(d => ({ reject: false, field: d })),
   })
 
   return (
     <div style={{ position: 'absolute' }}>
       <Score
         gameState={gameState}
-        field={fields.data[23]}
+        field={fields[23]}
         setGameState={setGameState}
         boardSize={800}
         height={800}

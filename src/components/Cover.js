@@ -75,7 +75,7 @@ Cover.defaultProps = {
   cols: 3,
   rows: 3,
   loop: 1,
-  fields: fields.data,
+  fields: fields,
   fill: false,
   margin: 3
 }
