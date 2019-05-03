@@ -400,7 +400,7 @@
     "description": "Erste Sommertage: Sie möchten einen Holzkohlegrill für Ihren Balkon kaufen.",
     "amount": -70,
     "yes": "Was für ein Schnäppchen!",
-    "no": "Ufff ... zu teuer. ",
+    "no": "Ufff… zu teuer. ",
     "outro": "Sie haben auf den Balkongrill verzichtet. ",
     "source": "https://www.obi.ch/holzkohlegrills/obi-premium-kugelgrill-cleveland-43-cm/p/4952388",
     "type": "chance",
