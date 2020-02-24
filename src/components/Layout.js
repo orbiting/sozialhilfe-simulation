@@ -3,6 +3,7 @@ import {
   Center,
   Interaction,
   mediaQueries,
+  useHeaderHeight
 } from '@project-r/styleguide'
 
 import theme from './theme'
@@ -10,7 +11,6 @@ import { css } from 'glamor'
 import App from './App'
 import { scrollIt } from './scroll'
 import Board from './Board'
-import { HEADER_HEIGHT_MOBILE, HEADER_HEIGHT } from './constants'
 import AVATARS from './avatars'
 import { Cancel } from './icons'
 import fields from '../../fields.json'
@@ -56,12 +56,11 @@ const Layout = () => {
   const centerRef = useRef(null)
   const gameRef = useRef(null)
 
+  const [ headerHeight ] = useHeaderHeight()
+
   const measure = () => {
     if (centerRef.current) {
       const mobile = window.innerWidth < mediaQueries.mBreakPoint
-      const headerHeight = mobile
-        ? HEADER_HEIGHT_MOBILE
-        : HEADER_HEIGHT
       const { offsetWidth } = centerRef.current
       const width = offsetWidth
       const innerWidth = window.document.body.clientWidth
