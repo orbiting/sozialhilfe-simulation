@@ -56,7 +56,7 @@ const Layout = () => {
   const centerRef = useRef(null)
   const gameRef = useRef(null)
 
-  const [ headerHeight ] = useHeaderHeight()
+  const headerHeight = useHeaderHeight()
 
   const measure = () => {
     if (centerRef.current) {
